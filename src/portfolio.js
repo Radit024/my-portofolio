@@ -23,7 +23,7 @@ const greeting = {
   username: "Daffa Radityo",
   title: "Hi all, I'm Daffa Radityo",
   subTitle: emoji(
-    "A passionate Full Stack Developer & Tech Innovator ⚡ with a strong focus on Web & Mobile applications, Web3 architectures, and data-driven Agribusiness systems. Driven to build impactful digital solutions with JavaScript, TypeScript, React, Dart, and modern cloud technologies."
+    "I build practical digital solutions with modern technology, turning ideas into functional products for real-world needs. My work connects Full-Stack Development, AI, and Web3 with an industrial perspective in supply chain, operations, and data-driven decision making to create efficient, impactful systems"
   ),
   resumeLink: "", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
@@ -46,19 +46,19 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "DYNAMIC FULL-STACK DEVELOPER & DIGITAL SYSTEMS BUILDER",
+  subTitle: "BUILDING PRACTICAL DIGITAL SOLUTIONS & EFFICIENT BUSINESS SYSTEMS",
   skills: [
     emoji(
-      "⚡ Building responsive, high-performance Web and Mobile applications using modern JavaScript, TypeScript, React, and Dart"
+      "⚡ Developing practical Full-Stack Web and Mobile applications, turning ideas into functional, real-world digital products using React, TypeScript, and Dart"
     ),
     emoji(
-      "⚡ Architecting decentralized Web3 solutions, Smart Contracts, and Blockchain-based supply chain traceability with Solidity"
+      "⚡ Architecting AI-powered systems and decentralized Web3 solutions with Solidity for modern, transparent, and automated workflows"
     ),
     emoji(
-      "⚡ Engineering AI-powered Agribusiness Platforms, Decision Support Systems (DSS), and automated market analysis tools"
+      "⚡ Applying an industrial engineering perspective through process analysis, production & inventory planning, and supply chain operations"
     ),
     emoji(
-      "⚡ End-to-end Project Management, Agile team coordination, and intuitive UI/UX design from concept to production deployment"
+      "⚡ Connecting modern technology with real business processes and data-driven decision making to create efficient, practical, and impactful solutions"
     )
   ],
 
