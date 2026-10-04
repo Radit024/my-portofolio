@@ -1,94 +1,77 @@
-import React, {useContext} from "react";
+import React from "react";
+import {motion} from "framer-motion";
+import {useReducedMotion} from "../../hooks/useReducedMotion";
 import "./StartupProjects.scss";
 import {bigProjects} from "../../portfolio";
-import {Fade} from "react-reveal";
-import StyleContext from "../../contexts/StyleContext";
-
+import LinkArrow from "../../components/linkArrow/LinkArrow";
 export default function StartupProject() {
-  function openUrlInNewTab(url) {
-    if (!url) {
-      return;
-    }
-    var win = window.open(url, "_blank");
-    win.focus();
-  }
-
-  const {isDark} = useContext(StyleContext);
-  if (!bigProjects.display) {
-    return null;
-  }
+  const reduceMotion = useReducedMotion();
+  if (!bigProjects.display) return null;
   return (
-    <Fade bottom duration={1000} distance="20px">
-      <div className="main" id="projects">
-        <div>
-          <h1 className="skills-heading">{bigProjects.title}</h1>
-          <p
-            className={
-              isDark
-                ? "dark-mode project-subtitle"
-                : "subTitle project-subtitle"
-            }
-          >
-            {bigProjects.subtitle}
-          </p>
-
-          <div className="projects-container">
-            {bigProjects.projects.map((project, i) => {
-              return (
-                <div
-                  key={i}
-                  className={
-                    isDark
-                      ? "dark-mode project-card project-card-dark"
-                      : "project-card project-card-light"
-                  }
-                >
-                  {project.image ? (
-                    <div className="project-image">
-                      <img
-                        src={project.image}
-                        alt={project.projectName}
-                        className="card-image"
-                      ></img>
-                    </div>
-                  ) : null}
-                  <div className="project-detail">
-                    <h5
-                      className={isDark ? "dark-mode card-title" : "card-title"}
-                    >
-                      {project.projectName}
-                    </h5>
-                    <p
-                      className={
-                        isDark ? "dark-mode card-subtitle" : "card-subtitle"
-                      }
-                    >
-                      {project.projectDesc}
-                    </p>
-                    {project.footerLink ? (
-                      <div className="project-card-footer">
-                        {project.footerLink.map((link, i) => {
-                          return (
-                            <span
-                              key={i}
-                              className={
-                                isDark ? "dark-mode project-tag" : "project-tag"
-                              }
-                              onClick={() => openUrlInNewTab(link.url)}
-                            >
-                              {link.name}
-                            </span>
-                          );
-                        })}
-                      </div>
-                    ) : null}
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-        </div>
+    <section className="portfolio-section project-showcase" id="projects">
+      <header className="portfolio-section-header">
+        <h2>{bigProjects.title}</h2>
+        <p>{bigProjects.subtitle}</p>
+      </header>
+      <div className="projects-container">
+        {bigProjects.projects.map(project => (
+          <article className="project-card" key={project.projectName}>
+            <div
+              className={`project-preview project-preview--${project.previewStyle}`}
+            >
+              {project.image && (
+                <motion.img
+                  whileHover={reduceMotion ? undefined : {scale: 1.025}}
+                  transition={{duration: 0.25}}
+                  src={project.image}
+                  alt={project.imageAlt || project.projectName}
+                  loading="lazy"
+                  decoding="async"
+                  width="1120"
+                  height="700"
+                />
+              )}
+              <span className="project-preview-caption">
+                {project.previewLabel}
+              </span>
+            </div>
+            <div className="project-detail">
+              <p className="project-date">{project.date}</p>
+              <h3 title={project.projectName}>
+                {project.displayName || project.projectName}
+              </h3>
+              <p className="project-description">{project.projectDesc}</p>
+              {project.contributors && (
+                <p className="project-contributors">
+                  Collaborators: {project.contributors}
+                </p>
+              )}
+              {project.skills?.length > 0 && (
+                <ul className="project-skills" aria-label="Project skills">
+                  {project.skills.map(skill => (
+                    <li key={skill}>{skill}</li>
+                  ))}
+                </ul>
+              )}
+              <div className="project-card-footer">
+                {project.footerLink?.map(link => (
+                  <a
+                    className="showcase-link"
+                    key={link.url}
+                    href={link.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={`${link.name}: ${project.projectName}`}
+                  >
+                    {link.name}
+                    <LinkArrow />
+                  </a>
+                ))}
+              </div>
+            </div>
+          </article>
+        ))}
       </div>
-    </Fade>
+    </section>
   );
 }

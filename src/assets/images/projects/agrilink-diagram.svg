@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 700">
+  <defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0 10 5 0 10" fill="none" stroke="#8766a7" stroke-width="1.5"/></marker></defs>
+  <rect width="1120" height="700" fill="#e9e3f0"/>
+  <g fill="#372249" font-family="sans-serif"><text x="70" y="130" font-size="62" font-weight="600">Agrilink</text><text x="73" y="177" font-size="22" fill="#6b557e">Tracing the food supply chain</text></g>
+  <g stroke="#8766a7" stroke-width="3" fill="none" marker-end="url(#arrow)"><path d="M275 330H325"/><path d="M535 330H585"/><path d="M795 330H845"/></g>
+  <g fill="#faf8fc" stroke="#c9b8d9" stroke-width="2"><rect x="65" y="265" width="210" height="130" rx="20"/><rect x="325" y="265" width="210" height="130" rx="20"/><rect x="585" y="265" width="210" height="130" rx="20"/><rect x="845" y="265" width="210" height="130" rx="20"/></g>
+  <g fill="#473058" font-family="sans-serif" font-size="23" text-anchor="middle"><text x="170" y="339">Producers</text><text x="430" y="339">Distributors</text><text x="690" y="339">Retailers</text><text x="950" y="339">Consumers</text></g>
+  <path d="M170 395V445H690V395M430 395V495M950 395V495" fill="none" stroke="#a089b4" stroke-width="2" stroke-dasharray="7 7"/>
+  <rect x="270" y="495" width="330" height="78" rx="18" fill="#663698"/><rect x="775" y="495" width="280" height="78" rx="18" fill="#faf8fc"/>
+  <g font-family="sans-serif" font-size="23" text-anchor="middle"><text x="435" y="543" fill="#fff">Polygon records</text><text x="915" y="543" fill="#473058">QR access</text></g>
+</svg>

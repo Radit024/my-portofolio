@@ -25,3 +25,11 @@ yarn-error.log*
 #user generated content
 public/profile.json
 public/blogs.json
+docs/linkedin-content-source.md
+.gitignore
+docs/portfolio-lower-redesign-inspiration.md
+docs/motion-design.md
+docs/superpowers/plans/2026-10-04-lower-showcase.md
+docs/superpowers/plans/2026-10-04-react-upgrade.md
+docs/superpowers/specs/2026-10-04-lower-showcase-design.md
+src/assets/images/projects/ASSET-SOURCES.md

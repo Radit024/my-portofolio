@@ -1,69 +1,60 @@
-import React, {useContext} from "react";
+import React from "react";
+import {motion} from "framer-motion";
+import {useReducedMotion} from "../../hooks/useReducedMotion";
+import LinkArrow from "../../components/linkArrow/LinkArrow";
+import {contactInfo, socialMediaLinks} from "../../portfolio";
 import "./Contact.scss";
-import SocialMedia from "../../components/socialMedia/SocialMedia";
-import {illustration, contactInfo} from "../../portfolio";
-import {Fade} from "react-reveal";
-import email from "../../assets/lottie/email";
-import DisplayLottie from "../../components/displayLottie/DisplayLottie";
-import StyleContext from "../../contexts/StyleContext";
-
+const socialNames = {
+  github: "GitHub",
+  linkedin: "LinkedIn",
+  gitlab: "GitLab",
+  facebook: "Facebook",
+  instagram: "Instagram",
+  twitter: "X / Twitter",
+  medium: "Medium",
+  stackoverflow: "Stack Overflow",
+  kaggle: "Kaggle"
+};
 export default function Contact() {
-  const {isDark} = useContext(StyleContext);
+  const reduceMotion = useReducedMotion();
   return (
-    <Fade bottom duration={1000} distance="20px">
-      <div className="main contact-margin-top" id="contact">
-        <div className="contact-div-main">
-          <div className="contact-header">
-            <h1 className="heading contact-title">{contactInfo.title}</h1>
-            <p
-              className={
-                isDark
-                  ? "dark-mode contact-subtitle"
-                  : "subTitle contact-subtitle"
-              }
-            >
-              {contactInfo.subtitle}
-            </p>
-            <div
-              className={
-                isDark ? "dark-mode contact-text-div" : "contact-text-div"
-              }
-            >
-              {contactInfo.number && (
-                <>
-                  <a
-                    className="contact-detail"
-                    href={"tel:" + contactInfo.number}
-                  >
-                    {contactInfo.number}
-                  </a>
-                  <br />
-                  <br />
-                </>
-              )}
-              <a
-                className="contact-detail-email"
-                href={"mailto:" + contactInfo.email_address}
-              >
-                {contactInfo.email_address}
-              </a>
-              <br />
-              <br />
-              <SocialMedia />
-            </div>
-          </div>
-          <div className="contact-image-div">
-            {illustration.animated ? (
-              <DisplayLottie animationData={email} />
-            ) : (
-              <img
-                alt="Man working"
-                src={require("../../assets/images/contactMailDark.svg")}
-              ></img>
-            )}
-          </div>
-        </div>
+    <section className="portfolio-section contact-showcase" id="contact">
+      <div className="contact-showcase-top">
+        <h2>{contactInfo.title}</h2>
+        <p>{contactInfo.subtitle}</p>
       </div>
-    </Fade>
+      <motion.a
+        className="contact-email-action"
+        href={`mailto:${contactInfo.email_address}`}
+        whileTap={reduceMotion ? undefined : {scale: 0.99}}
+      >
+        <span>{contactInfo.email_address}</span>
+        <LinkArrow />
+      </motion.a>
+      <div className="contact-secondary">
+        {contactInfo.number && (
+          <a className="showcase-link" href={`tel:${contactInfo.number}`}>
+            {contactInfo.number}
+          </a>
+        )}
+        {socialMediaLinks.display && (
+          <nav aria-label="Social profiles" className="contact-socials">
+            {Object.entries(socialNames)
+              .filter(([key]) => socialMediaLinks[key])
+              .map(([key, label]) => (
+                <a
+                  key={key}
+                  href={socialMediaLinks[key]}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {label}
+                  <LinkArrow />
+                </a>
+              ))}
+          </nav>
+        )}
+      </div>
+    </section>
   );
 }

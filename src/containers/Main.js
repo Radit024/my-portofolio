@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from "react";
+import {useReducedMotion} from "../hooks/useReducedMotion";
 import Header from "../components/header/Header";
 import Greeting from "./greeting/Greeting";
 import Skills from "./skills/Skills";
@@ -20,15 +21,27 @@ import {splashScreen} from "../portfolio";
 import {StyleProvider} from "../contexts/StyleContext";
 import {useLocalStorage} from "../hooks/useLocalStorage";
 import "./Main.scss";
+import "./LowerPortfolio.scss";
 
 const Main = () => {
-  const darkPref = window.matchMedia("(prefers-color-scheme: dark)");
-  const [isDark, setIsDark] = useLocalStorage("isDark", darkPref.matches);
-  const [isShowingSplashAnimation, setIsShowingSplashAnimation] =
-    useState(true);
+  const reduceMotion = useReducedMotion();
+  const darkPref = window.matchMedia
+    ? window.matchMedia("(prefers-color-scheme: dark)")
+    : null;
+  const [isDark, setIsDark] = useLocalStorage(
+    "isDark",
+    darkPref ? darkPref.matches : false
+  );
+  const [isShowingSplashAnimation, setIsShowingSplashAnimation] = useState(
+    splashScreen.enabled && !reduceMotion
+  );
 
   useEffect(() => {
-    if (splashScreen.enabled) {
+    if (reduceMotion) {
+      setIsShowingSplashAnimation(false);
+      return;
+    }
+    if (splashScreen.enabled && isShowingSplashAnimation) {
       const splashTimer = setTimeout(
         () => setIsShowingSplashAnimation(false),
         splashScreen.duration
@@ -37,7 +50,7 @@ const Main = () => {
         clearTimeout(splashTimer);
       };
     }
-  }, []);
+  }, [reduceMotion, isShowingSplashAnimation]);
 
   const changeTheme = () => {
     setIsDark(!isDark);
@@ -46,7 +59,7 @@ const Main = () => {
   return (
     <div className={isDark ? "dark-mode" : null}>
       <StyleProvider value={{isDark: isDark, changeTheme: changeTheme}}>
-        {isShowingSplashAnimation && splashScreen.enabled ? (
+        {isShowingSplashAnimation && splashScreen.enabled && !reduceMotion ? (
           <SplashScreen />
         ) : (
           <>
@@ -55,16 +68,18 @@ const Main = () => {
             <Skills />
             <StackProgress />
             <Education />
-            <WorkExperience />
-            <Projects />
-            <StartupProject />
-            <Achievement />
-            <Blogs />
-            <Talks />
-            <Twitter />
-            <Podcast />
-            <Profile />
-            <Footer />
+            <div className="lower-portfolio">
+              <WorkExperience />
+              <Projects />
+              <StartupProject />
+              <Achievement />
+              <Blogs />
+              <Talks />
+              <Twitter />
+              <Podcast />
+              <Profile />
+              <Footer />
+            </div>
             <ScrollToTopButton />
           </>
         )}

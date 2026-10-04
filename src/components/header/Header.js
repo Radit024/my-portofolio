@@ -7,6 +7,7 @@ import {
   greeting,
   workExperiences,
   skillsSection,
+  bigProjects,
   openSource,
   blogSection,
   talkSection,
@@ -46,7 +47,12 @@ function Header() {
           )}
           {viewExperience && (
             <li>
-              <a href="#experience">Work Experiences</a>
+              <a href="#experience">Experiences</a>
+            </li>
+          )}
+          {bigProjects.display && (
+            <li>
+              <a href="#projects">Projects</a>
             </li>
           )}
           {viewOpenSource && (
@@ -56,7 +62,7 @@ function Header() {
           )}
           {viewAchievement && (
             <li>
-              <a href="#achievements">Achievements</a>
+              <a href="#achievements">Certifications</a>
             </li>
           )}
           {viewBlog && (

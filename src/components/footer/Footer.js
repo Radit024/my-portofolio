@@ -1,22 +1,13 @@
-import React, {useContext} from "react";
+import React from "react";
+import {greeting} from "../../portfolio";
 import "./Footer.scss";
-import {Fade} from "react-reveal";
-import emoji from "react-easy-emoji";
-import StyleContext from "../../contexts/StyleContext";
-
 export default function Footer() {
-  const {isDark} = useContext(StyleContext);
   return (
-    <Fade bottom duration={1000} distance="5px">
-      <div className="footer-div">
-        <p className={isDark ? "dark-mode footer-text" : "footer-text"}>
-
-        </p>
-        <p className={isDark ? "dark-mode footer-text" : "footer-text"}>
-          <a href="https://github.com/saadpasta/developerFolio">
-          </a>
-        </p>
-      </div>
-    </Fade>
+    <footer className="showcase-footer">
+      <p>
+        © {new Date().getFullYear()} {greeting.username}
+      </p>
+      <a href="#greeting">Back to top</a>
+    </footer>
   );
 }

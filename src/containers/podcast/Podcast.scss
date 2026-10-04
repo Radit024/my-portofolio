@@ -1,39 +1,18 @@
-@import "../../_globalColor";
-
-.podcast-header-title {
-  font-size: 56px;
-  font-weight: 400;
-  line-height: 0px;
-}
-
-.podcast {
-  width: 600px;
-}
-
-.podcast-main-div {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1rem 1rem;
-}
-.subTitle {
-  color: $subTitle;
-}
-
-@media (max-width: 768px) {
-  .podcast-header-title {
-    font-size: 30px;
-    text-align: center;
-  }
-  .podcast-header-subtitle {
-    font-size: 16px;
-    line-height: normal;
-    text-align: center;
-  }
-
-  .podcast {
-    width: 300px;
-  }
+.lower-portfolio {
   .podcast-main-div {
-    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+  }
+  .podcast {
+    width: 100%;
+    height: 160px;
+    border: 0;
+    border-radius: 12px;
+  }
+}
+@media (max-width: 760px) {
+  .lower-portfolio .podcast-main-div {
+    grid-template-columns: minmax(0, 1fr);
   }
 }

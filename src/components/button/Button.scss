@@ -16,13 +16,14 @@
   margin-top: 20px;
   font-size: 1rem;
   cursor: pointer;
-  transition: all 0.3s ease-in-out 0s;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
 }
-.main-button:hover {
+.main-button:hover,
+.main-button:focus-visible {
   background-color: $darkBoxShadow2;
   color: $buttonColor;
-  transition: all 0.3s ease 0s;
-  transform: translateY(-3px);
 }
 .project-button {
   display: flex;

@@ -1,23 +1,22 @@
-.centerContent {
-  text-align: center;
-  margin: auto;
-  display: block;
-  margin: 0 auto;
-  padding: 1.5rem;
-}
-.tw-main-div {
-  margin-left: 15px;
-  margin-right: 15px;
-  margin-bottom: 15px;
-  width: auto;
-  padding: 1.5rem;
-}
-.twitter-component {
-  width: auto;
-  padding: 1.5rem;
-}
-
-.timeline-Header-title {
-  font-size: 56px;
-  font-weight: 100 !important;
+.lower-portfolio {
+  .twitter-showcase {
+    border-top: 1px solid var(--showcase-line);
+  }
+  .twitter-timeline {
+    max-width: 640px;
+    min-width: 0;
+    margin-bottom: 12px;
+  }
+  .twitter-timeline iframe {
+    max-width: 100% !important;
+  }
+  .twitter-placeholder,
+  .twitter-fallback {
+    color: var(--showcase-muted);
+    font-size: 13px;
+    line-height: 1.7;
+  }
+  .twitter-fallback {
+    margin: 4px 0 0;
+  }
 }
