@@ -2,6 +2,174 @@
 
 .dark-mode {
   background-color: $darkBackground;
-  color: white;
-  transition: "0.1s";
+  color: $textColorDark;
+  transition: background-color 0.2s ease, color 0.2s ease;
+
+  // Headings & paragraphs
+  h1, h2, h3, h4, h5, h6 {
+    color: $textColorDark;
+  }
+
+  p {
+    color: #e2e8f0;
+  }
+
+  .subTitle {
+    color: #94a3b8 !important;
+  }
+
+  // Greeting Section
+  .greeting-text {
+    color: $textColorDark !important;
+  }
+
+  .greeting-text-p {
+    color: #d1d5db !important;
+  }
+
+  // Skills Section
+  .skills-heading {
+    color: $textColorDark !important;
+  }
+
+  .skills-text-subtitle {
+    color: #cbd5e1 !important;
+  }
+
+  .skills-text {
+    color: #e2e8f0 !important;
+  }
+
+  .software-skill-inline > i,
+  .software-skill-inline > .software-skill-icon-svg,
+  .software-skill-inline > p {
+    color: #b0b8c4 !important;
+    fill: #b0b8c4 !important;
+  }
+
+  // Stack Progress
+  .skills-bar {
+    .skills-heading {
+      color: $textColorDark !important;
+    }
+
+    .tech-stack-subtitle {
+      color: #cbd5e1 !important;
+    }
+
+    .skill h3 {
+      color: $textColorDark !important;
+    }
+
+    .skill p {
+      color: #94a3b8 !important;
+    }
+  }
+
+  // Education Section
+  .education-heading {
+    color: $textColorDark !important;
+  }
+
+  .education-text-school {
+    color: $textColorDark !important;
+  }
+
+  .education-text-subHeader {
+    color: #e2e8f0 !important;
+  }
+
+  .education-text-duration {
+    color: #cbd5e1 !important;
+  }
+
+  .education-text-desc {
+    color: #94a3b8 !important;
+  }
+
+  .education-text-bullets li {
+    color: #cbd5e1 !important;
+  }
+
+  .education-card-border {
+    border-top-color: rgba(255, 255, 255, 0.12) !important;
+  }
+
+  // Header Logo in Dark Mode
+  .header .logo,
+  .header .logo-name {
+    color: $textColorDark !important;
+  }
+
+  .header .grey-color {
+    color: #9ca3af !important;
+  }
+
+  // Experience Section
+  .experience-heading {
+    color: $textColorDark !important;
+  }
+  .experience-card-dark {
+    background-color: #1a1921 !important;
+    border-color: rgba(255, 255, 255, 0.08) !important;
+  }
+  .experience-text-role {
+    color: $textColorDark !important;
+  }
+  .experience-text-date {
+    color: #cbd5e1 !important;
+  }
+  .experience-text-desc {
+    color: #94a3b8 !important;
+  }
+  .experience-text-details li {
+    color: #cbd5e1 !important;
+  }
+
+  // Achievement Section
+  .achievement-heading {
+    color: $textColorDark !important;
+  }
+  .achievement-subtitle {
+    color: #94a3b8 !important;
+  }
+  .dark-mode.certificate-card {
+    background-color: #1a1921 !important;
+    border-color: rgba(255, 255, 255, 0.08) !important;
+  }
+  .card-title {
+    color: $textColorDark !important;
+  }
+  .card-subtitle {
+    color: #94a3b8 !important;
+  }
+
+  // Contact Section
+  .contact-title {
+    color: $textColorDark !important;
+  }
+  .contact-subtitle {
+    color: #94a3b8 !important;
+  }
+  .contact-detail,
+  .contact-detail-email {
+    color: #cbd5e1 !important;
+  }
+  .contact-detail:hover,
+  .contact-detail-email:hover {
+    color: $textColorDark !important;
+  }
+
+  // Podcast Section
+  .podcast-header-title {
+    color: $textColorDark !important;
+  }
+  .podcast-header-subtitle {
+    color: #94a3b8 !important;
+  }
+
+  // Splash Screen in Dark Mode
+  .splash-title {
+    color: $textColorDark !important;
+  }
 }

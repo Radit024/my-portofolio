@@ -21,7 +21,6 @@ import {splashScreen} from "../portfolio";
 import {StyleProvider} from "../contexts/StyleContext";
 import {useLocalStorage} from "../hooks/useLocalStorage";
 import "./Main.scss";
-import "./LowerPortfolio.scss";
 
 const Main = () => {
   const reduceMotion = useReducedMotion();
@@ -68,18 +67,16 @@ const Main = () => {
             <Skills />
             <StackProgress />
             <Education />
-            <div className="lower-portfolio">
-              <WorkExperience />
-              <Projects />
-              <StartupProject />
-              <Achievement />
-              <Blogs />
-              <Talks />
-              <Twitter />
-              <Podcast />
-              <Profile />
-              <Footer />
-            </div>
+            <WorkExperience />
+            <Projects />
+            <StartupProject />
+            <Achievement />
+            <Blogs />
+            <Talks />
+            <Twitter />
+            <Podcast />
+            <Profile />
+            <Footer />
             <ScrollToTopButton />
           </>
         )}

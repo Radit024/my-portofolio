@@ -16,6 +16,7 @@
     "sass": "^1.105.1"
   },
   "scripts": {
+    "dev": "node fetch.js && react-scripts start",
     "predeploy": "npm run build",
     "start": "node fetch.js && react-scripts start",
     "build": "node fetch.js && react-scripts build",

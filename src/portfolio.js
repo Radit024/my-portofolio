@@ -21,9 +21,9 @@ const illustration = {
 
 const greeting = {
   username: "Daffa Radityo",
-  title: "Hi, I'm Daffa Radityo Adjefirmansyah",
+  title: "Hi all, I'm Daffa Radityo",
   subTitle: emoji(
-    "I'm an Agricultural Industrial Engineering undergraduate at Universitas Brawijaya, exploring the intersection of technology, business, and industrial systems. I'm developing my skills in Web Development, Web3, Integrated Supply Chain Management, AI Prompting, and Financial Markets through continuous learning and hands-on projects."
+    "A passionate Full Stack Developer & Tech Innovator ⚡ with a strong focus on Web & Mobile applications, Web3 architectures, and data-driven Agribusiness systems. Driven to build impactful digital solutions with JavaScript, TypeScript, React, Dart, and modern cloud technologies."
   ),
   resumeLink: "", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
@@ -45,16 +45,21 @@ const socialMediaLinks = {
 // Skills Section
 
 const skillsSection = {
-  title: "Skills & Interests",
-  subTitle: "EXPLORING TECHNOLOGY, BUSINESS, AND INDUSTRIAL SYSTEMS",
+  title: "What I do",
+  subTitle: "DYNAMIC FULL-STACK DEVELOPER & DIGITAL SYSTEMS BUILDER",
   skills: [
-    "Web Development / Pengembangan Web, Web Design, and User Interface Design.",
-    "Web3, Blockchain Architecture, and Smart Contracts.",
-    "Integrated Supply Chain Management and Product Development.",
-    "Artificial Intelligence (AI) and AI Prompting.",
-    "Financial Markets, with an interest in cryptocurrency.",
-    "Software Project Management, Manajemen Proyek, and Manajemen Tim.",
-    "TypeScript, Pengembangan Software, and 3D Modeling."
+    emoji(
+      "⚡ Building responsive, high-performance Web and Mobile applications using modern JavaScript, TypeScript, React, and Dart"
+    ),
+    emoji(
+      "⚡ Architecting decentralized Web3 solutions, Smart Contracts, and Blockchain-based supply chain traceability with Solidity"
+    ),
+    emoji(
+      "⚡ Engineering AI-powered Agribusiness Platforms, Decision Support Systems (DSS), and automated market analysis tools"
+    ),
+    emoji(
+      "⚡ End-to-end Project Management, Agile team coordination, and intuitive UI/UX design from concept to production deployment"
+    )
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
@@ -62,35 +67,44 @@ https://fontawesome.com/icons?d=gallery */
 
   softwareSkills: [
     {
-      skillName: "HTML",
+      skillName: "HTML5",
       fontAwesomeClassname: "fab fa-html5"
     },
     {
-      skillName: "TypeScript",
-      fontAwesomeClassname: "fas fa-code"
+      skillName: "CSS3",
+      fontAwesomeClassname: "fab fa-css3-alt"
     },
     {
       skillName: "JavaScript",
       fontAwesomeClassname: "fab fa-js"
     },
     {
-      skillName: "SQL",
-      fontAwesomeClassname: "fas fa-database"
+      skillName: "TypeScript",
+      fontAwesomeClassname: "fas fa-code"
+    },
+    {
+      skillName: "React",
+      fontAwesomeClassname: "fab fa-react"
     },
     {
       skillName: "Dart",
-      fontAwesomeClassname: "fas fa-code"
+      fontAwesomeClassname: "fas fa-mobile-alt"
+    },
+    {
+      skillName: "SQL Database",
+      fontAwesomeClassname: "fas fa-database"
     },
     {
       skillName: "Git & GitHub",
       fontAwesomeClassname: "fab fa-github"
     },
     {
-      skillName: "Polygon",
-      fontAwesomeClassname: "fas fa-link"
+      skillName: "Solidity / Web3",
+      fontAwesomeClassname: "solidity",
+      iconType: "solidity"
     },
     {
-      skillName: "Alibaba Cloud",
+      skillName: "Cloud Computing",
       fontAwesomeClassname: "fas fa-cloud"
     }
   ],
@@ -105,65 +119,62 @@ const educationInfo = {
     {
       schoolName: "Universitas Brawijaya",
       logo: require("./assets/images/UB LOGO.jpeg"),
-      subHeader: "Bachelor of Engineering, Agroindustrial Technology",
-      duration: "August 2023 - September 2027 (expected)"
+      subHeader: "Bachelor of Engineering in Agroindustrial Technology",
+      duration: "August 2023 - Present",
+      desc: "Focusing on Industrial Systems Optimization, Decision Support Systems, and Software Engineering.",
+      descBullets: [
+        "Active contributor in regional tech challenges (APAC Solution Challenge, Web3 University Tour).",
+        "Researching and developing blockchain-driven food supply chain traceability and smart farming analytics."
+      ]
     },
     {
       schoolName: "SMA Negeri 9 Malang",
       logo: require("./assets/images/SMAAWA.jpeg"),
-      subHeader: "Senior High School",
-      duration: "August 2020 - March 2023",
-      desc: "Grade: 85.9"
+      subHeader: "Senior High School — Mathematics & Natural Sciences",
+      duration: "June 2020 - March 2023",
+      desc: "Graduated with distinction (Score: 85.9). Developed foundational analytical thinking and early programming exploration."
     }
   ]
 };
 
-// Technologies evidenced by LinkedIn skills, projects, and coursework.
+// Technologies & Proficiencies
 
 const techStack = {
+  viewSkillBars: true, // Set to true to show Proficiency Section
   display: true,
-  title: "Tech Stack & Tools",
-  subtitle: "Technologies explored through projects and certified coursework.",
+  title: "Proficiency",
+  subtitle: "CORE COMPETENCIES & TECHNICAL PROFICIENCY",
   experience: [
     {
-      Stack: "Web & Software",
-      technologies: "HTML, JavaScript, TypeScript, Dart"
+      Stack: "Frontend & Mobile Development",
+      progressPercentage: "85%",
+      technologies: "HTML5, CSS3, JavaScript, TypeScript, React, Dart"
     },
     {
-      Stack: "Data & Development Tools",
-      technologies: "SQL, Git, GitHub, Alibaba Cloud coursework"
+      Stack: "Backend, Cloud & Databases",
+      progressPercentage: "75%",
+      technologies: "Node.js, SQL, Alibaba Cloud, Git & GitHub"
     },
     {
-      Stack: "Blockchain",
-      technologies: "Polygon, QR Codes, Smart Contracts, Web3"
+      Stack: "Web3 & Smart Contracts",
+      progressPercentage: "70%",
+      technologies: "Solidity, Smart Contracts, Supply Chain Traceability"
+    },
+    {
+      Stack: "Industrial Systems & Problem Solving",
+      progressPercentage: "80%",
+      technologies: "Agile Leadership, UI/UX Design, Decision Support Systems"
     }
   ]
 };
 
-// Learning and community participation; no employment history is listed on LinkedIn.
+// Work & Community Experience Section
 
 const workExperiences = {
-  display: true,
-  title: "Experiences & Participation",
-  subtitle: "Learning and community activities listed on LinkedIn.",
-  experience: [
-    {
-      role: "Participant — Web3 University Tour Malang",
-      company: "Binance Academy & Coinvestasi",
-      date: "September 2026",
-      desc: "Explored blockchain technology, digital assets, and the Web3 ecosystem while exchanging ideas with fellow participants interested in emerging technologies.",
-      sourceUrl:
-        "https://www.linkedin.com/in/daffaradityoadjiefirmansyah/overlay/Honor/1410413014/treasury/"
-    },
-    {
-      role: "Participant — APAC Solution Challenge 2025",
-      company: "Google Asia Pacific",
-      date: "July 2025",
-      desc: "Participated in APAC Solution Challenge 2025, with a participation certificate issued by Google Asia Pacific.",
-      sourceUrl:
-        "https://www.linkedin.com/in/daffaradityoadjiefirmansyah/overlay/Honor/898140349/treasury/"
-    }
-  ]
+  display: false,
+  title: "Experience",
+  subtitle: "COMMUNITY ENGAGEMENT & TECH PARTICIPATION",
+  experience: []
 };
 
 /* Your Open Source Section to View Your Github Pinned Projects
@@ -174,11 +185,11 @@ const openSource = {
   display: false // Set false to hide this section, defaults to true
 };
 
-// Some big projects you have worked on
+// Some projects you have worked on
 
 const bigProjects = {
   title: "Projects",
-  subtitle: "Hands-on work in agribusiness, Web3, digital media, and health.",
+  subtitle: "",
   projects: [
     {
       projectName:
@@ -186,16 +197,17 @@ const bigProjects = {
       displayName: "Agrilink",
       image: require("./assets/images/projects/agrilink-diagram.svg").default,
       imageAlt:
-        "Concept diagram connecting producers, distributors, retailers, and consumers through Polygon records and QR access",
+        "Concept diagram connecting producers, distributors, retailers, and consumers through Solidity contracts and QR access",
       previewStyle: "agrilink",
       previewLabel: "Concept diagram",
       date: "September 2026 - Present",
       projectDesc:
-        "A food supply chain traceability system using Polygon and QR Codes, designed to address fragmented and manipulation-prone records across producers, distributors, retailers, and consumers.",
+        "A decentralized food supply chain traceability platform built with Solidity, eliminating record tampering and bridging farm-to-table transparency via verifiable QR codes.",
       skills: [
-        "Pengembangan Web",
+        "Web3 Architecture",
         "Smart Contracts",
-        "Integrated Supply Chain Management"
+        "Solidity",
+        "Supply Chain Traceability"
       ],
       footerLink: [
         {
@@ -211,16 +223,16 @@ const bigProjects = {
       image: require("./assets/images/projects/arina-field.jpg"),
       imageAlt: "Agriculture artwork showing a drone above a green field",
       previewStyle: "arina-agri",
-      previewLabel: "Agriculture artwork",
+      previewLabel: "AgriTech platform",
       date: "March 2026 - Present",
       projectDesc:
-        "A digital platform for independent farmers and small-scale agribusiness owners, providing data-driven tools for business planning, cost management, production analysis, and market decisions.",
+        "A comprehensive digital Decision Support System (DSS) transforming Indonesian agribusiness with data-driven yield forecasting, operational costing, and intelligent market analytics.",
       contributors: "Ade Surya and Mutiara",
       skills: [
-        "Web Development",
-        "Software Project Management",
-        "Web Design",
-        "AI Prompting"
+        "Full Stack Web",
+        "Decision Support Systems",
+        "AI Prompting",
+        "AgriTech"
       ],
       footerLink: [
         {
@@ -234,12 +246,17 @@ const bigProjects = {
       image: `${process.env.PUBLIC_URL}/project-assets/torock-mascot.svg`,
       imageAlt: "Torock Verse project mascot",
       previewStyle: "torock",
-      previewLabel: "Project artwork",
+      previewLabel: "Digital Media Platform",
       date: "March 2026 - Present",
       projectDesc:
-        "An Indonesian digital media platform covering games, anime, film, and technology, with reviews, news, and an interactive community for Gen Z and Millennial audiences.",
+        "A dynamic pop-culture and technology digital media publication engaging Gen Z & Millennials with curated reviews, gaming insights, and interactive community spaces.",
       contributors: "Sufyan Dwi",
-      skills: ["Pengembangan Web", "Manajemen Proyek", "Manajemen Tim"],
+      skills: [
+        "Web Development",
+        "UI/UX Design",
+        "Content Platform",
+        "Community Ops"
+      ],
       footerLink: [
         {
           name: "View on LinkedIn",
@@ -253,16 +270,16 @@ const bigProjects = {
       image: require("./assets/images/projects/arina-logo.png"),
       imageAlt: "Arina AI project logo",
       previewStyle: "arina",
-      previewLabel: "Project identity",
+      previewLabel: "AI Smart Farming",
       date: "April 2025 - February 2026",
       projectDesc:
-        "A SaaS agribusiness companion focused on data-driven agricultural planning: calculating costs and ROI, optimizing inputs, and forecasting market demand using AI.",
+        "An AI-powered SaaS companion for modern farmers, calculating production ROI, resource input optimization, and predicting agricultural commodity price fluctuations.",
       contributors: "Ade Surya, Azel, and two other contributors",
       skills: [
-        "Pengembangan Web",
-        "Pengembangan Software",
-        "Artificial Intelligence (AI)",
-        "Product Development"
+        "AI Analytics",
+        "SaaS Architecture",
+        "Product Engineering",
+        "AgriTech"
       ],
       footerLink: [
         {
@@ -277,12 +294,17 @@ const bigProjects = {
         .default,
       imageAlt: "WellNessMe illustration of a person meditating",
       previewStyle: "wellness",
-      previewLabel: "Project artwork",
+      previewLabel: "Health & Wellbeing App",
       date: "December 2023 - January 2024",
       projectDesc:
-        "A health tracking application focused on monitoring sleep, body weight, and mental wellness. Associated with Universitas Brawijaya.",
+        "A personal health & wellbeing tracking application designed to monitor sleep quality, physical activity, and holistic lifestyle routines.",
       contributors: "Athallah",
-      skills: ["Pengembangan Software"],
+      skills: [
+        "Software Engineering",
+        "Mobile-First Design",
+        "HealthTech",
+        "UI Design"
+      ],
       footerLink: [
         {
           name: "View projects on LinkedIn",
@@ -294,58 +316,45 @@ const bigProjects = {
   display: true
 };
 
-// Achievement Section
-// Include certificates, talks etc
+// Achievement & Certifications Section
 
 const achievementSection = {
-  title: "Licenses & Certifications",
+  title: emoji("Achievements & Certifications 🏆"),
   subtitle:
-    "Coursework in web development, software, AI, cloud, and financial literacy.",
+    "Achievements, Certifications, and Verified Credentials That Highlight My Continuous Growth!",
 
   achievementsCards: [
     {
-      title: "Introduction to Financial Literacy",
-      subtitle: "Dicoding Indonesia",
-      issued: "January 2026",
-      expires: "January 2029",
-      credentialId: "0LZ05LN93X65",
-      footerLink: [
-        {
-          name: "Show credential",
-          url: "https://www.dicoding.com/certificates/0LZ05LN93X65"
-        }
-      ]
-    },
-    {
-      title: "Financial Literacy 101",
-      subtitle: "Dicoding Indonesia",
+      title: "APAC Solution Challenge Innovator",
+      subtitle: "Google Asia Pacific",
+      image: require("./assets/images/googleLogo.svg").default || require("./assets/images/googleLogo.svg"),
+      imageAlt: "Google Asia Pacific",
       issued: "July 2025",
-      expires: "July 2028",
-      credentialId: "L4PQ2RLOOZO1",
       footerLink: [
         {
-          name: "Show credential",
-          url: "https://www.dicoding.com/certificates/L4PQ2RLOOZO1"
-        }
-      ]
-    },
-
-    {
-      title: "Belajar Dasar AI",
-      subtitle: "Dicoding Indonesia",
-      issued: "January 2025",
-      expires: "January 2028",
-      credentialId: "ERZREMRGWXYV",
-      footerLink: [
-        {
-          name: "Show credential",
-          url: "https://www.dicoding.com/certificates/ERZREMRGWXYV"
+          name: "View credential",
+          url: "https://www.linkedin.com/in/daffaradityoadjiefirmansyah/overlay/Honor/898140349/treasury/"
         }
       ]
     },
     {
-      title: "Cloud Certification",
+      title: "Web3 University Tour Malang Participant",
+      subtitle: "Binance Academy & Coinvestasi",
+      image: require("./assets/images/binanceLogo.svg").default || require("./assets/images/binanceLogo.svg"),
+      imageAlt: "Binance Academy & Coinvestasi",
+      issued: "September 2026",
+      footerLink: [
+        {
+          name: "View credential",
+          url: "https://www.linkedin.com/in/daffaradityoadjiefirmansyah/overlay/Honor/1410413014/treasury/"
+        }
+      ]
+    },
+    {
+      title: "Cloud Technology & Solutions Certified",
       subtitle: "Alibaba Cloud",
+      image: require("./assets/images/alibabaCloudLogo.svg").default || require("./assets/images/alibabaCloudLogo.svg"),
+      imageAlt: "Alibaba Cloud Certification",
       issued: "February 2024",
       expires: "January 2026",
       expired: true,
@@ -354,110 +363,6 @@ const achievementSection = {
         {
           name: "View certificate on LinkedIn",
           url: "https://www.linkedin.com/in/daffaradityoadjiefirmansyah/overlay/Certifications/1432093470/treasury/"
-        }
-      ]
-    },
-    {
-      title: "Memulai Pemrograman dengan Dart",
-      subtitle: "Dicoding Indonesia",
-      issued: "November 2024",
-      expires: "November 2027",
-      credentialId: "4EXG7G0Q1PRL",
-      footerLink: [
-        {
-          name: "Show credential",
-          url: "https://www.dicoding.com/certificates/4EXG7G0Q1PRL"
-        }
-      ]
-    },
-    {
-      title: "Sertifikat Kelas Belajar Dasar HTML",
-      subtitle: "CODEPOLITAN",
-      issued: "March 2024",
-      expires: "March 2027",
-      credentialId: "CT6BYUU",
-      footerLink: [
-        {name: "Show credential", url: "https://codepolitan.com/c/CT6BYUU"}
-      ]
-    },
-    {
-      title: "Belajar Membuat Front-End Web untuk Pemula",
-      subtitle: "Dicoding Indonesia",
-      issued: "November 2023",
-      expires: "November 2026",
-      credentialId: "1OP81GJYVZQK",
-      footerLink: [
-        {
-          name: "Show credential",
-          url: "https://www.dicoding.com/certificates/1OP81GJYVZQK"
-        }
-      ]
-    },
-    {
-      title: "Belajar Dasar Pemrograman JavaScript",
-      subtitle: "Dicoding Indonesia",
-      issued: "November 2023",
-      expires: "November 2026",
-      credentialId: "QLZ9RLN52P5D",
-      footerLink: [
-        {
-          name: "Show credential",
-          url: "https://www.dicoding.com/certificates/QLZ9RLN52P5D"
-        }
-      ]
-    },
-    {
-      title: "Belajar Dasar Pemrograman Web",
-      subtitle: "Dicoding Indonesia",
-      issued: "October 2023",
-      expires: "October 2026",
-      credentialId: "2VX3654R3XYQ",
-      footerLink: [
-        {
-          name: "Show credential",
-          url: "https://www.dicoding.com/certificates/2VX3654R3XYQ"
-        }
-      ]
-    },
-    {
-      title: "Memulai Dasar Pemrograman untuk Menjadi Pengembang Software",
-      subtitle: "Dicoding Indonesia",
-      issued: "September 2023",
-      expires: "September 2026",
-      expired: true,
-      credentialId: "6RPN4K368X2M",
-      footerLink: [
-        {
-          name: "Show credential",
-          url: "https://www.dicoding.com/certificates/6RPN4K368X2M"
-        }
-      ]
-    },
-    {
-      title: "Belajar Dasar Git dengan GitHub",
-      subtitle: "Dicoding Indonesia",
-      issued: "August 2023",
-      expires: "August 2026",
-      expired: true,
-      credentialId: "4EXGNWM6GZRL",
-      footerLink: [
-        {
-          name: "Show credential",
-          url: "https://www.dicoding.com/certificates/4EXGNWM6GZRL"
-        }
-      ]
-    },
-    {
-      title: "Belajar Dasar Structured Query Language (SQL)",
-      subtitle: "Dicoding Indonesia",
-      issued: "August 2023",
-      expires: "August 2026",
-      expired: true,
-      credentialId: "1OP80G708XQK",
-      footerLink: [
-        {
-          name: "Show credential",
-          url: "https://www.dicoding.com/certificates/1OP80G708XQK"
         }
       ]
     }
@@ -472,20 +377,7 @@ const blogSection = {
   subtitle:
     "With Love for Developing cool stuff, I love to write and teach others what I have learnt.",
   displayMediumBlogs: "true", // Set true to display fetched medium blogs instead of hardcoded ones
-  blogs: [
-    {
-      url: "https://blog.usejournal.com/create-a-google-assistant-action-and-win-a-google-t-shirt-and-cloud-credits-4a8d86d76eae",
-      title: "Win a Google Assistant Tshirt and $200 in Google Cloud Credits",
-      description:
-        "Do you want to win $200 and Google Assistant Tshirt by creating a Google Assistant Action in less then 30 min?"
-    },
-    {
-      url: "https://medium.com/@saadpasta/why-react-is-the-best-5a97563f423e",
-      title: "Why REACT is The Best?",
-      description:
-        "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
-    }
-  ],
+  blogs: [],
   display: false // Set false to hide this section, defaults to true
 };
 
@@ -496,23 +388,15 @@ const talkSection = {
   subtitle: emoji(
     "I LOVE TO SHARE MY LIMITED KNOWLEDGE AND GET A SPEAKER BADGE 😅"
   ),
-
-  talks: [
-    {
-      title: "Build Actions For Google Assistant",
-      subtitle: "Codelab at GDG DevFest Karachi 2019",
-      slides_url: "https://bit.ly/saadpasta-slides",
-      event_url: "https://www.facebook.com/events/2339906106275053/"
-    }
-  ],
+  talks: [],
   display: false // Set false to hide this section, defaults to true
 };
 
 // Podcast Section
 
 const podcastSection = {
-  title: emoji("Favourite Song"),
-  subtitle: "My Favourite Song",
+  title: emoji("Favourite Playlist 🎧"),
+  subtitle: "Music that fuels my coding & focus sessions",
 
   // Please Provide with Your Podcast embeded Link
   podcast: [
@@ -523,9 +407,9 @@ const podcastSection = {
 };
 
 const contactInfo = {
-  title: "Let's Connect",
+  title: emoji("Contact Me ☎️"),
   subtitle:
-    "Open to learning, collaborating, and working on projects across technology, financial markets, and supply chain management.",
+    "Discuss a project, collaborate on tech, or just want to say hi? My inbox is open for all!",
   number: "",
   email_address: "daffaradityoa03@gmail.com"
 };
@@ -537,7 +421,7 @@ const twitterDetails = {
   display: true // Set true to display this section, defaults to false
 };
 
-const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
+const isHireable = true; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
 
 export {
   illustration,

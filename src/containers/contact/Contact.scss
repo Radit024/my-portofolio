@@ -1,100 +1,87 @@
-.lower-portfolio {
-  .contact-showcase {
-    padding-top: 96px;
-    padding-bottom: 52px;
-    border-top: 1px solid var(--showcase-line);
-    margin-top: 48px;
-  }
-  .contact-showcase-top {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    gap: 40px;
-    margin-bottom: 48px;
-  }
-  .contact-showcase h2 {
-    font-size: clamp(48px, 7.5vw, 96px);
-    font-weight: 600;
-    line-height: 1.05;
-    letter-spacing: -0.04em;
-    text-wrap: balance;
-    margin: 0;
-    max-width: 600px;
-  }
-  .contact-showcase-top > p {
-    max-width: 340px;
-    color: var(--showcase-muted);
-    font-size: 15px;
-    line-height: 1.8;
-    margin: 0;
-  }
-  .contact-email-action {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
-    padding: 28px 0;
-    font-size: clamp(18px, 3vw, 36px);
-    font-weight: 500;
-    text-decoration: none;
-    color: var(--showcase-accent);
-    border-bottom: 1px solid var(--showcase-line);
-  }
-  .contact-email-action span {
-    min-width: 0;
-    overflow-wrap: anywhere;
-  }
-  .contact-email-action > svg {
-    width: 40px;
-    height: 40px;
-  }
-  .contact-email-action:hover {
-    color: var(--showcase-text);
-  }
-  .contact-secondary {
-    padding-top: 28px;
-  }
-  .contact-socials {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12px 28px;
-  }
-  .contact-socials a {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    font-size: 13px;
-    color: var(--showcase-muted);
-    text-decoration: none;
-    min-height: 44px;
-  }
-  .contact-socials a:hover {
-    color: var(--showcase-text);
-    text-decoration: underline;
-    text-underline-offset: 5px;
-  }
-  .contact-socials svg {
-    width: 14px;
-    height: 14px;
-  }
+@import "../../_globalColor";
+
+.contact-div-main {
+  display: flex;
 }
-@media (max-width: 760px) {
-  .lower-portfolio {
-    .contact-showcase-top {
-      display: block;
-      margin-bottom: 28px;
-    }
-    .contact-showcase-top > p {
-      margin-top: 24px;
-    }
-    .contact-email-action {
-      font-size: clamp(14px, 4.4vw, 18px);
-      padding: 24px 0;
-      gap: 12px;
-    }
-    .contact-email-action > svg {
-      width: 26px;
-      height: 26px;
-    }
+
+.dark-mode a {
+  color: $textColorDark;
+}
+
+.contact-div-main > * {
+  flex: 1;
+}
+
+.contact-title {
+  font-size: 65px;
+  font-weight: 400;
+}
+
+.contact-detail,
+.contact-detail-email {
+  margin-top: 20px;
+  font-size: 40px;
+  font-weight: 400;
+  color: $subTitle;
+  text-decoration: none;
+}
+
+.contact-detail:hover,
+.contact-detail-email:hover {
+  color: $textColor;
+  text-shadow: 2px 1px 2px $contactDetailHoverTS;
+  transition: all 0.3s;
+}
+
+.contact-subtitle {
+  text-transform: uppercase;
+}
+
+.contact-text-div {
+  margin-top: 1.5rem;
+}
+
+.contact-margin-top {
+  margin-top: 4rem;
+}
+
+.contact-image-div > img {
+  max-width: 100%;
+  height: auto;
+  margin-left: 1.5rem;
+  margin-top: -4rem;
+}
+
+/* Media Query */
+@media (max-width: 1380px), (max-width: 768px) {
+  .contact-title {
+    font-size: 56px;
+    font-weight: 400;
+    text-align: center;
+  }
+
+  .contact-title {
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .contact-subtitle {
+    font-size: 16px;
+    line-height: normal;
+    text-align: center;
+  }
+
+  .contact-text-div {
+    text-align: center;
+    margin-top: 1.5rem;
+  }
+
+  .contact-detail,
+  .contact-detail-email {
+    font-size: 20px;
+  }
+
+  .contact-image-div {
+    display: none;
   }
 }

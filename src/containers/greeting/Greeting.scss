@@ -18,11 +18,7 @@
 }
 
 .subTitle {
-  color: $subTitle !important;
-}
-
-.greeting-main {
-  display: flex;
+  color: $subTitle;
 }
 
 .greeting-main > * {
@@ -37,7 +33,7 @@
 .greeting-text {
   font-size: 70px;
   line-height: 1.1;
-  color: $textColor !important;
+  color: $textColor;
 }
 
 .greeting-text-p {
@@ -51,22 +47,57 @@
 }
 
 .wave-emoji {
+  animation-duration: 1.8s;
+  animation-iteration-count: infinite;
+  animation-name: wave;
   display: inline-block;
   transform-origin: 70% 70%;
 }
 
+@keyframes wave {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(-10deg);
+  }
+  20% {
+    transform: rotate(12deg);
+  }
+  30% {
+    transform: rotate(-10deg);
+  }
+  40% {
+    transform: rotate(9deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
 /* Media Query */
+.greeting-image-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
 @media (max-width: 1380px) {
   .greeting-text {
-    font-size: 50px;
+    font-size: 55px;
   }
   .greeting-text-p {
     font-size: 20px;
+    line-height: 30px;
   }
 }
 @media (max-width: 768px) {
-  .button-greeting-div {
-    justify-content: space-around;
+  .greeting-main {
+    flex-direction: column;
   }
   .greeting-text {
     font-size: 30px;
@@ -77,16 +108,13 @@
     line-height: normal;
     text-align: center;
   }
-  .greeting-main {
-    display: block;
-  }
   .greeting-image-div {
-    height: 256px;
+    display: flex;
+    justify-content: center;
+    max-width: 320px;
+    margin: 1.5rem auto 0 auto;
   }
-}
-
-@media (max-width: 320px) {
-  .main {
-    width: auto;
+  .button-greeting-div {
+    justify-content: space-around;
   }
 }

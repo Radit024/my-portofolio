@@ -2,13 +2,15 @@ import React from "react";
 import {motion} from "framer-motion";
 import {useReducedMotion} from "../../hooks/useReducedMotion";
 import "./StartupProjects.scss";
+import "../LowerPortfolio.scss";
 import {bigProjects} from "../../portfolio";
 import LinkArrow from "../../components/linkArrow/LinkArrow";
 export default function StartupProject() {
   const reduceMotion = useReducedMotion();
   if (!bigProjects.display) return null;
   return (
-    <section className="portfolio-section project-showcase" id="projects">
+    <div className="lower-portfolio">
+      <section className="portfolio-section project-showcase" id="projects">
       <header className="portfolio-section-header">
         <h2>{bigProjects.title}</h2>
         <p>{bigProjects.subtitle}</p>
@@ -73,5 +75,6 @@ export default function StartupProject() {
         ))}
       </div>
     </section>
+  </div>
   );
 }

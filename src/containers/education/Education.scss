@@ -12,39 +12,49 @@
   margin-top: 2rem;
 }
 
-.education-section > * {
+.education-main-div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+  margin-top: 1rem;
+}
+
+.education-image-div {
   flex: 1;
-  margin-bottom: 30px;
+  max-width: 480px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .education-card-container {
+  flex: 1.2;
   display: flex;
   flex-direction: column;
-  padding-top: 20px;
+  gap: 1.5rem;
 }
 
-@media (max-width: 1380px) {
-  .education-card-container {
-    padding-top: 0px;
+@media (max-width: 1024px) {
+  .education-main-div {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .education-image-div {
+    max-width: 360px;
+    margin: 0 auto;
   }
   .education-heading {
-    font-size: 40px;
-  }
-  .education-text-subtitle {
-    font-size: 18px;
     text-align: center;
   }
 }
 
 @media (max-width: 768px) {
-  .education-card-container {
-    padding-top: 0px;
-  }
   .education-heading {
     font-size: 30px;
     text-align: center;
   }
-  .education-text-subtitle {
-    font-size: 16px;
+  .education-image-div {
+    max-width: 280px;
   }
 }

@@ -1,15 +1,31 @@
 @import "../../_globalColor";
 
+.meter {
+  height: 20px;
+  position: relative;
+  background: $progressBarBackground;
+  -moz-border-radius: 25px;
+  -webkit-border-radius: 25px;
+  border-radius: 25px;
+}
+.meter > span {
+  display: block;
+  height: 100%;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  background-color: $progressBarSpanBG;
+  position: relative;
+  overflow: hidden;
+  transition: width 1s ease-in-out;
+}
 .skill {
-  line-height: 1.6;
-  margin-bottom: 1.5rem;
+  line-height: 3.5vw;
 }
-.skill h3 {
-  margin-bottom: 0.25rem;
-}
-.skill p,
-.tech-stack-subtitle {
-  line-height: 1.6;
+.skill p {
+  margin: 0;
+  font-weight: 500;
 }
 .skill-bars {
   font-size: 28px;
@@ -55,5 +71,8 @@
   .skills-image {
     display: none;
     order: 2;
+  }
+  .skill {
+    line-height: 2rem;
   }
 }

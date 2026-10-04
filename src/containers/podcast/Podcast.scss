@@ -1,18 +1,50 @@
-.lower-portfolio {
-  .podcast-main-div {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 24px;
+@import "../../_globalColor";
+
+.podcast-header-title {
+  font-size: 56px;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+  padding: 0;
+}
+
+.podcast-header-subtitle {
+  margin-top: 10px;
+  margin-bottom: 2rem;
+}
+
+.podcast {
+  width: 100%;
+  max-width: 500px;
+  height: 152px;
+  border-radius: 12px;
+  border: none;
+}
+
+.podcast-main-div {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.5rem 1.5rem;
+}
+.subTitle {
+  color: $subTitle;
+}
+
+@media (max-width: 768px) {
+  .podcast-header-title {
+    font-size: 30px;
+    text-align: center;
   }
+  .podcast-header-subtitle {
+    font-size: 16px;
+    line-height: normal;
+    text-align: center;
+  }
+
   .podcast {
     width: 100%;
-    height: 160px;
-    border: 0;
-    border-radius: 12px;
   }
-}
-@media (max-width: 760px) {
-  .lower-portfolio .podcast-main-div {
-    grid-template-columns: minmax(0, 1fr);
+  .podcast-main-div {
+    text-align: center;
   }
 }

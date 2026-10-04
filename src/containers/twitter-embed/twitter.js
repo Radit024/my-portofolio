@@ -1,41 +1,54 @@
-import React, {useContext} from "react";
+import React, {Suspense, useContext} from "react";
 import "./twitter.scss";
+import Loading from "../loading/Loading";
 import {TwitterTimelineEmbed} from "react-twitter-embed";
 import {twitterDetails} from "../../portfolio";
 import StyleContext from "../../contexts/StyleContext";
-import LinkArrow from "../../components/linkArrow/LinkArrow";
+
+const renderLoader = () => <Loading />;
+const cantDisplayError =
+  "<div className='centerContent'><h2>Can't load? Check privacy protection settings</h2></div>";
+
+function timeOut() {
+  setTimeout(function () {
+    const el = document.getElementById("twitter");
+    if (el && !el.innerHTML.includes("iframe")) {
+      el.innerHTML = cantDisplayError;
+    }
+  }, 10000);
+}
 
 export default function Twitter() {
   const {isDark} = useContext(StyleContext);
-  if (!twitterDetails.display || !twitterDetails.userName) return null;
-  return (
-    <section className="portfolio-section twitter-showcase" id="twitter">
-      <header className="portfolio-section-header">
-        <h2>Notes & updates</h2>
-        <p>From my timeline on X.</p>
-      </header>
-      <div className="twitter-timeline">
-        <TwitterTimelineEmbed
-          sourceType="profile"
-          screenName={twitterDetails.userName}
-          options={{height: 400}}
-          key={isDark ? "dark" : "light"}
-          theme={isDark ? "dark" : "light"}
-          noFooter
-          placeholder={<p className="twitter-placeholder">Loading timeline…</p>}
-        />
-      </div>
-      <a
-        className="showcase-link"
-        href={`https://x.com/${twitterDetails.userName}`}
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        View @{twitterDetails.userName} on X <LinkArrow />
-      </a>
-      <p className="twitter-fallback">
-        If the timeline is unavailable, open the profile directly.
-      </p>
-    </section>
-  );
+
+  if (!twitterDetails.display) {
+    return null;
+  }
+  if (!twitterDetails.userName) {
+    console.error("Twitter username for twitter section is missing");
+  }
+  if (twitterDetails.userName) {
+    return (
+      <Suspense fallback={renderLoader()}>
+        <div className="tw-main-div" id="twitter">
+          <div className="centerContent">
+            <TwitterTimelineEmbed
+              sourceType="profile"
+              screenName={twitterDetails.userName}
+              options={{height: 400}}
+              placeholder={renderLoader()}
+              autoHeight={false}
+              borderColor="#fff"
+              key={isDark ? "1" : "2"}
+              theme={isDark ? "dark" : "light"}
+              noFooter={true}
+              onload={timeOut()}
+            />
+          </div>
+        </div>
+      </Suspense>
+    );
+  } else {
+    return null;
+  }
 }

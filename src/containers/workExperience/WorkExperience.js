@@ -1,20 +1,42 @@
-import React from "react";
+import React, {useContext} from "react";
 import "./WorkExperience.scss";
 import ExperienceCard from "../../components/experienceCard/ExperienceCard";
 import {workExperiences} from "../../portfolio";
+import {Fade} from "../../components/fade/Fade";
+import StyleContext from "../../contexts/StyleContext";
+
 export default function WorkExperience() {
-  if (!workExperiences.display) return null;
-  return (
-    <section className="portfolio-section experience-showcase" id="experience">
-      <header className="portfolio-section-header">
-        <h2>{workExperiences.title}</h2>
-        <p>{workExperiences.subtitle}</p>
-      </header>
-      <div className="experience-cards-div">
-        {workExperiences.experience.map(card => (
-          <ExperienceCard key={card.role} cardInfo={card} />
-        ))}
+  const {isDark} = useContext(StyleContext);
+  if (workExperiences.display && workExperiences.experience && workExperiences.experience.length > 0) {
+    return (
+      <div id="experience">
+        <Fade bottom duration={1000} distance="20px">
+          <div className="experience-container" id="workExperience">
+            <div>
+              <h1 className="experience-heading">Experiences</h1>
+              <div className="experience-cards-div">
+                {workExperiences.experience.map((card, i) => {
+                  return (
+                    <ExperienceCard
+                      key={i}
+                      isDark={isDark}
+                      cardInfo={{
+                        company: card.company,
+                        desc: card.desc,
+                        date: card.date,
+                        companylogo: card.companylogo,
+                        role: card.role,
+                        descBullets: card.descBullets
+                      }}
+                    />
+                  );
+                })}
+              </div>
+            </div>
+          </div>
+        </Fade>
       </div>
-    </section>
-  );
+    );
+  }
+  return null;
 }

@@ -1,6 +1,16 @@
 import "@testing-library/jest-dom";
 import "jest-canvas-mock";
 
+global.IntersectionObserver = class IntersectionObserver {
+  constructor() {}
+  disconnect() {}
+  observe() {}
+  unobserve() {}
+  takeRecords() {
+    return [];
+  }
+};
+
 beforeEach(() => {
   Object.defineProperty(window, "matchMedia", {
     writable: true,
