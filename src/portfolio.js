@@ -3,14 +3,14 @@
 // To change portfolio colors globally go to the  _globalColor.scss file
 
 import emoji from "react-easy-emoji";
-import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your file name for custom animation
+import splashAnimation from "./assets/lottie/splashAnimation";
 
 // Splash Screen
 
 const splashScreen = {
   enabled: true, // set false to disable splash screen
   animation: splashAnimation,
-  duration: 3200 // Set animation duration as per your animation
+  duration: 2000 // Set animation duration as per your animation
 };
 
 // Summary And Greeting Section
@@ -23,7 +23,7 @@ const greeting = {
   username: "Daffa Radityo",
   title: "Hi all, I'm Daffa",
   subTitle: emoji(
-    "I build practical digital solutions with modern technology, turning ideas into functional products for real-world needs. My work connects Web applications, AI, and Web3 with an industrial perspective in supply chain, operations, and data-driven decision making to create efficient, impactful systems"
+    "I build digital solutions where technology meets real-world operations. I combine Software Development, AI, Web3, and digital systems with knowledge of supply chain, production planning, inventory control, and process optimization to build practical solutions that improve business and operational efficiency."
   ),
   resumeLink: "", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
@@ -37,28 +37,29 @@ const socialMediaLinks = {
   gmail: "daffaradityoa03@gmail.com",
   facebook: "https://www.facebook.com/daffa.radityo.58",
   instagram: "https://www.instagram.com/daffaradityoadjiefirmansyah/",
-  // Instagram, Twitter and Kaggle are also supported in the links!
-  // To customize icons and social links, tweak src/components/SocialMedia
-  display: true // Set true to display this section, defaults to false
+  display: true
 };
 
 // Skills Section
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "FULL-STACK WEB DEVELOPMENT, DATA SYSTEMS & INDUSTRIAL OPERATIONS",
+  subTitle: "FULL-STACK WEB DEVELOPMENT, QUANTITATIVE SYSTEMS & INDUSTRIAL OPERATIONS",
   skills: [
     emoji(
-      "⚡ Building responsive web applications and modern digital solutions using React, TypeScript, and Node.js"
+      "⚡ Building responsive front-ends and full-stack web applications using React, TypeScript, and Node.js"
     ),
     emoji(
-      "⚡ Developing Decision Support Systems (DSS) and predictive analytics tools using Python for agricultural yield forecasting and operational planning"
+      "⚡ Developing automated cryptocurrency trading engines on OKX with algorithmic risk controls, universe screening, and SQLite trade logging"
     ),
     emoji(
-      "⚡ Writing Solidity smart contracts for food supply chain traceability and verifiable farm-to-table records"
+      "⚡ Creating Decision Support Systems (DSS) and predictive models using Python for crop yield forecasting and operational cost planning"
     ),
     emoji(
-      "⚡ Applying industrial engineering methods in process mapping, production scheduling, and inventory management"
+      "⚡ Implementing Solidity smart contracts for food supply chain traceability and verifiable provenance records"
+    ),
+    emoji(
+      "⚡ Applying industrial engineering methods in unit costing (HPP), production scheduling, inventory management, and process mapping"
     )
   ],
   skillCards: [
@@ -67,7 +68,7 @@ const skillsSection = {
       accent: "blue",
       title: "Web & Full-Stack Development",
       description:
-        "Building responsive front-ends and full-stack web applications with React and TypeScript. I focus on clean component structure, practical UI, and reliable integration with backend APIs.",
+        "Building responsive front-ends and full-stack web applications with React, TypeScript, and Node.js. I focus on clean component structure, practical UI, and reliable integration with backend APIs.",
       tags: [
         {name: "React", icon: "fab fa-react"},
         {name: "TypeScript", icon: "fas fa-code"},
@@ -78,14 +79,14 @@ const skillsSection = {
     {
       icon: "fab fa-python",
       accent: "emerald",
-      title: "AI & Decision Support Systems",
+      title: "Quantitative & Algorithmic Trading",
       description:
-        "Creating practical Decision Support Systems (DSS) for agribusiness, combining operational data with predictive models for crop yield forecasting and cost analysis.",
+        "Engineering automated crypto trading bots connected directly to the OKX API. Incorporates automated ticker screening (ADX, RSI, volume surges), trend filters, hard-coded risk management, and SQLite logging.",
       tags: [
-        {name: "Decision Support (DSS)", icon: "fas fa-chart-line"},
-        {name: "Data Analysis", icon: "fas fa-database"},
-        {name: "Yield Forecasting", icon: "fas fa-seedling"},
-        {name: "Python", icon: "fab fa-python"}
+        {name: "Python", icon: "fab fa-python"},
+        {name: "OKX API / CCXT", icon: "fas fa-exchange-alt"},
+        {name: "Pandas & NumPy", icon: "pandas"},
+        {name: "FastAPI", icon: "fastapi"}
       ]
     },
     {
@@ -104,20 +105,17 @@ const skillsSection = {
     {
       icon: "fas fa-truck-moving",
       accent: "amber",
-      title: "Industrial Operations & Logistics",
+      title: "Industrial Operations & Financial Systems",
       description:
-        "Applying industrial engineering methods to real operations: mapping production workflows, inventory planning, and logistics analysis so software fits field realities.",
+        "Applying industrial engineering and financial tracking to real operations: Decision Support Systems (DSS), SME unit costing (HPP), production scheduling, and inventory planning.",
       tags: [
+        {name: "Decision Support (DSS)", icon: "fas fa-brain"},
+        {name: "Unit Costing & P&L", icon: "fas fa-file-excel"},
         {name: "Process Mapping", icon: "fas fa-project-diagram"},
-        {name: "Production Planning", icon: "fas fa-calendar-check"},
-        {name: "Inventory Management", icon: "fas fa-boxes"},
         {name: "Supply Chain", icon: "fas fa-truck-moving"}
       ]
     }
   ],
-
-  /* Make Sure to include correct Font Awesome Classname to view your icon
-https://fontawesome.com/icons?d=gallery */
 
   softwareSkills: [
     {
@@ -137,10 +135,6 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fas fa-code"
     },
     {
-      skillName: "Python",
-      fontAwesomeClassname: "fab fa-python"
-    },
-    {
       skillName: "React",
       fontAwesomeClassname: "fab fa-react"
     },
@@ -149,12 +143,46 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fab fa-node-js"
     },
     {
-      skillName: "SQL Database",
-      fontAwesomeClassname: "fas fa-database"
+      skillName: "Python",
+      fontAwesomeClassname: "fab fa-python"
     },
     {
-      skillName: "Git & GitHub",
-      fontAwesomeClassname: "fab fa-github"
+      skillName: "Pandas",
+      fontAwesomeClassname: "pandas",
+      iconType: "pandas"
+    },
+    {
+      skillName: "NumPy",
+      fontAwesomeClassname: "numpy",
+      iconType: "numpy"
+    },
+    {
+      skillName: "PostgreSQL",
+      fontAwesomeClassname: "postgresql",
+      iconType: "postgresql"
+    },
+    {
+      skillName: "SQLite",
+      fontAwesomeClassname: "sqlite",
+      iconType: "sqlite"
+    },
+    {
+      skillName: "FastAPI",
+      fontAwesomeClassname: "fastapi",
+      iconType: "fastapi"
+    },
+    {
+      skillName: "Docker",
+      fontAwesomeClassname: "fab fa-docker"
+    },
+    {
+      skillName: "Excel / Sheets",
+      fontAwesomeClassname: "fas fa-file-excel"
+    },
+    {
+      skillName: "TradingView",
+      fontAwesomeClassname: "tradingview",
+      iconType: "tradingview"
     },
     {
       skillName: "Solidity / Web3",
@@ -162,17 +190,25 @@ https://fontawesome.com/icons?d=gallery */
       iconType: "solidity"
     },
     {
+      skillName: "Git & GitHub",
+      fontAwesomeClassname: "fab fa-github"
+    },
+    {
+      skillName: "Linux / VPS",
+      fontAwesomeClassname: "fab fa-linux"
+    },
+    {
       skillName: "Cloud Computing",
       fontAwesomeClassname: "fas fa-cloud"
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: true
 };
 
 // Education Section
 
 const educationInfo = {
-  display: true, // Set false to hide this section, defaults to true
+  display: true,
   schools: [
     {
       schoolName: "Universitas Brawijaya",
@@ -198,30 +234,35 @@ const educationInfo = {
 // Technologies & Proficiencies
 
 const techStack = {
-  viewSkillBars: true, // Set to true to show Proficiency Section
+  viewSkillBars: true,
   display: true,
   title: "Proficiency",
   subtitle: "CORE TECHNICAL STACK & ENGINEERING SKILLS",
   experience: [
     {
       Stack: "Full-Stack Web Development",
-      progressPercentage: "70%",
+      progressPercentage: "80%",
       technologies: "React, TypeScript, JavaScript, Node.js, HTML5, CSS3"
     },
     {
+      Stack: "Quantitative Trading & Data Systems",
+      progressPercentage: "80%",
+      technologies: "Python, OKX API, CCXT, Pandas, NumPy, TradingView"
+    },
+    {
       Stack: "Backend, Databases & Cloud",
-      progressPercentage: "40%",
-      technologies: "Python, SQL Database, PostgreSQL, Alibaba Cloud, REST APIs, Git"
+      progressPercentage: "75%",
+      technologies: "PostgreSQL, SQLite, FastAPI, Docker, Alibaba Cloud, Git"
     },
     {
       Stack: "Web3 & Smart Contracts",
       progressPercentage: "65%",
-      technologies: "Solidity, Smart Contracts, Web3"
+      technologies: "Solidity, Smart Contracts, Supply Chain Traceability, Web3"
     },
     {
-      Stack: "Industrial Engineering & Operations",
+      Stack: "Industrial Operations & Unit Costing",
       progressPercentage: "80%",
-      technologies: "Production Planning, Inventory Management, Decision Support Systems"
+      technologies: "Process Mapping, Production Planning, Cost of Goods Sold (HPP), Decision Support Systems"
     }
   ]
 };
@@ -235,12 +276,9 @@ const workExperiences = {
   experience: []
 };
 
-/* Your Open Source Section to View Your Github Pinned Projects
-To know how to get github key look at readme.md */
-
 const openSource = {
-  showGithubProfile: "false", // Set true or false to show Contact profile using Github, defaults to true
-  display: false // Set false to hide this section, defaults to true
+  showGithubProfile: "false",
+  display: false
 };
 
 // Some projects you have worked on
@@ -248,8 +286,38 @@ const openSource = {
 const bigProjects = {
   title: "Projects",
   subtitle:
-    "Web applications, smart contracts, and decision support tools I have developed.",
+    "Quantitative trading systems, web applications, smart contracts, and decision support tools I have developed.",
   projects: [
+    {
+      projectName:
+        "Torock Trading Bot — Quantitative & Automated Cryptocurrency Trading System",
+      displayName: "Torock Trading Bot",
+      image: require("./assets/images/projects/torock-trading.svg").default,
+      imageAlt:
+        "Torock Trading Bot architecture showing OKX screening, AI strategy, risk validator, and execution",
+      previewStyle: "torock",
+      previewLabel: "Quantitative Trading System",
+      date: "July 2026 - Present",
+      projectDesc:
+        "An automated crypto trading bot executing on OKX. Features automated ticker universe screening (ADX, RSI, volume surges), rule-based entry/exit execution, hard-coded risk management (max drawdown and leverage limits), SQLite trade journaling, and a FastAPI dashboard with real-time Discord transaction alerts.",
+      skills: [
+        "Quantitative Trading",
+        "OKX API / CCXT",
+        "Risk Controls",
+        "FastAPI",
+        "Python"
+      ],
+      footerLink: [
+        {
+          name: "View on GitHub",
+          url: "https://github.com/Radit024"
+        },
+        {
+          name: "View on LinkedIn",
+          url: "https://www.linkedin.com/in/daffaradityoadjiefirmansyah/"
+        }
+      ]
+    },
     {
       projectName:
         "Agrilink — Blockchain & QR-Based Food Supply Chain Traceability System",
@@ -272,6 +340,32 @@ const bigProjects = {
         {
           name: "View on LinkedIn",
           url: "https://www.linkedin.com/in/daffaradityoadjiefirmansyah/overlay/1789751222392/single-media-viewer/"
+        }
+      ]
+    },
+    {
+      projectName:
+        "BisnisKu / BusinessTracker — SME Financial Management & Cost Analytics Platform",
+      displayName: "BisnisKu / BusinessTracker",
+      image: require("./assets/images/projects/bisnisku-diagram.svg").default,
+      imageAlt:
+        "BisnisKu financial platform architecture showing cash flow ledger, unit costing, and P&L analytics",
+      previewStyle: "arina-agri",
+      previewLabel: "Financial Management Platform",
+      date: "July 2025 - Present",
+      projectDesc:
+        "A financial management platform for micro and small businesses. Tracks cash flow journals, categorized expenses, raw material inventory valuation, and Cost of Goods Sold (HPP) to generate automated monthly profit & loss statements.",
+      skills: [
+        "Financial Accounting",
+        "Cash Flow Analytics",
+        "Unit Economics",
+        "PostgreSQL",
+        "TypeScript"
+      ],
+      footerLink: [
+        {
+          name: "View on LinkedIn",
+          url: "https://www.linkedin.com/in/daffaradityoadjiefirmansyah/details/projects/"
         }
       ]
     },
@@ -324,33 +418,8 @@ const bigProjects = {
       ]
     },
     {
-      projectName: "Arina — Smart Farming Analysis",
-      displayName: "Arina",
-      image: require("./assets/images/projects/arina-logo.png"),
-      imageAlt: "Arina AI project logo",
-      previewStyle: "arina",
-      previewLabel: "AI Smart Farming",
-      date: "April 2025 - February 2026",
-      projectDesc:
-        "A web application for agricultural decision-making, providing production input cost estimation, ROI projections, and commodity price trend analysis.",
-      contributors: "Ade Surya, Azel, and two other contributors",
-      skills: [
-        "Data Analytics",
-        "Decision Support (DSS)",
-        "Product Engineering",
-        "AgriTech"
-      ],
-      footerLink: [
-        {
-          name: "View on LinkedIn",
-          url: "https://www.linkedin.com/in/daffaradityoadjiefirmansyah/overlay/1753552029290/single-media-viewer/"
-        }
-      ]
-    },
-    {
       projectName: "WellNessMe",
-      image: require("./assets/images/projects/wellness-meditation.svg")
-        .default,
+      image: require("./assets/images/projects/wellness-meditation.svg").default,
       imageAlt: "WellNessMe illustration of a person meditating",
       previewStyle: "wellness",
       previewLabel: "Health & Wellbeing App",
@@ -410,6 +479,19 @@ const achievementSection = {
       ]
     },
     {
+      title: "SME Financial Record-Keeping & Cost Optimization",
+      subtitle: "Program Mahasiswa Membangun Mitra (3M FTP UB) — UMKM Sari Gunung",
+      image: require("./assets/images/UB LOGO.jpeg"),
+      imageAlt: "Universitas Brawijaya 3M FTP",
+      issued: "July 2025",
+      footerLink: [
+        {
+          name: "View profile on LinkedIn",
+          url: "https://www.linkedin.com/in/daffaradityoadjiefirmansyah/"
+        }
+      ]
+    },
+    {
       title: "Cloud Technology & Solutions Certified",
       subtitle: "Alibaba Cloud",
       image: require("./assets/images/alibabaCloudLogo.svg").default || require("./assets/images/alibabaCloudLogo.svg"),
@@ -435,9 +517,9 @@ const blogSection = {
   title: "Blogs",
   subtitle:
     "Technical articles and notes on software development, blockchain, and decision support systems.",
-  displayMediumBlogs: "true", // Set true to display fetched medium blogs instead of hardcoded ones
+  displayMediumBlogs: "true",
   blogs: [],
-  display: false // Set false to hide this section, defaults to true
+  display: false
 };
 
 // Talks Sections
@@ -448,7 +530,7 @@ const talkSection = {
     "Sharing experiences in software development, tech competitions, and student initiatives."
   ),
   talks: [],
-  display: false // Set false to hide this section, defaults to true
+  display: false
 };
 
 // Podcast Section
@@ -456,19 +538,17 @@ const talkSection = {
 const podcastSection = {
   title: emoji("Favourite Playlist 🎧"),
   subtitle: "Music that fuels my coding & focus sessions",
-
-  // Please Provide with Your Podcast embeded Link
   podcast: [
     "https://open.spotify.com/embed/track/4eNf4ckHiHsajLCBaOC80l?utm_source=generator",
     "https://open.spotify.com/embed/track/6TTAZeyRDN03BHlhQ9Lq6L?utm_source=generator"
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: true
 };
 
 const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
-    "Interested in collaborating on a project, discussing software engineering, or exploring quantitative systems? Feel free to reach out.",
+    "Interested in collaborating on software engineering, quantitative trading systems, or agro-industrial operations? Feel free to reach out.",
   number: "",
   email_address: "daffaradityoa03@gmail.com"
 };
@@ -476,11 +556,11 @@ const contactInfo = {
 // Twitter Section
 
 const twitterDetails = {
-  userName: "DaffaradityoA", //Replace "twitter" with your twitter username without @
-  display: true // Set true to display this section, defaults to false
+  userName: "DaffaradityoA",
+  display: true
 };
 
-const isHireable = true; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
+const isHireable = true;
 
 export {
   illustration,

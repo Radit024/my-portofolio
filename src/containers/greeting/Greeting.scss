@@ -248,61 +248,7 @@
   }
 }
 
-// Greeting Mode Switch Button
-.greeting-mode-switch-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  padding: 12px 22px;
-  border-radius: 12px;
-  font-size: 14px;
-  font-weight: 700;
-  cursor: pointer;
-  outline: none;
-  border: 1.5px solid;
-  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
-  margin-left: 14px;
 
-  .door-icon-hint {
-    font-size: 15px;
-    transition: transform 0.2s ease;
-  }
-
-  &:hover {
-    transform: translateY(-2px);
-    .door-icon-hint {
-      transform: scale(1.2);
-    }
-  }
-
-  &:active {
-    transform: translateY(0);
-  }
-
-  &.to-finance-btn {
-    background: rgba(16, 185, 129, 0.1);
-    color: #10b981;
-    border-color: rgba(16, 185, 129, 0.35);
-
-    &:hover {
-      background: rgba(16, 185, 129, 0.18);
-      border-color: rgba(16, 185, 129, 0.6);
-      box-shadow: 0 4px 20px rgba(16, 185, 129, 0.25);
-    }
-  }
-
-  &.to-tech-btn {
-    background: rgba(99, 102, 241, 0.1);
-    color: #818cf8;
-    border-color: rgba(99, 102, 241, 0.35);
-
-    &:hover {
-      background: rgba(99, 102, 241, 0.18);
-      border-color: rgba(99, 102, 241, 0.6);
-      box-shadow: 0 4px 20px rgba(99, 102, 241, 0.25);
-    }
-  }
-}
 
 @media (max-width: 768px) {
   .button-greeting-div {

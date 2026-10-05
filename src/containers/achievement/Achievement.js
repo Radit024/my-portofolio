@@ -2,20 +2,15 @@ import React, {useContext} from "react";
 import "./Achievement.scss";
 import AchievementCard from "../../components/achievementCard/AchievementCard";
 import {achievementSection, illustration} from "../../portfolio";
-import {financeAchievementSection} from "../../financePortfolio";
 import {Fade} from "../../components/fade/Fade";
 import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 import trophyAward from "../../assets/lottie/trophyAward";
 import StyleContext from "../../contexts/StyleContext";
-import {usePortfolioMode} from "../../contexts/PortfolioModeContext";
 
 export default function Achievement() {
   const {isDark} = useContext(StyleContext);
-  const {mode} = usePortfolioMode();
-  const isFinance = mode === "finance";
-  const activeAchievements = isFinance ? financeAchievementSection : achievementSection;
 
-  if (!activeAchievements.display) {
+  if (!achievementSection.display) {
     return null;
   }
   return (
@@ -30,7 +25,7 @@ export default function Achievement() {
                   : "heading achievement-heading"
               }
             >
-              {activeAchievements.title}
+              {achievementSection.title}
             </h1>
             <p
               className={
@@ -39,7 +34,7 @@ export default function Achievement() {
                   : "subTitle achievement-subtitle"
               }
             >
-              {activeAchievements.subtitle}
+              {achievementSection.subtitle}
             </p>
           </div>
         </Fade>
@@ -55,7 +50,7 @@ export default function Achievement() {
           </Fade>
           <Fade right duration={1000} distance="30px">
             <div className="achievement-cards-div">
-              {activeAchievements.achievementsCards.map((card, i) => {
+              {achievementSection.achievementsCards.map((card, i) => {
                 return (
                   <AchievementCard
                     key={i}

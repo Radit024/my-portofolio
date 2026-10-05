@@ -2,18 +2,13 @@ import React, {useContext} from "react";
 import "./Contact.scss";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
 import {illustration, contactInfo} from "../../portfolio";
-import {financeContactInfo} from "../../financePortfolio";
 import {Fade} from "../../components/fade/Fade";
 import contactPerson from "../../assets/lottie/contactPerson";
 import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 import StyleContext from "../../contexts/StyleContext";
-import {usePortfolioMode} from "../../contexts/PortfolioModeContext";
 
 export default function Contact() {
   const {isDark} = useContext(StyleContext);
-  const {mode} = usePortfolioMode();
-  const isFinance = mode === "finance";
-  const activeContact = isFinance ? financeContactInfo : contactInfo;
 
   return (
     <Fade bottom duration={1000} distance="20px">
@@ -26,11 +21,11 @@ export default function Contact() {
               <img
                 alt="Man working"
                 src={require("../../assets/images/contactMailDark.svg")}
-              ></img>
+              />
             )}
           </div>
           <div className="contact-header">
-            <h1 className="heading contact-title">{activeContact.title}</h1>
+            <h1 className="heading contact-title">{contactInfo.title}</h1>
             <p
               className={
                 isDark
@@ -38,20 +33,20 @@ export default function Contact() {
                   : "subTitle contact-subtitle"
               }
             >
-              {activeContact.subtitle}
+              {contactInfo.subtitle}
             </p>
             <div
               className={
                 isDark ? "dark-mode contact-text-div" : "contact-text-div"
               }
             >
-              {activeContact.number && (
+              {contactInfo.number && (
                 <>
                   <a
                     className="contact-detail"
-                    href={"tel:" + activeContact.number}
+                    href={"tel:" + contactInfo.number}
                   >
-                    {activeContact.number}
+                    {contactInfo.number}
                   </a>
                   <br />
                   <br />
@@ -59,9 +54,9 @@ export default function Contact() {
               )}
               <a
                 className="contact-detail-email"
-                href={"mailto:" + activeContact.email_address}
+                href={"mailto:" + contactInfo.email_address}
               >
-                {activeContact.email_address}
+                {contactInfo.email_address}
               </a>
               <br />
               <br />

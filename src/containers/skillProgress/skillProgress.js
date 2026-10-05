@@ -1,15 +1,12 @@
 import React, {useContext} from "react";
 import "./Progress.scss";
 import {illustration, techStack} from "../../portfolio";
-import {financeTechStack} from "../../financePortfolio";
 import {Fade} from "../../components/fade/Fade";
 import developmentPerson from "../../assets/lottie/developmentPerson";
-import agriData from "../../assets/lottie/agriData";
 import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 import {motion} from "framer-motion";
 import {useReducedMotion} from "../../hooks/useReducedMotion";
 import StyleContext from "../../contexts/StyleContext";
-import {usePortfolioMode} from "../../contexts/PortfolioModeContext";
 
 const containerVariants = {
   hidden: {opacity: 0},
@@ -49,11 +46,8 @@ const barFillVariants = {
 export default function StackProgress() {
   const reduceMotion = useReducedMotion();
   const {isDark} = useContext(StyleContext) || {};
-  const {mode} = usePortfolioMode();
-  const isFinance = mode === "finance";
-  const activeTechStack = isFinance ? financeTechStack : techStack;
 
-  if (activeTechStack.viewSkillBars || activeTechStack.display) {
+  if (techStack.viewSkillBars || techStack.display) {
     return (
       <Fade bottom duration={1000} distance="20px">
         <div className="skills-container" id="proficiency">
@@ -64,8 +58,8 @@ export default function StackProgress() {
             whileInView="visible"
             viewport={{once: true, amount: 0.2}}
           >
-            <h1 className="skills-heading">{activeTechStack.title || "Proficiency"}</h1>
-            {activeTechStack.subtitle && (
+            <h1 className="skills-heading">{techStack.title || "Proficiency"}</h1>
+            {techStack.subtitle && (
               <p
                 className={
                   isDark
@@ -73,11 +67,11 @@ export default function StackProgress() {
                     : "subTitle skills-subtitle"
                 }
               >
-                {activeTechStack.subtitle}
+                {techStack.subtitle}
               </p>
             )}
             <div className="skills-list">
-              {activeTechStack.experience.map((exp, i) => {
+              {techStack.experience.map((exp, i) => {
                 return (
                   <motion.div
                     key={i}
@@ -119,10 +113,7 @@ export default function StackProgress() {
 
           <div className="skills-image">
             {illustration.animated ? (
-              <DisplayLottie
-                key={isFinance ? "finance-progress-lottie" : "tech-progress-lottie"}
-                animationData={isFinance ? agriData : developmentPerson}
-              />
+              <DisplayLottie animationData={developmentPerson} />
             ) : (
               <img
                 alt="Skills"

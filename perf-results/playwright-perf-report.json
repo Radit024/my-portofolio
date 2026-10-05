@@ -1,0 +1,3116 @@
+[
+  {
+    "scenario": "Live Site - Desktop (Fast)",
+    "url": "https://radit024.github.io/my-portofolio/",
+    "screenshotPath": "D:\\Vs Code Project\\my-portofolio\\perf-results\\live_site___desktop__fast_.png",
+    "mainContentLoadedTime": 9891,
+    "themeToggleDuration": null,
+    "modeSwitchDuration": null,
+    "scrollTotalTime": 888,
+    "consoleErrors": [
+      "Failed to load resource: the server responded with a status of 404 ()",
+      "Failed to load resource: the server responded with a status of 404 ()",
+      "Failed to load resource: the server responded with a status of 429 ()",
+      "Failed to load resource: the server responded with a status of 404 ()",
+      "[object Response] (because of this error, nothing is shown in place of Projects section. Also check if Projects section has been configured)",
+      "Failed to load resource: the server responded with a status of 404 ()",
+      "TypeError: Cannot read properties of undefined (reading 'items') (because of this error Blogs section could not be displayed. Blogs section has reverted to default)",
+      "Permissions policy violation: encrypted-media is not allowed in this document.",
+      "Permissions policy violation: encrypted-media is not allowed in this document.",
+      "Permissions policy violation: encrypted-media is not allowed in this document.",
+      "Permissions policy violation: encrypted-media is not allowed in this document.",
+      "Permissions policy violation: encrypted-media is not allowed in this document.",
+      "Permissions policy violation: encrypted-media is not allowed in this document.",
+      "Permissions policy violation: encrypted-media is not allowed in this document.",
+      "Permissions policy violation: encrypted-media is not allowed in this document.",
+      "Permissions policy violation: encrypted-media is not allowed in this document.",
+      "Permissions policy violation: encrypted-media is not allowed in this document.",
+      "Permissions policy violation: encrypted-media is not allowed in this document.",
+      "Permissions policy violation: encrypted-media is not allowed in this document.",
+      "Permissions policy violation: encrypted-media is not allowed in this document.",
+      "Permissions policy violation: encrypted-media is not allowed in this document.",
+      "Permissions policy violation: encrypted-media is not allowed in this document.",
+      "Permissions policy violation: encrypted-media is not allowed in this document.",
+      "Permissions policy violation: encrypted-media is not allowed in this document.",
+      "Permissions policy violation: encrypted-media is not allowed in this document.",
+      "Permissions policy violation: encrypted-media is not allowed in this document.",
+      "Permissions policy violation: encrypted-media is not allowed in this document.",
+      "Permissions policy violation: encrypted-media is not allowed in this document.",
+      "Permissions policy violation: encrypted-media is not allowed in this document.",
+      "Permissions policy violation: encrypted-media is not allowed in this document.",
+      "Permissions policy violation: encrypted-media is not allowed in this document.",
+      "Permissions policy violation: encrypted-media is not allowed in this document.",
+      "Permissions policy violation: encrypted-media is not allowed in this document.",
+      "Permissions policy violation: encrypted-media is not allowed in this document.",
+      "Permissions policy violation: encrypted-media is not allowed in this document."
+    ],
+    "networkRequests": [
+      {
+        "url": "https://radit024.github.io/my-portofolio/",
+        "resourceType": "document",
+        "status": 200,
+        "duration": 366,
+        "transferSize": 1362,
+        "bodySize": 1362
+      },
+      {
+        "url": "https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@5.15.4/css/all.min.css",
+        "resourceType": "stylesheet",
+        "status": 200,
+        "duration": 105,
+        "transferSize": 13656,
+        "bodySize": 13656
+      },
+      {
+        "url": "https://radit024.github.io/static/media/Montserrat-Regular.ee653992.ttf",
+        "resourceType": "font",
+        "status": "FAILED",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://radit024.github.io/static/media/Agustina.21f233e1.woff",
+        "resourceType": "font",
+        "status": "FAILED",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://www.googletagmanager.com/gtag/js?id=UA-135618960-2",
+        "resourceType": "script",
+        "status": 200,
+        "duration": 339,
+        "transferSize": 136681,
+        "bodySize": 136681
+      },
+      {
+        "url": "https://www.google-analytics.com/analytics.js",
+        "resourceType": "script",
+        "status": 200,
+        "duration": 406,
+        "transferSize": 21409,
+        "bodySize": 21409
+      },
+      {
+        "url": "https://www.googletagmanager.com/gtag/js?id=G-001DL7NH6R&cx=c&gtm=4e6a10",
+        "resourceType": "script",
+        "status": 200,
+        "duration": 614,
+        "transferSize": 162779,
+        "bodySize": 162779
+      },
+      {
+        "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-001DL7NH6R&gtm=45je6a10v9114951033za20gxf1&_p=1791221371612&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAI&cid=1747401004.1791221372&frm=0&ngs=1&pscdl=noapi&rcb=7&sr=1440x900&uaa=x86&uab=64&uafvl=HeadlessChrome%3B153.0.8010.12%7CNot_A%2520Brand%3B8.0.0.0%7CChromium%3B153.0.8010.12&uam=&uamb=0&uap=Windows&uapv=19.0.0&uaw=0&ul=en-us&_s=1&tag_exp=115938465~115938468~118897920~118897930~120213116~120385422~120469145~120469153~121246027~121246035~121280969~121436581&sid=1791221372&sct=1&seg=0&dl=https%3A%2F%2Fradit024.github.io%2Fmy-portofolio%2F&dt=Daffa%20Radityo%20Portfolio&en=page_view&_fv=1&_ss=1&tfd=1436",
+        "resourceType": "fetch",
+        "status": "FAILED",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://radit024.github.io/my-portofolio/static/css/main.30bb81db.css",
+        "resourceType": "stylesheet",
+        "status": 200,
+        "duration": 1503,
+        "transferSize": 5957,
+        "bodySize": 5957
+      },
+      {
+        "url": "https://radit024.github.io/my-portofolio/static/js/main.dce33df4.js",
+        "resourceType": "script",
+        "status": 200,
+        "duration": 3310,
+        "transferSize": 257700,
+        "bodySize": 257700
+      },
+      {
+        "url": "https://radit024.github.io/my-portofolio/static/media/Agustina.eb0c59dda4cc308cba96.woff",
+        "resourceType": "font",
+        "status": 200,
+        "duration": 1512,
+        "transferSize": 97190,
+        "bodySize": 97190
+      },
+      {
+        "url": "https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/72x72/260e.png",
+        "resourceType": "image",
+        "status": 200,
+        "duration": 102,
+        "transferSize": 1521,
+        "bodySize": 1521
+      },
+      {
+        "url": "https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/72x72/26a1.png",
+        "resourceType": "image",
+        "status": 200,
+        "duration": 103,
+        "transferSize": 752,
+        "bodySize": 752
+      },
+      {
+        "url": "https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/72x72/1f44b.png",
+        "resourceType": "image",
+        "status": 200,
+        "duration": 104,
+        "transferSize": 1525,
+        "bodySize": 1525
+      },
+      {
+        "url": "https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/72x72/2600.png",
+        "resourceType": "image",
+        "status": 200,
+        "duration": 104,
+        "transferSize": 809,
+        "bodySize": 809
+      },
+      {
+        "url": "https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@5.15.4/webfonts/fa-solid-900.woff2",
+        "resourceType": "font",
+        "status": 200,
+        "duration": 244,
+        "transferSize": 79012,
+        "bodySize": 79012
+      },
+      {
+        "url": "https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@5.15.4/webfonts/fa-brands-400.woff2",
+        "resourceType": "font",
+        "status": 200,
+        "duration": 244,
+        "transferSize": 77456,
+        "bodySize": 77456
+      },
+      {
+        "url": "https://platform.twitter.com/widgets.js",
+        "resourceType": "script",
+        "status": 200,
+        "duration": 275,
+        "transferSize": 28122,
+        "bodySize": 28122
+      },
+      {
+        "url": "https://open.spotify.com/embed/track/4eNf4ckHiHsajLCBaOC80l?utm_source=generator",
+        "resourceType": "document",
+        "status": 200,
+        "duration": 385,
+        "transferSize": 4509,
+        "bodySize": 4509
+      },
+      {
+        "url": "https://embed-cdn.spotifycdn.com/_next/static/css/32b229a353fab527.css",
+        "resourceType": "stylesheet",
+        "status": 200,
+        "duration": 128,
+        "transferSize": 6711,
+        "bodySize": 6711
+      },
+      {
+        "url": "https://embed-cdn.spotifycdn.com/_next/static/css/32b229a353fab527.css",
+        "resourceType": "stylesheet",
+        "status": 200,
+        "duration": 6,
+        "transferSize": 0,
+        "bodySize": -555
+      },
+      {
+        "url": "https://open.spotify.com/embed/track/6TTAZeyRDN03BHlhQ9Lq6L?utm_source=generator",
+        "resourceType": "document",
+        "status": 200,
+        "duration": 382,
+        "transferSize": 4035,
+        "bodySize": 4035
+      },
+      {
+        "url": "https://embed-cdn.spotifycdn.com/_next/static/css/160b1a83b9cf861d.css",
+        "resourceType": "stylesheet",
+        "status": 200,
+        "duration": 136,
+        "transferSize": 5176,
+        "bodySize": 5176
+      },
+      {
+        "url": "https://embed-cdn.spotifycdn.com/_next/static/css/160b1a83b9cf861d.css",
+        "resourceType": "stylesheet",
+        "status": 200,
+        "duration": 13,
+        "transferSize": 0,
+        "bodySize": -555
+      },
+      {
+        "url": "https://embed-cdn.spotifycdn.com/_next/static/chunks/webpack-a52320c215c6f749.js",
+        "resourceType": "script",
+        "status": 200,
+        "duration": 135,
+        "transferSize": 3542,
+        "bodySize": 3542
+      },
+      {
+        "url": "https://embed-cdn.spotifycdn.com/_next/static/chunks/webpack-a52320c215c6f749.js",
+        "resourceType": "script",
+        "status": 200,
+        "duration": 13,
+        "transferSize": 0,
+        "bodySize": -562
+      },
+      {
+        "url": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02bc4bd45694b345b9e17bdaa9",
+        "resourceType": "image",
+        "status": 200,
+        "duration": 181,
+        "transferSize": 43852,
+        "bodySize": 43852
+      },
+      {
+        "url": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02d763928f4cd06199b82998f4",
+        "resourceType": "image",
+        "status": 200,
+        "duration": 58,
+        "transferSize": 26510,
+        "bodySize": 26510
+      },
+      {
+        "url": "https://platform.twitter.com/widgets/widget_iframe.1227a5674072e080ffb1ba14ac0c1079.html?origin=https%3A%2F%2Fradit024.github.io",
+        "resourceType": "document",
+        "status": 200,
+        "duration": 614,
+        "transferSize": 105657,
+        "bodySize": 105657
+      },
+      {
+        "url": "https://syndication.twitter.com/settings?session_id=af5f00b46f5b706a82466314986deaf1d160624d",
+        "resourceType": "fetch",
+        "status": 200,
+        "duration": 308,
+        "transferSize": 964,
+        "bodySize": 964
+      },
+      {
+        "url": "https://platform.twitter.com/js/timeline.9ee124fd8db0c3ba3796e9613bbc9e53.js",
+        "resourceType": "script",
+        "status": 200,
+        "duration": 66,
+        "transferSize": 3129,
+        "bodySize": 3129
+      },
+      {
+        "url": "https://syndication.twitter.com/srv/timeline-profile/screen-name/DaffaradityoA?dnt=false&embedId=twitter-widget-0&features=eyJ0ZndfdGltZWxpbmVfbGlzdCI6eyJidWNrZXQiOltdLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X2ZvbGxvd2VyX2NvdW50X3N1bnNldCI6eyJidWNrZXQiOnRydWUsInZlcnNpb24iOm51bGx9LCJ0ZndfdHdlZXRfZWRpdF9iYWNrZW5kIjp7ImJ1Y2tldCI6Im9uIiwidmVyc2lvbiI6bnVsbH0sInRmd19yZWZzcmNfc2Vzc2lvbiI6eyJidWNrZXQiOiJvbiIsInZlcnNpb24iOm51bGx9LCJ0ZndfZm9zbnJfc29mdF9pbnRlcnZlbnRpb25zX2VuYWJsZWQiOnsiYnVja2V0Ijoib24iLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X21peGVkX21lZGlhXzE1ODk3Ijp7ImJ1Y2tldCI6InRyZWF0bWVudCIsInZlcnNpb24iOm51bGx9LCJ0ZndfZXhwZXJpbWVudHNfY29va2llX2V4cGlyYXRpb24iOnsiYnVja2V0IjoxMjA5NjAwLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X3Nob3dfYmlyZHdhdGNoX3Bpdm90c19lbmFibGVkIjp7ImJ1Y2tldCI6Im9uIiwidmVyc2lvbiI6bnVsbH0sInRmd19kdXBsaWNhdGVfc2NyaWJlc190b19zZXR0aW5ncyI6eyJidWNrZXQiOiJvbiIsInZlcnNpb24iOm51bGx9LCJ0ZndfdXNlX3Byb2ZpbGVfaW1hZ2Vfc2hhcGVfZW5hYmxlZCI6eyJidWNrZXQiOiJvbiIsInZlcnNpb24iOm51bGx9LCJ0ZndfdmlkZW9faGxzX2R5bmFtaWNfbWFuaWZlc3RzXzE1MDgyIjp7ImJ1Y2tldCI6InRydWVfYml0cmF0ZSIsInZlcnNpb24iOm51bGx9LCJ0ZndfbGVnYWN5X3RpbWVsaW5lX3N1bnNldCI6eyJidWNrZXQiOnRydWUsInZlcnNpb24iOm51bGx9LCJ0ZndfdHdlZXRfZWRpdF9mcm9udGVuZCI6eyJidWNrZXQiOiJvbiIsInZlcnNpb24iOm51bGx9fQ%3D%3D&frame=false&hideBorder=false&hideFooter=true&hideHeader=false&hideScrollBar=false&lang=en&maxHeight=400px&origin=https%3A%2F%2Fradit024.github.io%2Fmy-portofolio%2F&sessionId=af5f00b46f5b706a82466314986deaf1d160624d&showHeader=true&showReplies=false&theme=light&transparent=false&widgetsVersion=6a3ad42b224df%3A1778106238597",
+        "resourceType": "document",
+        "status": 429,
+        "duration": 224,
+        "transferSize": 270,
+        "bodySize": 270
+      },
+      {
+        "url": "https://embed-cdn.spotifycdn.com/_next/static/css/ae20dae031358b14.css",
+        "resourceType": "stylesheet",
+        "status": 200,
+        "duration": 2434,
+        "transferSize": 25426,
+        "bodySize": 25426
+      },
+      {
+        "url": "https://embed-cdn.spotifycdn.com/_next/static/css/ae20dae031358b14.css",
+        "resourceType": "stylesheet",
+        "status": 200,
+        "duration": 2311,
+        "transferSize": 0,
+        "bodySize": -556
+      },
+      {
+        "url": "https://embed-cdn.spotifycdn.com/_next/static/chunks/main-6a4ed030edd4b4ec.js",
+        "resourceType": "script",
+        "status": 200,
+        "duration": 2464,
+        "transferSize": 41778,
+        "bodySize": 41778
+      },
+      {
+        "url": "https://embed-cdn.spotifycdn.com/_next/static/chunks/main-6a4ed030edd4b4ec.js",
+        "resourceType": "script",
+        "status": 200,
+        "duration": 2341,
+        "transferSize": 0,
+        "bodySize": -540
+      },
+      {
+        "url": "https://encore.scdn.co/fonts/SpotifyMixUI-Regular-76c92fb1a35c462f73429fa8865163eb.woff2",
+        "resourceType": "font",
+        "status": 200,
+        "duration": 189,
+        "transferSize": 44741,
+        "bodySize": 44741
+      },
+      {
+        "url": "https://encore.scdn.co/fonts/SpotifyMixUI-Regular-76c92fb1a35c462f73429fa8865163eb.woff2",
+        "resourceType": "font",
+        "status": 200,
+        "duration": 168,
+        "transferSize": 0,
+        "bodySize": -508
+      },
+      {
+        "url": "https://encore.scdn.co/fonts/SpotifyMixUI-Bold-09c45a3a0ce9d2971e62cb26e97760fb.woff2",
+        "resourceType": "font",
+        "status": 200,
+        "duration": 219,
+        "transferSize": 47822,
+        "bodySize": 47822
+      },
+      {
+        "url": "https://encore.scdn.co/fonts/SpotifyMixUI-Bold-09c45a3a0ce9d2971e62cb26e97760fb.woff2",
+        "resourceType": "font",
+        "status": 200,
+        "duration": 199,
+        "transferSize": 0,
+        "bodySize": -508
+      },
+      {
+        "url": "https://radit024.github.io/my-portofolio/static/media/Montserrat-Regular.3cd786652b8a2e9d41f2.ttf",
+        "resourceType": "font",
+        "status": 200,
+        "duration": 5007,
+        "transferSize": 113045,
+        "bodySize": 113045
+      },
+      {
+        "url": "https://radit024.github.io/profile.json",
+        "resourceType": "fetch",
+        "status": 404,
+        "duration": 2963,
+        "transferSize": 5413,
+        "bodySize": 5413
+      },
+      {
+        "url": "https://radit024.github.io/blogs.json",
+        "resourceType": "fetch",
+        "status": 404,
+        "duration": 3050,
+        "transferSize": 5372,
+        "bodySize": 5372
+      },
+      {
+        "url": "https://radit024.github.io/my-portofolio/static/media/SMP%2026.6855c6c0e2180d135179.webp",
+        "resourceType": "image",
+        "status": 200,
+        "duration": 3083,
+        "transferSize": 5507,
+        "bodySize": 5507
+      },
+      {
+        "url": "https://radit024.github.io/my-portofolio/static/media/SD%20TJS.a30e42be8a7a31371b9d.jpeg",
+        "resourceType": "image",
+        "status": 200,
+        "duration": 3227,
+        "transferSize": 11043,
+        "bodySize": 11043
+      },
+      {
+        "url": "https://embed-cdn.spotifycdn.com/_next/static/fd43d1d6-342b-44fe-a743-f63f4d75129b/_ssgManifest.js",
+        "resourceType": "script",
+        "status": 200,
+        "duration": 3239,
+        "transferSize": 404,
+        "bodySize": 404
+      },
+      {
+        "url": "https://embed-cdn.spotifycdn.com/_next/static/chunks/framework-6f473f6ede4ec4c4.js",
+        "resourceType": "script",
+        "status": 200,
+        "duration": 3241,
+        "transferSize": 60361,
+        "bodySize": 60361
+      },
+      {
+        "url": "https://embed-cdn.spotifycdn.com/_next/static/chunks/8494-228b98ef7673b262.js",
+        "resourceType": "script",
+        "status": 200,
+        "duration": 3240,
+        "transferSize": 4231,
+        "bodySize": 4231
+      },
+      {
+        "url": "https://embed-cdn.spotifycdn.com/_next/static/fd43d1d6-342b-44fe-a743-f63f4d75129b/_buildManifest.js",
+        "resourceType": "script",
+        "status": 200,
+        "duration": 3241,
+        "transferSize": 1447,
+        "bodySize": 1447
+      },
+      {
+        "url": "https://embed-cdn.spotifycdn.com/_next/static/chunks/1df930d7-c3c84ee0b3e2843b.js",
+        "resourceType": "script",
+        "status": 200,
+        "duration": 3240,
+        "transferSize": 1801,
+        "bodySize": 1801
+      },
+      {
+        "url": "https://embed-cdn.spotifycdn.com/_next/static/chunks/8914-bbf5d87850f61402.js",
+        "resourceType": "script",
+        "status": 200,
+        "duration": 3240,
+        "transferSize": 3590,
+        "bodySize": 3590
+      },
+      {
+        "url": "https://embed-cdn.spotifycdn.com/_next/static/chunks/1df930d7-c3c84ee0b3e2843b.js",
+        "resourceType": "script",
+        "status": 200,
+        "duration": 3119,
+        "transferSize": 0,
+        "bodySize": -562
+      },
+      {
+        "url": "https://embed-cdn.spotifycdn.com/_next/static/chunks/8494-228b98ef7673b262.js",
+        "resourceType": "script",
+        "status": 200,
+        "duration": 3119,
+        "transferSize": 0,
+        "bodySize": -562
+      },
+      {
+        "url": "https://embed-cdn.spotifycdn.com/_next/static/fd43d1d6-342b-44fe-a743-f63f4d75129b/_ssgManifest.js",
+        "resourceType": "script",
+        "status": 200,
+        "duration": 3119,
+        "transferSize": 0,
+        "bodySize": -513
+      },
+      {
+        "url": "https://embed-cdn.spotifycdn.com/_next/static/fd43d1d6-342b-44fe-a743-f63f4d75129b/_buildManifest.js",
+        "resourceType": "script",
+        "status": 200,
+        "duration": 3120,
+        "transferSize": 0,
+        "bodySize": -562
+      },
+      {
+        "url": "https://embed-cdn.spotifycdn.com/_next/static/chunks/8914-bbf5d87850f61402.js",
+        "resourceType": "script",
+        "status": 200,
+        "duration": 3119,
+        "transferSize": 0,
+        "bodySize": -562
+      },
+      {
+        "url": "https://embed-cdn.spotifycdn.com/_next/static/chunks/2955-c0d2c686a2d002a5.js",
+        "resourceType": "script",
+        "status": 200,
+        "duration": 3241,
+        "transferSize": 9789,
+        "bodySize": 9789
+      },
+      {
+        "url": "https://embed-cdn.spotifycdn.com/_next/static/chunks/pages/track/%5Bid%5D-584f85bda414a422.js",
+        "resourceType": "script",
+        "status": 200,
+        "duration": 3119,
+        "transferSize": 0,
+        "bodySize": -562
+      },
+      {
+        "url": "https://embed-cdn.spotifycdn.com/_next/static/chunks/pages/track/%5Bid%5D-584f85bda414a422.js",
+        "resourceType": "script",
+        "status": 200,
+        "duration": 3241,
+        "transferSize": 5669,
+        "bodySize": 5669
+      },
+      {
+        "url": "https://embed-cdn.spotifycdn.com/_next/static/chunks/2955-c0d2c686a2d002a5.js",
+        "resourceType": "script",
+        "status": 200,
+        "duration": 3120,
+        "transferSize": 0,
+        "bodySize": -562
+      },
+      {
+        "url": "https://embed-cdn.spotifycdn.com/_next/static/chunks/framework-6f473f6ede4ec4c4.js",
+        "resourceType": "script",
+        "status": 200,
+        "duration": 3119,
+        "transferSize": 0,
+        "bodySize": -540
+      },
+      {
+        "url": "https://embed-cdn.spotifycdn.com/_next/static/chunks/7544-99cd03ed22c662fc.js",
+        "resourceType": "script",
+        "status": 200,
+        "duration": 3155,
+        "transferSize": 0,
+        "bodySize": -563
+      },
+      {
+        "url": "https://embed-cdn.spotifycdn.com/_next/static/chunks/7544-99cd03ed22c662fc.js",
+        "resourceType": "script",
+        "status": 200,
+        "duration": 3278,
+        "transferSize": 40895,
+        "bodySize": 40895
+      },
+      {
+        "url": "https://embed-cdn.spotifycdn.com/_next/static/chunks/69bd4b51-865e1672b6809701.js",
+        "resourceType": "script",
+        "status": 200,
+        "duration": 3473,
+        "transferSize": 101227,
+        "bodySize": 101227
+      },
+      {
+        "url": "https://embed-cdn.spotifycdn.com/_next/static/chunks/69bd4b51-865e1672b6809701.js",
+        "resourceType": "script",
+        "status": 200,
+        "duration": 3350,
+        "transferSize": 0,
+        "bodySize": -540
+      },
+      {
+        "url": "https://embed-cdn.spotifycdn.com/_next/static/chunks/pages/_app-c544158e5ba248fd.js",
+        "resourceType": "script",
+        "status": 200,
+        "duration": 3477,
+        "transferSize": 128687,
+        "bodySize": 128687
+      },
+      {
+        "url": "https://embed-cdn.spotifycdn.com/_next/static/chunks/pages/_app-c544158e5ba248fd.js",
+        "resourceType": "script",
+        "status": 200,
+        "duration": 3354,
+        "transferSize": 0,
+        "bodySize": -540
+      },
+      {
+        "url": "https://embed-cdn.spotifycdn.com/_next/static/chunks/4504-162c87597b0bb7a8.js",
+        "resourceType": "script",
+        "status": 200,
+        "duration": 3476,
+        "transferSize": 127980,
+        "bodySize": 127980
+      },
+      {
+        "url": "https://embed-cdn.spotifycdn.com/_next/static/chunks/4504-162c87597b0bb7a8.js",
+        "resourceType": "script",
+        "status": 200,
+        "duration": 3354,
+        "transferSize": 0,
+        "bodySize": -540
+      },
+      {
+        "url": "blob:https://open.spotify.com/bc1909b9-3c06-4b79-a34f-7e95982de762",
+        "resourceType": "script",
+        "status": 200,
+        "duration": 130,
+        "transferSize": -1,
+        "bodySize": -59
+      },
+      {
+        "url": "blob:https://open.spotify.com/aca796cc-f715-4c17-ad8b-c20845928752",
+        "resourceType": "script",
+        "status": 200,
+        "duration": 104,
+        "transferSize": -1,
+        "bodySize": -59
+      },
+      {
+        "url": "https://embed-cdn.spotifycdn.com/_next/static/chunks/da236039.77ef9cc158887e7e.js",
+        "resourceType": "script",
+        "status": 200,
+        "duration": 35,
+        "transferSize": 16825,
+        "bodySize": 16825
+      },
+      {
+        "url": "https://embed-cdn.spotifycdn.com/_next/static/chunks/da236039.77ef9cc158887e7e.js",
+        "resourceType": "script",
+        "status": 200,
+        "duration": 26,
+        "transferSize": 0,
+        "bodySize": -563
+      },
+      {
+        "url": "https://embed-cdn.spotifycdn.com/_next/static/chunks/5039.a54f1bd47316601a.js",
+        "resourceType": "script",
+        "status": 200,
+        "duration": 38,
+        "transferSize": 11893,
+        "bodySize": 11893
+      },
+      {
+        "url": "https://embed-cdn.spotifycdn.com/_next/static/chunks/5039.a54f1bd47316601a.js",
+        "resourceType": "script",
+        "status": 200,
+        "duration": 28,
+        "transferSize": 0,
+        "bodySize": -563
+      },
+      {
+        "url": "https://embed-cdn.spotifycdn.com/_next/static/chunks/spotify_player_o.fb37a86507bf6388.js",
+        "resourceType": "script",
+        "status": 200,
+        "duration": 39,
+        "transferSize": 4710,
+        "bodySize": 4710
+      },
+      {
+        "url": "https://embed-cdn.spotifycdn.com/_next/static/chunks/spotify_player_o.fb37a86507bf6388.js",
+        "resourceType": "script",
+        "status": 200,
+        "duration": 29,
+        "transferSize": 0,
+        "bodySize": -562
+      },
+      {
+        "url": "https://o22381.ingest.us.sentry.io/api/4505164808585216/envelope/?sentry_version=7&sentry_key=4cc707ab12ea4779b417479c0550a5cb&sentry_client=sentry.javascript.nextjs%2F10.45.0",
+        "resourceType": "fetch",
+        "status": 200,
+        "duration": 69,
+        "transferSize": 300,
+        "bodySize": 300
+      },
+      {
+        "url": "https://o22381.ingest.us.sentry.io/api/4505164808585216/envelope/?sentry_version=7&sentry_key=4cc707ab12ea4779b417479c0550a5cb&sentry_client=sentry.javascript.nextjs%2F10.45.0",
+        "resourceType": "fetch",
+        "status": 200,
+        "duration": 103,
+        "transferSize": 56,
+        "bodySize": 56
+      },
+      {
+        "url": "https://o22381.ingest.us.sentry.io/api/4505164808585216/envelope/?sentry_version=7&sentry_key=4cc707ab12ea4779b417479c0550a5cb&sentry_client=sentry.javascript.nextjs%2F10.45.0",
+        "resourceType": "fetch",
+        "status": 200,
+        "duration": 66,
+        "transferSize": 56,
+        "bodySize": 56
+      },
+      {
+        "url": "https://o22381.ingest.us.sentry.io/api/4505164808585216/envelope/?sentry_version=7&sentry_key=4cc707ab12ea4779b417479c0550a5cb&sentry_client=sentry.javascript.nextjs%2F10.45.0",
+        "resourceType": "fetch",
+        "status": 200,
+        "duration": 66,
+        "transferSize": 56,
+        "bodySize": 56
+      },
+      {
+        "url": "https://o22381.ingest.us.sentry.io/api/4505164808585216/envelope/?sentry_version=7&sentry_key=4cc707ab12ea4779b417479c0550a5cb&sentry_client=sentry.javascript.nextjs%2F10.45.0",
+        "resourceType": "fetch",
+        "status": 200,
+        "duration": 51,
+        "transferSize": 56,
+        "bodySize": 56
+      },
+      {
+        "url": "https://o22381.ingest.us.sentry.io/api/4505164808585216/envelope/?sentry_version=7&sentry_key=4cc707ab12ea4779b417479c0550a5cb&sentry_client=sentry.javascript.nextjs%2F10.45.0",
+        "resourceType": "fetch",
+        "status": 200,
+        "duration": 51,
+        "transferSize": 56,
+        "bodySize": 56
+      },
+      {
+        "url": "https://embed-cdn.spotifycdn.com/_next/static/chunks/8272.358f99da4dbaadef.js",
+        "resourceType": "script",
+        "status": 200,
+        "duration": 83,
+        "transferSize": 88329,
+        "bodySize": 88329
+      },
+      {
+        "url": "https://embed-cdn.spotifycdn.com/_next/static/chunks/8272.358f99da4dbaadef.js",
+        "resourceType": "script",
+        "status": 200,
+        "duration": 73,
+        "transferSize": 0,
+        "bodySize": -540
+      },
+      {
+        "url": "https://apresolve.spotify.com/?type=dealer-g2&type=spclient",
+        "resourceType": "xhr",
+        "status": 200,
+        "duration": 149,
+        "transferSize": 319,
+        "bodySize": 319
+      },
+      {
+        "url": "https://apresolve.spotify.com/?type=dealer-g2&type=spclient",
+        "resourceType": "xhr",
+        "status": 200,
+        "duration": 220,
+        "transferSize": 171,
+        "bodySize": 171
+      },
+      {
+        "url": "https://apresolve.spotify.com/?type=dealer-g2&type=spclient",
+        "resourceType": "fetch",
+        "status": 200,
+        "duration": 287,
+        "transferSize": 137,
+        "bodySize": 137
+      },
+      {
+        "url": "https://apresolve.spotify.com/?type=dealer-g2&type=spclient",
+        "resourceType": "fetch",
+        "status": 200,
+        "duration": 363,
+        "transferSize": 135,
+        "bodySize": 135
+      },
+      {
+        "url": "https://gew4-spclient.spotify.com/gabo-receiver-service/public/v3/events",
+        "resourceType": "fetch",
+        "status": 200,
+        "duration": 830,
+        "transferSize": 164,
+        "bodySize": 164
+      },
+      {
+        "url": "https://gew4-spclient.spotify.com/gabo-receiver-service/public/v3/events",
+        "resourceType": "fetch",
+        "status": 200,
+        "duration": 791,
+        "transferSize": 32,
+        "bodySize": 32
+      },
+      {
+        "url": "https://gew4-spclient.spotify.com/gabo-receiver-service/public/v3/events",
+        "resourceType": "fetch",
+        "status": 200,
+        "duration": 409,
+        "transferSize": 32,
+        "bodySize": 32
+      },
+      {
+        "url": "https://gew4-spclient.spotify.com/gabo-receiver-service/public/v3/events",
+        "resourceType": "fetch",
+        "status": 200,
+        "duration": 392,
+        "transferSize": 32,
+        "bodySize": 32
+      },
+      {
+        "url": "https://gew4-spclient.spotify.com/gabo-receiver-service/public/v3/events",
+        "resourceType": "xhr",
+        "status": 200,
+        "duration": 420,
+        "transferSize": 32,
+        "bodySize": 32
+      },
+      {
+        "url": "https://gew4-spclient.spotify.com/gabo-receiver-service/public/v3/events",
+        "resourceType": "xhr",
+        "status": 200,
+        "duration": 433,
+        "transferSize": 32,
+        "bodySize": 32
+      },
+      {
+        "url": "https://gew4-spclient.spotify.com/gabo-receiver-service/public/v3/events",
+        "resourceType": "xhr",
+        "status": 200,
+        "duration": 419,
+        "transferSize": 32,
+        "bodySize": 32
+      },
+      {
+        "url": "https://gew4-spclient.spotify.com/gabo-receiver-service/public/v3/events",
+        "resourceType": "xhr",
+        "status": 200,
+        "duration": 422,
+        "transferSize": 32,
+        "bodySize": 32
+      }
+    ],
+    "cdpMetrics": {
+      "Timestamp": 115315.028574,
+      "AudioHandlers": 0,
+      "AudioWorkletProcessors": 0,
+      "Documents": 8,
+      "Frames": 6,
+      "JSEventListeners": 898,
+      "LayoutObjects": 843,
+      "MediaKeySessions": 0,
+      "MediaKeys": 0,
+      "Nodes": 1774,
+      "Resources": 155,
+      "ContextLifecycleStateObservers": 69,
+      "V8PerContextDatas": 12,
+      "WorkerGlobalScopes": 2,
+      "UACSSResources": 0,
+      "RTCPeerConnections": 0,
+      "ResourceFetchers": 10,
+      "AdSubframes": 0,
+      "DetachedScriptStates": 0,
+      "ArrayBufferContents": 110,
+      "LayoutCount": 2303,
+      "RecalcStyleCount": 2390,
+      "LayoutDuration": 0.291795,
+      "RecalcStyleDuration": 0.658458,
+      "DevToolsCommandDuration": 0.092077,
+      "ScriptDuration": 2.430733,
+      "V8CompileDuration": 0.008358,
+      "TaskDuration": 6.909047,
+      "TaskOtherDuration": 3.427626,
+      "ThreadTime": 6.894703,
+      "ProcessTime": 14.849901,
+      "JSHeapUsedSize": 44699376,
+      "JSHeapTotalSize": 62869504,
+      "FirstMeaningfulPaint": 115276.853777,
+      "DomContentLoaded": 115276.824278,
+      "NavigationStart": 115273.110306
+    },
+    "navigation": {
+      "dns": 6,
+      "tcp": 65,
+      "ttfb": 289,
+      "download": 1,
+      "domInteractive": 378,
+      "domContentLoaded": 3714,
+      "loadComplete": 9714,
+      "transferSize": 1239
+    },
+    "perf": {
+      "fcp": 3732,
+      "lcp": 6032,
+      "lcpElement": "H1.greeting-text",
+      "cls": 0.13392966017232508,
+      "tbt": 57,
+      "longTasks": [
+        {
+          "duration": 81,
+          "startTime": 5744
+        },
+        {
+          "duration": 63,
+          "startTime": 9504
+        },
+        {
+          "duration": 63,
+          "startTime": 9592
+        }
+      ],
+      "renderTimeline": [
+        {
+          "event": "FCP",
+          "time": 3732
+        },
+        {
+          "event": "LCP",
+          "time": 3732,
+          "element": "DIV.splash-title-container"
+        },
+        {
+          "event": "LCP",
+          "time": 6032,
+          "element": "H1.greeting-text"
+        }
+      ]
+    },
+    "memory": {
+      "usedJSHeapMB": 48,
+      "totalJSHeapMB": 65
+    },
+    "resources": [
+      {
+        "name": "https://radit024.github.io/static/media/Montserrat-Regular.ee653992.ttf",
+        "initiatorType": "link",
+        "duration": 319,
+        "transferSize": 300,
+        "encodedBodySize": 0,
+        "decodedBodySize": 0,
+        "startTime": 371,
+        "responseEnd": 690
+      },
+      {
+        "name": "https://radit024.github.io/static/media/Agustina.21f233e1.woff",
+        "initiatorType": "link",
+        "duration": 319,
+        "transferSize": 300,
+        "encodedBodySize": 0,
+        "decodedBodySize": 0,
+        "startTime": 371,
+        "responseEnd": 690
+      },
+      {
+        "name": "https://www.googletagmanager.com/gtag/js?id=UA-135618960-2",
+        "initiatorType": "script",
+        "duration": 339,
+        "transferSize": 0,
+        "encodedBodySize": 0,
+        "decodedBodySize": 0,
+        "startTime": 372,
+        "responseEnd": 710
+      },
+      {
+        "name": "https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@5.15.4/css/all.min.css",
+        "initiatorType": "link",
+        "duration": 105,
+        "transferSize": 13182,
+        "encodedBodySize": 12882,
+        "decodedBodySize": 59305,
+        "startTime": 372,
+        "responseEnd": 477
+      },
+      {
+        "name": "https://radit024.github.io/my-portofolio/static/css/main.30bb81db.css",
+        "initiatorType": "link",
+        "duration": 1503,
+        "transferSize": 5866,
+        "encodedBodySize": 5566,
+        "decodedBodySize": 25953,
+        "startTime": 372,
+        "responseEnd": 1875
+      },
+      {
+        "name": "https://radit024.github.io/my-portofolio/static/js/main.dce33df4.js",
+        "initiatorType": "script",
+        "duration": 3310,
+        "transferSize": 257690,
+        "encodedBodySize": 257390,
+        "decodedBodySize": 1211371,
+        "startTime": 372,
+        "responseEnd": 3682
+      },
+      {
+        "name": "https://www.googletagmanager.com/gtag/js?id=G-001DL7NH6R&cx=c&gtm=4e6a10",
+        "initiatorType": "script",
+        "duration": 614,
+        "transferSize": 0,
+        "encodedBodySize": 0,
+        "decodedBodySize": 0,
+        "startTime": 755,
+        "responseEnd": 1368
+      },
+      {
+        "name": "https://www.google-analytics.com/analytics.js",
+        "initiatorType": "script",
+        "duration": 405,
+        "transferSize": 0,
+        "encodedBodySize": 0,
+        "decodedBodySize": 0,
+        "startTime": 759,
+        "responseEnd": 1164
+      },
+      {
+        "name": "https://www.google-analytics.com/g/collect?v=2&tid=G-001DL7NH6R&gtm=45je6a10v9114951033za20gxf1&_p=1791221371612&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAI&cid=1747401004.1791221372&frm=0&ngs=1&pscdl=noapi&rcb=7&sr=1440x900&uaa=x86&uab=64&uafvl=HeadlessChrome%3B153.0.8010.12%7CNot_A%2520Brand%3B8.0.0.0%7CChromium%3B153.0.8010.12&uam=&uamb=0&uap=Windows&uapv=19.0.0&uaw=0&ul=en-us&_s=1&tag_exp=115938465~115938468~118897920~118897930~120213116~120385422~120469145~120469153~121246027~121246035~121280969~121436581&sid=1791221372&sct=1&seg=0&dl=https%3A%2F%2Fradit024.github.io%2Fmy-portofolio%2F&dt=Daffa%20Radityo%20Portfolio&en=page_view&_fv=1&_ss=1&tfd=1436",
+        "initiatorType": "fetch",
+        "duration": 34,
+        "transferSize": 0,
+        "encodedBodySize": 0,
+        "decodedBodySize": 0,
+        "startTime": 1437,
+        "responseEnd": 1471
+      },
+      {
+        "name": "https://radit024.github.io/my-portofolio/static/media/Montserrat-Regular.3cd786652b8a2e9d41f2.ttf",
+        "initiatorType": "css",
+        "duration": 5007,
+        "transferSize": 113136,
+        "encodedBodySize": 112836,
+        "decodedBodySize": 245708,
+        "startTime": 3715,
+        "responseEnd": 8723
+      },
+      {
+        "name": "https://radit024.github.io/my-portofolio/static/media/Agustina.eb0c59dda4cc308cba96.woff",
+        "initiatorType": "css",
+        "duration": 1512,
+        "transferSize": 97232,
+        "encodedBodySize": 96932,
+        "decodedBodySize": 96932,
+        "startTime": 3716,
+        "responseEnd": 5228
+      },
+      {
+        "name": "https://open.spotify.com/embed/track/4eNf4ckHiHsajLCBaOC80l?utm_source=generator",
+        "initiatorType": "iframe",
+        "duration": 3918,
+        "transferSize": 0,
+        "encodedBodySize": 0,
+        "decodedBodySize": 0,
+        "startTime": 5755,
+        "responseEnd": 9673
+      },
+      {
+        "name": "https://open.spotify.com/embed/track/6TTAZeyRDN03BHlhQ9Lq6L?utm_source=generator",
+        "initiatorType": "iframe",
+        "duration": 3956,
+        "transferSize": 0,
+        "encodedBodySize": 0,
+        "decodedBodySize": 0,
+        "startTime": 5757,
+        "responseEnd": 9713
+      },
+      {
+        "name": "https://radit024.github.io/profile.json",
+        "initiatorType": "fetch",
+        "duration": 2963,
+        "transferSize": 5442,
+        "encodedBodySize": 5142,
+        "decodedBodySize": 9115,
+        "startTime": 5822,
+        "responseEnd": 8785
+      },
+      {
+        "name": "https://radit024.github.io/blogs.json",
+        "initiatorType": "fetch",
+        "duration": 3050,
+        "transferSize": 5442,
+        "encodedBodySize": 5142,
+        "decodedBodySize": 9115,
+        "startTime": 5822,
+        "responseEnd": 8872
+      },
+      {
+        "name": "https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/72x72/2600.png",
+        "initiatorType": "img",
+        "duration": 104,
+        "transferSize": 808,
+        "encodedBodySize": 508,
+        "decodedBodySize": 530,
+        "startTime": 5825,
+        "responseEnd": 5929
+      },
+      {
+        "name": "https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/72x72/26a1.png",
+        "initiatorType": "img",
+        "duration": 103,
+        "transferSize": 751,
+        "encodedBodySize": 451,
+        "decodedBodySize": 446,
+        "startTime": 5825,
+        "responseEnd": 5928
+      },
+      {
+        "name": "https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/72x72/1f44b.png",
+        "initiatorType": "img",
+        "duration": 104,
+        "transferSize": 1525,
+        "encodedBodySize": 1225,
+        "decodedBodySize": 1285,
+        "startTime": 5825,
+        "responseEnd": 5929
+      },
+      {
+        "name": "https://radit024.github.io/my-portofolio/static/media/SMP%2026.6855c6c0e2180d135179.webp",
+        "initiatorType": "img",
+        "duration": 3083,
+        "transferSize": 5570,
+        "encodedBodySize": 5270,
+        "decodedBodySize": 5270,
+        "startTime": 5826,
+        "responseEnd": 8908
+      },
+      {
+        "name": "https://radit024.github.io/my-portofolio/static/media/SD%20TJS.a30e42be8a7a31371b9d.jpeg",
+        "initiatorType": "img",
+        "duration": 3227,
+        "transferSize": 11176,
+        "encodedBodySize": 10876,
+        "decodedBodySize": 10876,
+        "startTime": 5826,
+        "responseEnd": 9053
+      },
+      {
+        "name": "https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/72x72/260e.png",
+        "initiatorType": "img",
+        "duration": 102,
+        "transferSize": 1166,
+        "encodedBodySize": 866,
+        "decodedBodySize": 914,
+        "startTime": 5826,
+        "responseEnd": 5928
+      },
+      {
+        "name": "https://platform.twitter.com/widgets.js",
+        "initiatorType": "script",
+        "duration": 275,
+        "transferSize": 0,
+        "encodedBodySize": 0,
+        "decodedBodySize": 0,
+        "startTime": 5832,
+        "responseEnd": 6107
+      },
+      {
+        "name": "https://platform.twitter.com/widgets/widget_iframe.1227a5674072e080ffb1ba14ac0c1079.html?origin=https%3A%2F%2Fradit024.github.io",
+        "initiatorType": "iframe",
+        "duration": 641,
+        "transferSize": 0,
+        "encodedBodySize": 0,
+        "decodedBodySize": 0,
+        "startTime": 6113,
+        "responseEnd": 6754
+      },
+      {
+        "name": "https://platform.twitter.com/js/timeline.9ee124fd8db0c3ba3796e9613bbc9e53.js",
+        "initiatorType": "script",
+        "duration": 65,
+        "transferSize": 0,
+        "encodedBodySize": 0,
+        "decodedBodySize": 0,
+        "startTime": 7065,
+        "responseEnd": 7130
+      },
+      {
+        "name": "https://syndication.twitter.com/srv/timeline-profile/screen-name/DaffaradityoA?dnt=false&embedId=twitter-widget-0&features=eyJ0ZndfdGltZWxpbmVfbGlzdCI6eyJidWNrZXQiOltdLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X2ZvbGxvd2VyX2NvdW50X3N1bnNldCI6eyJidWNrZXQiOnRydWUsInZlcnNpb24iOm51bGx9LCJ0ZndfdHdlZXRfZWRpdF9iYWNrZW5kIjp7ImJ1Y2tldCI6Im9uIiwidmVyc2lvbiI6bnVsbH0sInRmd19yZWZzcmNfc2Vzc2lvbiI6eyJidWNrZXQiOiJvbiIsInZlcnNpb24iOm51bGx9LCJ0ZndfZm9zbnJfc29mdF9pbnRlcnZlbnRpb25zX2VuYWJsZWQiOnsiYnVja2V0Ijoib24iLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X21peGVkX21lZGlhXzE1ODk3Ijp7ImJ1Y2tldCI6InRyZWF0bWVudCIsInZlcnNpb24iOm51bGx9LCJ0ZndfZXhwZXJpbWVudHNfY29va2llX2V4cGlyYXRpb24iOnsiYnVja2V0IjoxMjA5NjAwLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X3Nob3dfYmlyZHdhdGNoX3Bpdm90c19lbmFibGVkIjp7ImJ1Y2tldCI6Im9uIiwidmVyc2lvbiI6bnVsbH0sInRmd19kdXBsaWNhdGVfc2NyaWJlc190b19zZXR0aW5ncyI6eyJidWNrZXQiOiJvbiIsInZlcnNpb24iOm51bGx9LCJ0ZndfdXNlX3Byb2ZpbGVfaW1hZ2Vfc2hhcGVfZW5hYmxlZCI6eyJidWNrZXQiOiJvbiIsInZlcnNpb24iOm51bGx9LCJ0ZndfdmlkZW9faGxzX2R5bmFtaWNfbWFuaWZlc3RzXzE1MDgyIjp7ImJ1Y2tldCI6InRydWVfYml0cmF0ZSIsInZlcnNpb24iOm51bGx9LCJ0ZndfbGVnYWN5X3RpbWVsaW5lX3N1bnNldCI6eyJidWNrZXQiOnRydWUsInZlcnNpb24iOm51bGx9LCJ0ZndfdHdlZXRfZWRpdF9mcm9udGVuZCI6eyJidWNrZXQiOiJvbiIsInZlcnNpb24iOm51bGx9fQ%3D%3D&frame=false&hideBorder=false&hideFooter=true&hideHeader=false&hideScrollBar=false&lang=en&maxHeight=400px&origin=https%3A%2F%2Fradit024.github.io%2Fmy-portofolio%2F&sessionId=af5f00b46f5b706a82466314986deaf1d160624d&showHeader=true&showReplies=false&theme=light&transparent=false&widgetsVersion=6a3ad42b224df%3A1778106238597",
+        "initiatorType": "iframe",
+        "duration": 238,
+        "transferSize": 0,
+        "encodedBodySize": 0,
+        "decodedBodySize": 0,
+        "startTime": 7152,
+        "responseEnd": 7390
+      }
+    ],
+    "domNodes": 707
+  },
+  {
+    "scenario": "Live Site - Mobile Pixel 7 (Simulated 4G & 4x CPU)",
+    "url": "https://radit024.github.io/my-portofolio/",
+    "screenshotPath": "D:\\Vs Code Project\\my-portofolio\\perf-results\\live_site___mobile_pixel_7__simulated_4g___4x_cpu_.png",
+    "mainContentLoadedTime": 5833,
+    "themeToggleDuration": null,
+    "modeSwitchDuration": null,
+    "scrollTotalTime": 976,
+    "consoleErrors": [
+      "Failed to load resource: the server responded with a status of 404 ()",
+      "Failed to load resource: the server responded with a status of 404 ()",
+      "Failed to load resource: the server responded with a status of 404 ()",
+      "[object Response] (because of this error, nothing is shown in place of Projects section. Also check if Projects section has been configured)",
+      "Failed to load resource: the server responded with a status of 404 ()",
+      "TypeError: Cannot read properties of undefined (reading 'items') (because of this error Blogs section could not be displayed. Blogs section has reverted to default)",
+      "Failed to load resource: the server responded with a status of 429 ()",
+      "Permissions policy violation: encrypted-media is not allowed in this document.",
+      "Permissions policy violation: encrypted-media is not allowed in this document.",
+      "Permissions policy violation: encrypted-media is not allowed in this document.",
+      "Permissions policy violation: encrypted-media is not allowed in this document.",
+      "Permissions policy violation: encrypted-media is not allowed in this document.",
+      "Permissions policy violation: encrypted-media is not allowed in this document.",
+      "Permissions policy violation: encrypted-media is not allowed in this document.",
+      "Permissions policy violation: encrypted-media is not allowed in this document.",
+      "Permissions policy violation: encrypted-media is not allowed in this document.",
+      "Permissions policy violation: encrypted-media is not allowed in this document.",
+      "Permissions policy violation: encrypted-media is not allowed in this document.",
+      "Permissions policy violation: encrypted-media is not allowed in this document.",
+      "Permissions policy violation: encrypted-media is not allowed in this document.",
+      "Permissions policy violation: encrypted-media is not allowed in this document.",
+      "Permissions policy violation: encrypted-media is not allowed in this document.",
+      "Permissions policy violation: encrypted-media is not allowed in this document.",
+      "Permissions policy violation: encrypted-media is not allowed in this document.",
+      "Permissions policy violation: encrypted-media is not allowed in this document.",
+      "Permissions policy violation: encrypted-media is not allowed in this document.",
+      "Permissions policy violation: encrypted-media is not allowed in this document.",
+      "Permissions policy violation: encrypted-media is not allowed in this document.",
+      "Permissions policy violation: encrypted-media is not allowed in this document.",
+      "Permissions policy violation: encrypted-media is not allowed in this document.",
+      "Permissions policy violation: encrypted-media is not allowed in this document.",
+      "Permissions policy violation: encrypted-media is not allowed in this document.",
+      "Permissions policy violation: encrypted-media is not allowed in this document.",
+      "Permissions policy violation: encrypted-media is not allowed in this document.",
+      "Permissions policy violation: encrypted-media is not allowed in this document."
+    ],
+    "networkRequests": [
+      {
+        "url": "https://radit024.github.io/my-portofolio/",
+        "resourceType": "document",
+        "status": 200,
+        "duration": 261,
+        "transferSize": 1362,
+        "bodySize": 1362
+      },
+      {
+        "url": "https://radit024.github.io/static/media/Montserrat-Regular.ee653992.ttf",
+        "resourceType": "font",
+        "status": "FAILED",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://radit024.github.io/static/media/Agustina.21f233e1.woff",
+        "resourceType": "font",
+        "status": "FAILED",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://radit024.github.io/my-portofolio/static/css/main.30bb81db.css",
+        "resourceType": "stylesheet",
+        "status": 200,
+        "duration": 279,
+        "transferSize": 5729,
+        "bodySize": 5729
+      },
+      {
+        "url": "https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@5.15.4/css/all.min.css",
+        "resourceType": "stylesheet",
+        "status": 200,
+        "duration": 448,
+        "transferSize": 13653,
+        "bodySize": 13653
+      },
+      {
+        "url": "https://www.googletagmanager.com/gtag/js?id=UA-135618960-2",
+        "resourceType": "script",
+        "status": 200,
+        "duration": 1656,
+        "transferSize": 136681,
+        "bodySize": 136681
+      },
+      {
+        "url": "https://radit024.github.io/my-portofolio/static/js/main.dce33df4.js",
+        "resourceType": "script",
+        "status": 200,
+        "duration": 2384,
+        "transferSize": 257926,
+        "bodySize": 257926
+      },
+      {
+        "url": "https://www.google-analytics.com/analytics.js",
+        "resourceType": "script",
+        "status": 200,
+        "duration": 516,
+        "transferSize": 21409,
+        "bodySize": 21409
+      },
+      {
+        "url": "https://www.googletagmanager.com/gtag/js?id=G-001DL7NH6R&cx=c&gtm=4e6a10",
+        "resourceType": "script",
+        "status": 200,
+        "duration": 1714,
+        "transferSize": 162789,
+        "bodySize": 162789
+      },
+      {
+        "url": "https://radit024.github.io/my-portofolio/static/media/Montserrat-Regular.3cd786652b8a2e9d41f2.ttf",
+        "resourceType": "font",
+        "status": 200,
+        "duration": 1455,
+        "transferSize": 113091,
+        "bodySize": 113091
+      },
+      {
+        "url": "https://radit024.github.io/my-portofolio/static/media/Agustina.eb0c59dda4cc308cba96.woff",
+        "resourceType": "font",
+        "status": 200,
+        "duration": 1500,
+        "transferSize": 97144,
+        "bodySize": 97144
+      },
+      {
+        "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-001DL7NH6R&gtm=45je6a10v9114951033za20gxf1&_p=1791221413767&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAI&cid=1250674046.1791221417&frm=0&ngs=1&pscdl=noapi&rcb=16&sr=412x915&uaa=arm&uab=64&uafvl=HeadlessChrome%3B153.0.8010.12%7CNot_A%2520Brand%3B8.0.0.0%7CChromium%3B153.0.8010.12&uam=&uamb=1&uap=Android&uapv=14&uaw=0&ul=en-us&_s=1&tag_exp=115616985~115938466~115938469~118897920~118897930~120213116~120385423~120469145~120469153~121280969&sid=1791221417&sct=1&seg=0&dl=https%3A%2F%2Fradit024.github.io%2Fmy-portofolio%2F&dt=Daffa%20Radityo%20Portfolio&en=page_view&_fv=1&_ss=1&tfd=4234",
+        "resourceType": "fetch",
+        "status": "FAILED",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://open.spotify.com/embed/track/6TTAZeyRDN03BHlhQ9Lq6L?utm_source=generator",
+        "resourceType": "document",
+        "status": 200,
+        "duration": 319,
+        "transferSize": 4029,
+        "bodySize": 4029
+      },
+      {
+        "url": "https://open.spotify.com/embed/track/4eNf4ckHiHsajLCBaOC80l?utm_source=generator",
+        "resourceType": "document",
+        "status": 200,
+        "duration": 295,
+        "transferSize": 4508,
+        "bodySize": 4508
+      },
+      {
+        "url": "https://radit024.github.io/profile.json",
+        "resourceType": "fetch",
+        "status": 404,
+        "duration": 195,
+        "transferSize": 5414,
+        "bodySize": 5414
+      },
+      {
+        "url": "https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/72x72/26a1.png",
+        "resourceType": "image",
+        "status": 200,
+        "duration": 231,
+        "transferSize": 754,
+        "bodySize": 754
+      },
+      {
+        "url": "https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/72x72/2600.png",
+        "resourceType": "image",
+        "status": 200,
+        "duration": 248,
+        "transferSize": 810,
+        "bodySize": 810
+      },
+      {
+        "url": "https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/72x72/260e.png",
+        "resourceType": "image",
+        "status": 200,
+        "duration": 255,
+        "transferSize": 1519,
+        "bodySize": 1519
+      },
+      {
+        "url": "https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/72x72/1f44b.png",
+        "resourceType": "image",
+        "status": 200,
+        "duration": 270,
+        "transferSize": 1525,
+        "bodySize": 1525
+      },
+      {
+        "url": "https://radit024.github.io/my-portofolio/static/media/SMP%2026.6855c6c0e2180d135179.webp",
+        "resourceType": "image",
+        "status": 200,
+        "duration": 271,
+        "transferSize": 5508,
+        "bodySize": 5508
+      },
+      {
+        "url": "https://radit024.github.io/blogs.json",
+        "resourceType": "fetch",
+        "status": 404,
+        "duration": 237,
+        "transferSize": 5373,
+        "bodySize": 5373
+      },
+      {
+        "url": "https://radit024.github.io/my-portofolio/static/media/SD%20TJS.a30e42be8a7a31371b9d.jpeg",
+        "resourceType": "image",
+        "status": 200,
+        "duration": 317,
+        "transferSize": 11041,
+        "bodySize": 11041
+      },
+      {
+        "url": "https://embed-cdn.spotifycdn.com/_next/static/chunks/webpack-a52320c215c6f749.js",
+        "resourceType": "script",
+        "status": 200,
+        "duration": 362,
+        "transferSize": 3542,
+        "bodySize": 3542
+      },
+      {
+        "url": "https://embed-cdn.spotifycdn.com/_next/static/chunks/webpack-a52320c215c6f749.js",
+        "resourceType": "script",
+        "status": 200,
+        "duration": 330,
+        "transferSize": 0,
+        "bodySize": -562
+      },
+      {
+        "url": "https://embed-cdn.spotifycdn.com/_next/static/css/160b1a83b9cf861d.css",
+        "resourceType": "stylesheet",
+        "status": 200,
+        "duration": 400,
+        "transferSize": 5176,
+        "bodySize": 5176
+      },
+      {
+        "url": "https://embed-cdn.spotifycdn.com/_next/static/css/160b1a83b9cf861d.css",
+        "resourceType": "stylesheet",
+        "status": 200,
+        "duration": 366,
+        "transferSize": 0,
+        "bodySize": -555
+      },
+      {
+        "url": "https://embed-cdn.spotifycdn.com/_next/static/css/32b229a353fab527.css",
+        "resourceType": "stylesheet",
+        "status": 200,
+        "duration": 442,
+        "transferSize": 6711,
+        "bodySize": 6711
+      },
+      {
+        "url": "https://embed-cdn.spotifycdn.com/_next/static/css/32b229a353fab527.css",
+        "resourceType": "stylesheet",
+        "status": 200,
+        "duration": 408,
+        "transferSize": 0,
+        "bodySize": -555
+      },
+      {
+        "url": "https://embed-cdn.spotifycdn.com/_next/static/fd43d1d6-342b-44fe-a743-f63f4d75129b/_ssgManifest.js",
+        "resourceType": "script",
+        "status": 200,
+        "duration": 711,
+        "transferSize": 404,
+        "bodySize": 404
+      },
+      {
+        "url": "https://embed-cdn.spotifycdn.com/_next/static/fd43d1d6-342b-44fe-a743-f63f4d75129b/_ssgManifest.js",
+        "resourceType": "script",
+        "status": 200,
+        "duration": 677,
+        "transferSize": 0,
+        "bodySize": -513
+      },
+      {
+        "url": "https://embed-cdn.spotifycdn.com/_next/static/fd43d1d6-342b-44fe-a743-f63f4d75129b/_buildManifest.js",
+        "resourceType": "script",
+        "status": 200,
+        "duration": 727,
+        "transferSize": 1447,
+        "bodySize": 1447
+      },
+      {
+        "url": "https://embed-cdn.spotifycdn.com/_next/static/fd43d1d6-342b-44fe-a743-f63f4d75129b/_buildManifest.js",
+        "resourceType": "script",
+        "status": 200,
+        "duration": 693,
+        "transferSize": 0,
+        "bodySize": -562
+      },
+      {
+        "url": "https://embed-cdn.spotifycdn.com/_next/static/chunks/1df930d7-c3c84ee0b3e2843b.js",
+        "resourceType": "script",
+        "status": 200,
+        "duration": 790,
+        "transferSize": 1801,
+        "bodySize": 1801
+      },
+      {
+        "url": "https://embed-cdn.spotifycdn.com/_next/static/chunks/1df930d7-c3c84ee0b3e2843b.js",
+        "resourceType": "script",
+        "status": 200,
+        "duration": 759,
+        "transferSize": 0,
+        "bodySize": -562
+      },
+      {
+        "url": "https://platform.twitter.com/widgets.js",
+        "resourceType": "script",
+        "status": 200,
+        "duration": 872,
+        "transferSize": 28122,
+        "bodySize": 28122
+      },
+      {
+        "url": "https://embed-cdn.spotifycdn.com/_next/static/chunks/8494-228b98ef7673b262.js",
+        "resourceType": "script",
+        "status": 200,
+        "duration": 884,
+        "transferSize": 4231,
+        "bodySize": 4231
+      },
+      {
+        "url": "https://embed-cdn.spotifycdn.com/_next/static/chunks/8494-228b98ef7673b262.js",
+        "resourceType": "script",
+        "status": 200,
+        "duration": 852,
+        "transferSize": 0,
+        "bodySize": -562
+      },
+      {
+        "url": "https://embed-cdn.spotifycdn.com/_next/static/chunks/8914-bbf5d87850f61402.js",
+        "resourceType": "script",
+        "status": 200,
+        "duration": 976,
+        "transferSize": 3590,
+        "bodySize": 3590
+      },
+      {
+        "url": "https://embed-cdn.spotifycdn.com/_next/static/chunks/8914-bbf5d87850f61402.js",
+        "resourceType": "script",
+        "status": 200,
+        "duration": 944,
+        "transferSize": 0,
+        "bodySize": -562
+      },
+      {
+        "url": "https://embed-cdn.spotifycdn.com/_next/static/chunks/pages/track/%5Bid%5D-584f85bda414a422.js",
+        "resourceType": "script",
+        "status": 200,
+        "duration": 1065,
+        "transferSize": 5669,
+        "bodySize": 5669
+      },
+      {
+        "url": "https://embed-cdn.spotifycdn.com/_next/static/chunks/pages/track/%5Bid%5D-584f85bda414a422.js",
+        "resourceType": "script",
+        "status": 200,
+        "duration": 1032,
+        "transferSize": 0,
+        "bodySize": -562
+      },
+      {
+        "url": "https://embed-cdn.spotifycdn.com/_next/static/css/ae20dae031358b14.css",
+        "resourceType": "stylesheet",
+        "status": 200,
+        "duration": 1099,
+        "transferSize": 25426,
+        "bodySize": 25426
+      },
+      {
+        "url": "https://embed-cdn.spotifycdn.com/_next/static/css/ae20dae031358b14.css",
+        "resourceType": "stylesheet",
+        "status": 200,
+        "duration": 1064,
+        "transferSize": 0,
+        "bodySize": -556
+      },
+      {
+        "url": "https://embed-cdn.spotifycdn.com/_next/static/chunks/2955-c0d2c686a2d002a5.js",
+        "resourceType": "script",
+        "status": 200,
+        "duration": 1219,
+        "transferSize": 9789,
+        "bodySize": 9789
+      },
+      {
+        "url": "https://embed-cdn.spotifycdn.com/_next/static/chunks/2955-c0d2c686a2d002a5.js",
+        "resourceType": "script",
+        "status": 200,
+        "duration": 1187,
+        "transferSize": 0,
+        "bodySize": -562
+      },
+      {
+        "url": "https://embed-cdn.spotifycdn.com/_next/static/chunks/main-6a4ed030edd4b4ec.js",
+        "resourceType": "script",
+        "status": 200,
+        "duration": 1968,
+        "transferSize": 41778,
+        "bodySize": 41778
+      },
+      {
+        "url": "https://embed-cdn.spotifycdn.com/_next/static/chunks/main-6a4ed030edd4b4ec.js",
+        "resourceType": "script",
+        "status": 200,
+        "duration": 1936,
+        "transferSize": 0,
+        "bodySize": -540
+      },
+      {
+        "url": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02d763928f4cd06199b82998f4",
+        "resourceType": "image",
+        "status": 200,
+        "duration": 2687,
+        "transferSize": 26603,
+        "bodySize": 26603
+      },
+      {
+        "url": "https://embed-cdn.spotifycdn.com/_next/static/chunks/7544-99cd03ed22c662fc.js",
+        "resourceType": "script",
+        "status": 200,
+        "duration": 3031,
+        "transferSize": 40895,
+        "bodySize": 40895
+      },
+      {
+        "url": "https://embed-cdn.spotifycdn.com/_next/static/chunks/7544-99cd03ed22c662fc.js",
+        "resourceType": "script",
+        "status": 200,
+        "duration": 2999,
+        "transferSize": 0,
+        "bodySize": -563
+      },
+      {
+        "url": "https://embed-cdn.spotifycdn.com/_next/static/chunks/framework-6f473f6ede4ec4c4.js",
+        "resourceType": "script",
+        "status": 200,
+        "duration": 3796,
+        "transferSize": 60361,
+        "bodySize": 60361
+      },
+      {
+        "url": "https://encore.scdn.co/fonts/SpotifyMixUI-Regular-76c92fb1a35c462f73429fa8865163eb.woff2",
+        "resourceType": "font",
+        "status": 200,
+        "duration": 2746,
+        "transferSize": 44741,
+        "bodySize": 44741
+      },
+      {
+        "url": "https://encore.scdn.co/fonts/SpotifyMixUI-Regular-76c92fb1a35c462f73429fa8865163eb.woff2",
+        "resourceType": "font",
+        "status": 200,
+        "duration": 2654,
+        "transferSize": 0,
+        "bodySize": -508
+      },
+      {
+        "url": "https://embed-cdn.spotifycdn.com/_next/static/chunks/framework-6f473f6ede4ec4c4.js",
+        "resourceType": "script",
+        "status": 200,
+        "duration": 3763,
+        "transferSize": 0,
+        "bodySize": -540
+      },
+      {
+        "url": "https://encore.scdn.co/fonts/SpotifyMixUI-Bold-09c45a3a0ce9d2971e62cb26e97760fb.woff2",
+        "resourceType": "font",
+        "status": 200,
+        "duration": 2853,
+        "transferSize": 47822,
+        "bodySize": 47822
+      },
+      {
+        "url": "https://encore.scdn.co/fonts/SpotifyMixUI-Bold-09c45a3a0ce9d2971e62cb26e97760fb.woff2",
+        "resourceType": "font",
+        "status": 200,
+        "duration": 2764,
+        "transferSize": 0,
+        "bodySize": -508
+      },
+      {
+        "url": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02bc4bd45694b345b9e17bdaa9",
+        "resourceType": "image",
+        "status": 200,
+        "duration": 4103,
+        "transferSize": 43852,
+        "bodySize": 43852
+      },
+      {
+        "url": "https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@5.15.4/webfonts/fa-brands-400.woff2",
+        "resourceType": "font",
+        "status": 200,
+        "duration": 4738,
+        "transferSize": 77175,
+        "bodySize": 77175
+      },
+      {
+        "url": "https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@5.15.4/webfonts/fa-solid-900.woff2",
+        "resourceType": "font",
+        "status": 200,
+        "duration": 4780,
+        "transferSize": 79091,
+        "bodySize": 79091
+      },
+      {
+        "url": "https://embed-cdn.spotifycdn.com/_next/static/chunks/69bd4b51-865e1672b6809701.js",
+        "resourceType": "script",
+        "status": 200,
+        "duration": 4813,
+        "transferSize": 0,
+        "bodySize": -540
+      },
+      {
+        "url": "https://embed-cdn.spotifycdn.com/_next/static/chunks/69bd4b51-865e1672b6809701.js",
+        "resourceType": "script",
+        "status": 200,
+        "duration": 4845,
+        "transferSize": 101236,
+        "bodySize": 101236
+      },
+      {
+        "url": "https://platform.twitter.com/widgets/widget_iframe.1227a5674072e080ffb1ba14ac0c1079.html?origin=https%3A%2F%2Fradit024.github.io",
+        "resourceType": "document",
+        "status": 200,
+        "duration": 4097,
+        "transferSize": 105680,
+        "bodySize": 105680
+      },
+      {
+        "url": "https://embed-cdn.spotifycdn.com/_next/static/chunks/pages/_app-c544158e5ba248fd.js",
+        "resourceType": "script",
+        "status": 200,
+        "duration": 5155,
+        "transferSize": 128696,
+        "bodySize": 128696
+      },
+      {
+        "url": "https://embed-cdn.spotifycdn.com/_next/static/chunks/pages/_app-c544158e5ba248fd.js",
+        "resourceType": "script",
+        "status": 200,
+        "duration": 5123,
+        "transferSize": 0,
+        "bodySize": -540
+      },
+      {
+        "url": "https://embed-cdn.spotifycdn.com/_next/static/chunks/4504-162c87597b0bb7a8.js",
+        "resourceType": "script",
+        "status": 200,
+        "duration": 5168,
+        "transferSize": 127980,
+        "bodySize": 127980
+      },
+      {
+        "url": "https://embed-cdn.spotifycdn.com/_next/static/chunks/4504-162c87597b0bb7a8.js",
+        "resourceType": "script",
+        "status": 200,
+        "duration": 5136,
+        "transferSize": 0,
+        "bodySize": -540
+      },
+      {
+        "url": "blob:https://open.spotify.com/7832848c-5b8a-420b-b0b8-724352a377d6",
+        "resourceType": "script",
+        "status": 200,
+        "duration": 662,
+        "transferSize": -1,
+        "bodySize": -59
+      },
+      {
+        "url": "blob:https://open.spotify.com/21baaaf7-d308-416b-abbb-518a8cf9baab",
+        "resourceType": "script",
+        "status": 200,
+        "duration": 528,
+        "transferSize": -1,
+        "bodySize": -59
+      },
+      {
+        "url": "https://syndication.twitter.com/settings?session_id=8a4276f9a7b40e85eb847d46535df261cee45030",
+        "resourceType": "fetch",
+        "status": 200,
+        "duration": 279,
+        "transferSize": 963,
+        "bodySize": 963
+      },
+      {
+        "url": "https://o22381.ingest.us.sentry.io/api/4505164808585216/envelope/?sentry_version=7&sentry_key=4cc707ab12ea4779b417479c0550a5cb&sentry_client=sentry.javascript.nextjs%2F10.45.0",
+        "resourceType": "fetch",
+        "status": 200,
+        "duration": 263,
+        "transferSize": 281,
+        "bodySize": 281
+      },
+      {
+        "url": "https://o22381.ingest.us.sentry.io/api/4505164808585216/envelope/?sentry_version=7&sentry_key=4cc707ab12ea4779b417479c0550a5cb&sentry_client=sentry.javascript.nextjs%2F10.45.0",
+        "resourceType": "fetch",
+        "status": 200,
+        "duration": 197,
+        "transferSize": 56,
+        "bodySize": 56
+      },
+      {
+        "url": "https://o22381.ingest.us.sentry.io/api/4505164808585216/envelope/?sentry_version=7&sentry_key=4cc707ab12ea4779b417479c0550a5cb&sentry_client=sentry.javascript.nextjs%2F10.45.0",
+        "resourceType": "fetch",
+        "status": 200,
+        "duration": 184,
+        "transferSize": 20,
+        "bodySize": 20
+      },
+      {
+        "url": "https://o22381.ingest.us.sentry.io/api/4505164808585216/envelope/?sentry_version=7&sentry_key=4cc707ab12ea4779b417479c0550a5cb&sentry_client=sentry.javascript.nextjs%2F10.45.0",
+        "resourceType": "fetch",
+        "status": 200,
+        "duration": 193,
+        "transferSize": 20,
+        "bodySize": 20
+      },
+      {
+        "url": "https://o22381.ingest.us.sentry.io/api/4505164808585216/envelope/?sentry_version=7&sentry_key=4cc707ab12ea4779b417479c0550a5cb&sentry_client=sentry.javascript.nextjs%2F10.45.0",
+        "resourceType": "fetch",
+        "status": 200,
+        "duration": 192,
+        "transferSize": 20,
+        "bodySize": 20
+      },
+      {
+        "url": "https://o22381.ingest.us.sentry.io/api/4505164808585216/envelope/?sentry_version=7&sentry_key=4cc707ab12ea4779b417479c0550a5cb&sentry_client=sentry.javascript.nextjs%2F10.45.0",
+        "resourceType": "fetch",
+        "status": 200,
+        "duration": 205,
+        "transferSize": 20,
+        "bodySize": 20
+      },
+      {
+        "url": "https://embed-cdn.spotifycdn.com/_next/static/chunks/spotify_player_o.fb37a86507bf6388.js",
+        "resourceType": "script",
+        "status": 200,
+        "duration": 256,
+        "transferSize": 4710,
+        "bodySize": 4710
+      },
+      {
+        "url": "https://embed-cdn.spotifycdn.com/_next/static/chunks/spotify_player_o.fb37a86507bf6388.js",
+        "resourceType": "script",
+        "status": 200,
+        "duration": 215,
+        "transferSize": 0,
+        "bodySize": -562
+      },
+      {
+        "url": "https://embed-cdn.spotifycdn.com/_next/static/chunks/5039.a54f1bd47316601a.js",
+        "resourceType": "script",
+        "status": 200,
+        "duration": 351,
+        "transferSize": 11893,
+        "bodySize": 11893
+      },
+      {
+        "url": "https://embed-cdn.spotifycdn.com/_next/static/chunks/5039.a54f1bd47316601a.js",
+        "resourceType": "script",
+        "status": 200,
+        "duration": 309,
+        "transferSize": 0,
+        "bodySize": -563
+      },
+      {
+        "url": "https://apresolve.spotify.com/?type=dealer-g2&type=spclient",
+        "resourceType": "xhr",
+        "status": 200,
+        "duration": 528,
+        "transferSize": 337,
+        "bodySize": 337
+      },
+      {
+        "url": "https://embed-cdn.spotifycdn.com/_next/static/chunks/da236039.77ef9cc158887e7e.js",
+        "resourceType": "script",
+        "status": 200,
+        "duration": 416,
+        "transferSize": 16825,
+        "bodySize": 16825
+      },
+      {
+        "url": "https://embed-cdn.spotifycdn.com/_next/static/chunks/da236039.77ef9cc158887e7e.js",
+        "resourceType": "script",
+        "status": 200,
+        "duration": 374,
+        "transferSize": 0,
+        "bodySize": -563
+      },
+      {
+        "url": "https://platform.twitter.com/js/timeline.9ee124fd8db0c3ba3796e9613bbc9e53.js",
+        "resourceType": "script",
+        "status": 200,
+        "duration": 202,
+        "transferSize": 3129,
+        "bodySize": 3129
+      },
+      {
+        "url": "https://apresolve.spotify.com/?type=dealer-g2&type=spclient",
+        "resourceType": "xhr",
+        "status": 200,
+        "duration": 656,
+        "transferSize": 171,
+        "bodySize": 171
+      },
+      {
+        "url": "https://apresolve.spotify.com/?type=dealer-g2&type=spclient",
+        "resourceType": "fetch",
+        "status": 200,
+        "duration": 750,
+        "transferSize": 137,
+        "bodySize": 137
+      },
+      {
+        "url": "https://syndication.twitter.com/srv/timeline-profile/screen-name/DaffaradityoA?dnt=false&embedId=twitter-widget-0&features=eyJ0ZndfdGltZWxpbmVfbGlzdCI6eyJidWNrZXQiOltdLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X2ZvbGxvd2VyX2NvdW50X3N1bnNldCI6eyJidWNrZXQiOnRydWUsInZlcnNpb24iOm51bGx9LCJ0ZndfdHdlZXRfZWRpdF9iYWNrZW5kIjp7ImJ1Y2tldCI6Im9uIiwidmVyc2lvbiI6bnVsbH0sInRmd19yZWZzcmNfc2Vzc2lvbiI6eyJidWNrZXQiOiJvbiIsInZlcnNpb24iOm51bGx9LCJ0ZndfZm9zbnJfc29mdF9pbnRlcnZlbnRpb25zX2VuYWJsZWQiOnsiYnVja2V0Ijoib24iLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X21peGVkX21lZGlhXzE1ODk3Ijp7ImJ1Y2tldCI6InRyZWF0bWVudCIsInZlcnNpb24iOm51bGx9LCJ0ZndfZXhwZXJpbWVudHNfY29va2llX2V4cGlyYXRpb24iOnsiYnVja2V0IjoxMjA5NjAwLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X3Nob3dfYmlyZHdhdGNoX3Bpdm90c19lbmFibGVkIjp7ImJ1Y2tldCI6Im9uIiwidmVyc2lvbiI6bnVsbH0sInRmd19kdXBsaWNhdGVfc2NyaWJlc190b19zZXR0aW5ncyI6eyJidWNrZXQiOiJvbiIsInZlcnNpb24iOm51bGx9LCJ0ZndfdXNlX3Byb2ZpbGVfaW1hZ2Vfc2hhcGVfZW5hYmxlZCI6eyJidWNrZXQiOiJvbiIsInZlcnNpb24iOm51bGx9LCJ0ZndfdmlkZW9faGxzX2R5bmFtaWNfbWFuaWZlc3RzXzE1MDgyIjp7ImJ1Y2tldCI6InRydWVfYml0cmF0ZSIsInZlcnNpb24iOm51bGx9LCJ0ZndfbGVnYWN5X3RpbWVsaW5lX3N1bnNldCI6eyJidWNrZXQiOnRydWUsInZlcnNpb24iOm51bGx9LCJ0ZndfdHdlZXRfZWRpdF9mcm9udGVuZCI6eyJidWNrZXQiOiJvbiIsInZlcnNpb24iOm51bGx9fQ%3D%3D&frame=false&hideBorder=false&hideFooter=true&hideHeader=false&hideScrollBar=false&lang=en&maxHeight=400px&origin=https%3A%2F%2Fradit024.github.io%2Fmy-portofolio%2F&sessionId=8a4276f9a7b40e85eb847d46535df261cee45030&showHeader=true&showReplies=false&theme=light&transparent=false&widgetsVersion=6a3ad42b224df%3A1778106238597",
+        "resourceType": "document",
+        "status": 429,
+        "duration": 253,
+        "transferSize": 270,
+        "bodySize": 270
+      },
+      {
+        "url": "https://embed-cdn.spotifycdn.com/_next/static/chunks/8272.358f99da4dbaadef.js",
+        "resourceType": "script",
+        "status": 200,
+        "duration": 758,
+        "transferSize": 0,
+        "bodySize": -540
+      },
+      {
+        "url": "https://embed-cdn.spotifycdn.com/_next/static/chunks/8272.358f99da4dbaadef.js",
+        "resourceType": "script",
+        "status": 200,
+        "duration": 800,
+        "transferSize": 88338,
+        "bodySize": 88338
+      },
+      {
+        "url": "https://apresolve.spotify.com/?type=dealer-g2&type=spclient",
+        "resourceType": "fetch",
+        "status": 200,
+        "duration": 888,
+        "transferSize": 135,
+        "bodySize": 135
+      },
+      {
+        "url": "https://gew4-spclient.spotify.com/gabo-receiver-service/public/v3/events",
+        "resourceType": "fetch",
+        "status": 200,
+        "duration": 886,
+        "transferSize": 126,
+        "bodySize": 126
+      },
+      {
+        "url": "https://gew4-spclient.spotify.com/gabo-receiver-service/public/v3/events",
+        "resourceType": "fetch",
+        "status": 200,
+        "duration": 822,
+        "transferSize": 32,
+        "bodySize": 32
+      },
+      {
+        "url": "https://gew4-spclient.spotify.com/gabo-receiver-service/public/v3/events",
+        "resourceType": "fetch",
+        "status": 200,
+        "duration": 435,
+        "transferSize": 32,
+        "bodySize": 32
+      },
+      {
+        "url": "https://gew4-spclient.spotify.com/gabo-receiver-service/public/v3/events",
+        "resourceType": "fetch",
+        "status": 200,
+        "duration": 487,
+        "transferSize": 32,
+        "bodySize": 32
+      },
+      {
+        "url": "https://gew4-spclient.spotify.com/gabo-receiver-service/public/v3/events",
+        "resourceType": "xhr",
+        "status": 200,
+        "duration": 439,
+        "transferSize": 32,
+        "bodySize": 32
+      },
+      {
+        "url": "https://gew4-spclient.spotify.com/gabo-receiver-service/public/v3/events",
+        "resourceType": "xhr",
+        "status": 200,
+        "duration": 424,
+        "transferSize": 32,
+        "bodySize": 32
+      },
+      {
+        "url": "https://gew4-spclient.spotify.com/gabo-receiver-service/public/v3/events",
+        "resourceType": "xhr",
+        "status": 200,
+        "duration": 452,
+        "transferSize": 32,
+        "bodySize": 32
+      },
+      {
+        "url": "https://gew4-spclient.spotify.com/gabo-receiver-service/public/v3/events",
+        "resourceType": "xhr",
+        "status": 200,
+        "duration": 496,
+        "transferSize": 32,
+        "bodySize": 32
+      }
+    ],
+    "cdpMetrics": {
+      "Timestamp": 115353.490197,
+      "AudioHandlers": 0,
+      "AudioWorkletProcessors": 0,
+      "Documents": 8,
+      "Frames": 6,
+      "JSEventListeners": 898,
+      "LayoutObjects": 806,
+      "MediaKeySessions": 0,
+      "MediaKeys": 0,
+      "Nodes": 1776,
+      "Resources": 155,
+      "ContextLifecycleStateObservers": 69,
+      "V8PerContextDatas": 12,
+      "WorkerGlobalScopes": 2,
+      "UACSSResources": 0,
+      "RTCPeerConnections": 0,
+      "ResourceFetchers": 10,
+      "AdSubframes": 0,
+      "DetachedScriptStates": 0,
+      "ArrayBufferContents": 110,
+      "LayoutCount": 1902,
+      "RecalcStyleCount": 2023,
+      "LayoutDuration": 1.056254,
+      "RecalcStyleDuration": 2.236266,
+      "DevToolsCommandDuration": 0.41152,
+      "ScriptDuration": 9.667608,
+      "V8CompileDuration": 0.027747,
+      "TaskDuration": 24.753879,
+      "TaskOtherDuration": 11.354484,
+      "ThreadTime": 6.245249,
+      "ProcessTime": 45.660254,
+      "JSHeapUsedSize": 40987584,
+      "JSHeapTotalSize": 68374528,
+      "FirstMeaningfulPaint": 115318.406153,
+      "DomContentLoaded": 115318.23191,
+      "NavigationStart": 115315.336655
+    },
+    "navigation": {
+      "dns": 4,
+      "tcp": 61,
+      "ttfb": 30,
+      "download": 146,
+      "domInteractive": 307,
+      "domContentLoaded": 2895,
+      "loadComplete": 4404,
+      "transferSize": 1239
+    },
+    "perf": {
+      "fcp": 2960,
+      "lcp": 8224,
+      "lcpElement": "P.greeting-text-p.subTitle",
+      "cls": 0.007608484254142431,
+      "tbt": 2113,
+      "longTasks": [
+        {
+          "duration": 183,
+          "startTime": 1957
+        },
+        {
+          "duration": 103,
+          "startTime": 2144
+        },
+        {
+          "duration": 214,
+          "startTime": 2686
+        },
+        {
+          "duration": 99,
+          "startTime": 2960
+        },
+        {
+          "duration": 67,
+          "startTime": 3075
+        },
+        {
+          "duration": 233,
+          "startTime": 3929
+        },
+        {
+          "duration": 72,
+          "startTime": 4167
+        },
+        {
+          "duration": 543,
+          "startTime": 5064
+        },
+        {
+          "duration": 58,
+          "startTime": 6580
+        },
+        {
+          "duration": 123,
+          "startTime": 6817
+        },
+        {
+          "duration": 115,
+          "startTime": 9516
+        },
+        {
+          "duration": 93,
+          "startTime": 10735
+        },
+        {
+          "duration": 270,
+          "startTime": 10865
+        },
+        {
+          "duration": 342,
+          "startTime": 11287
+        },
+        {
+          "duration": 184,
+          "startTime": 11720
+        },
+        {
+          "duration": 60,
+          "startTime": 11964
+        },
+        {
+          "duration": 97,
+          "startTime": 12081
+        },
+        {
+          "duration": 68,
+          "startTime": 12195
+        },
+        {
+          "duration": 139,
+          "startTime": 12869
+        }
+      ],
+      "renderTimeline": [
+        {
+          "event": "FCP",
+          "time": 2960
+        },
+        {
+          "event": "LCP",
+          "time": 2960,
+          "element": "DIV.splash-title-container"
+        },
+        {
+          "event": "LCP",
+          "time": 8224,
+          "element": "P.greeting-text-p.subTitle"
+        }
+      ]
+    },
+    "memory": {
+      "usedJSHeapMB": 45,
+      "totalJSHeapMB": 73
+    },
+    "resources": [
+      {
+        "name": "https://radit024.github.io/static/media/Montserrat-Regular.ee653992.ttf",
+        "initiatorType": "link",
+        "duration": 231,
+        "transferSize": 300,
+        "encodedBodySize": 0,
+        "decodedBodySize": 0,
+        "startTime": 291,
+        "responseEnd": 522
+      },
+      {
+        "name": "https://radit024.github.io/static/media/Agustina.21f233e1.woff",
+        "initiatorType": "link",
+        "duration": 285,
+        "transferSize": 300,
+        "encodedBodySize": 0,
+        "decodedBodySize": 0,
+        "startTime": 293,
+        "responseEnd": 578
+      },
+      {
+        "name": "https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@5.15.4/css/all.min.css",
+        "initiatorType": "link",
+        "duration": 448,
+        "transferSize": 13182,
+        "encodedBodySize": 12882,
+        "decodedBodySize": 59305,
+        "startTime": 294,
+        "responseEnd": 742
+      },
+      {
+        "name": "https://www.googletagmanager.com/gtag/js?id=UA-135618960-2",
+        "initiatorType": "script",
+        "duration": 1656,
+        "transferSize": 0,
+        "encodedBodySize": 0,
+        "decodedBodySize": 0,
+        "startTime": 294,
+        "responseEnd": 1950
+      },
+      {
+        "name": "https://radit024.github.io/my-portofolio/static/js/main.dce33df4.js",
+        "initiatorType": "script",
+        "duration": 2384,
+        "transferSize": 257690,
+        "encodedBodySize": 257390,
+        "decodedBodySize": 1211371,
+        "startTime": 294,
+        "responseEnd": 2679
+      },
+      {
+        "name": "https://radit024.github.io/my-portofolio/static/css/main.30bb81db.css",
+        "initiatorType": "link",
+        "duration": 279,
+        "transferSize": 5866,
+        "encodedBodySize": 5566,
+        "decodedBodySize": 25953,
+        "startTime": 294,
+        "responseEnd": 573
+      },
+      {
+        "name": "https://www.googletagmanager.com/gtag/js?id=G-001DL7NH6R&cx=c&gtm=4e6a10",
+        "initiatorType": "script",
+        "duration": 1709,
+        "transferSize": 0,
+        "encodedBodySize": 0,
+        "decodedBodySize": 0,
+        "startTime": 2213,
+        "responseEnd": 3922
+      },
+      {
+        "name": "https://www.google-analytics.com/analytics.js",
+        "initiatorType": "script",
+        "duration": 508,
+        "transferSize": 0,
+        "encodedBodySize": 0,
+        "decodedBodySize": 0,
+        "startTime": 2247,
+        "responseEnd": 2756
+      },
+      {
+        "name": "https://radit024.github.io/my-portofolio/static/media/Montserrat-Regular.3cd786652b8a2e9d41f2.ttf",
+        "initiatorType": "css",
+        "duration": 1455,
+        "transferSize": 113136,
+        "encodedBodySize": 112836,
+        "decodedBodySize": 245708,
+        "startTime": 2898,
+        "responseEnd": 4353
+      },
+      {
+        "name": "https://radit024.github.io/my-portofolio/static/media/Agustina.eb0c59dda4cc308cba96.woff",
+        "initiatorType": "css",
+        "duration": 1500,
+        "transferSize": 97232,
+        "encodedBodySize": 96932,
+        "decodedBodySize": 96932,
+        "startTime": 2899,
+        "responseEnd": 4399
+      },
+      {
+        "name": "https://www.google-analytics.com/g/collect?v=2&tid=G-001DL7NH6R&gtm=45je6a10v9114951033za20gxf1&_p=1791221413767&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAI&cid=1250674046.1791221417&frm=0&ngs=1&pscdl=noapi&rcb=16&sr=412x915&uaa=arm&uab=64&uafvl=HeadlessChrome%3B153.0.8010.12%7CNot_A%2520Brand%3B8.0.0.0%7CChromium%3B153.0.8010.12&uam=&uamb=1&uap=Android&uapv=14&uaw=0&ul=en-us&_s=1&tag_exp=115616985~115938466~115938469~118897920~118897930~120213116~120385423~120469145~120469153~121280969&sid=1791221417&sct=1&seg=0&dl=https%3A%2F%2Fradit024.github.io%2Fmy-portofolio%2F&dt=Daffa%20Radityo%20Portfolio&en=page_view&_fv=1&_ss=1&tfd=4234",
+        "initiatorType": "fetch",
+        "duration": 177,
+        "transferSize": 0,
+        "encodedBodySize": 0,
+        "decodedBodySize": 0,
+        "startTime": 4238,
+        "responseEnd": 4415
+      },
+      {
+        "name": "https://open.spotify.com/embed/track/4eNf4ckHiHsajLCBaOC80l?utm_source=generator",
+        "initiatorType": "iframe",
+        "duration": 6602,
+        "transferSize": 0,
+        "encodedBodySize": 0,
+        "decodedBodySize": 0,
+        "startTime": 5111,
+        "responseEnd": 11713
+      },
+      {
+        "name": "https://open.spotify.com/embed/track/6TTAZeyRDN03BHlhQ9Lq6L?utm_source=generator",
+        "initiatorType": "iframe",
+        "duration": 6797,
+        "transferSize": 0,
+        "encodedBodySize": 0,
+        "decodedBodySize": 0,
+        "startTime": 5121,
+        "responseEnd": 11918
+      },
+      {
+        "name": "https://radit024.github.io/profile.json",
+        "initiatorType": "fetch",
+        "duration": 195,
+        "transferSize": 5442,
+        "encodedBodySize": 5142,
+        "decodedBodySize": 9115,
+        "startTime": 5574,
+        "responseEnd": 5769
+      },
+      {
+        "name": "https://radit024.github.io/blogs.json",
+        "initiatorType": "fetch",
+        "duration": 237,
+        "transferSize": 5442,
+        "encodedBodySize": 5142,
+        "decodedBodySize": 9115,
+        "startTime": 5576,
+        "responseEnd": 5812
+      },
+      {
+        "name": "https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/72x72/2600.png",
+        "initiatorType": "img",
+        "duration": 247,
+        "transferSize": 808,
+        "encodedBodySize": 508,
+        "decodedBodySize": 530,
+        "startTime": 5600,
+        "responseEnd": 5847
+      },
+      {
+        "name": "https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/72x72/1f44b.png",
+        "initiatorType": "img",
+        "duration": 270,
+        "transferSize": 1525,
+        "encodedBodySize": 1225,
+        "decodedBodySize": 1285,
+        "startTime": 5601,
+        "responseEnd": 5871
+      },
+      {
+        "name": "https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/72x72/26a1.png",
+        "initiatorType": "img",
+        "duration": 231,
+        "transferSize": 751,
+        "encodedBodySize": 451,
+        "decodedBodySize": 446,
+        "startTime": 5601,
+        "responseEnd": 5832
+      },
+      {
+        "name": "https://radit024.github.io/my-portofolio/static/media/SMP%2026.6855c6c0e2180d135179.webp",
+        "initiatorType": "img",
+        "duration": 271,
+        "transferSize": 5570,
+        "encodedBodySize": 5270,
+        "decodedBodySize": 5270,
+        "startTime": 5606,
+        "responseEnd": 5877
+      },
+      {
+        "name": "https://radit024.github.io/my-portofolio/static/media/SD%20TJS.a30e42be8a7a31371b9d.jpeg",
+        "initiatorType": "img",
+        "duration": 316,
+        "transferSize": 11176,
+        "encodedBodySize": 10876,
+        "decodedBodySize": 10876,
+        "startTime": 5606,
+        "responseEnd": 5923
+      },
+      {
+        "name": "https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/72x72/260e.png",
+        "initiatorType": "img",
+        "duration": 255,
+        "transferSize": 1166,
+        "encodedBodySize": 866,
+        "decodedBodySize": 914,
+        "startTime": 5607,
+        "responseEnd": 5862
+      },
+      {
+        "name": "https://platform.twitter.com/widgets.js",
+        "initiatorType": "script",
+        "duration": 871,
+        "transferSize": 0,
+        "encodedBodySize": 0,
+        "decodedBodySize": 0,
+        "startTime": 5707,
+        "responseEnd": 6578
+      },
+      {
+        "name": "https://platform.twitter.com/widgets/widget_iframe.1227a5674072e080ffb1ba14ac0c1079.html?origin=https%3A%2F%2Fradit024.github.io",
+        "initiatorType": "iframe",
+        "duration": 4218,
+        "transferSize": 0,
+        "encodedBodySize": 0,
+        "decodedBodySize": 0,
+        "startTime": 6620,
+        "responseEnd": 10838
+      },
+      {
+        "name": "https://platform.twitter.com/js/timeline.9ee124fd8db0c3ba3796e9613bbc9e53.js",
+        "initiatorType": "script",
+        "duration": 200,
+        "transferSize": 0,
+        "encodedBodySize": 0,
+        "decodedBodySize": 0,
+        "startTime": 12277,
+        "responseEnd": 12477
+      },
+      {
+        "name": "https://syndication.twitter.com/srv/timeline-profile/screen-name/DaffaradityoA?dnt=false&embedId=twitter-widget-0&features=eyJ0ZndfdGltZWxpbmVfbGlzdCI6eyJidWNrZXQiOltdLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X2ZvbGxvd2VyX2NvdW50X3N1bnNldCI6eyJidWNrZXQiOnRydWUsInZlcnNpb24iOm51bGx9LCJ0ZndfdHdlZXRfZWRpdF9iYWNrZW5kIjp7ImJ1Y2tldCI6Im9uIiwidmVyc2lvbiI6bnVsbH0sInRmd19yZWZzcmNfc2Vzc2lvbiI6eyJidWNrZXQiOiJvbiIsInZlcnNpb24iOm51bGx9LCJ0ZndfZm9zbnJfc29mdF9pbnRlcnZlbnRpb25zX2VuYWJsZWQiOnsiYnVja2V0Ijoib24iLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X21peGVkX21lZGlhXzE1ODk3Ijp7ImJ1Y2tldCI6InRyZWF0bWVudCIsInZlcnNpb24iOm51bGx9LCJ0ZndfZXhwZXJpbWVudHNfY29va2llX2V4cGlyYXRpb24iOnsiYnVja2V0IjoxMjA5NjAwLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X3Nob3dfYmlyZHdhdGNoX3Bpdm90c19lbmFibGVkIjp7ImJ1Y2tldCI6Im9uIiwidmVyc2lvbiI6bnVsbH0sInRmd19kdXBsaWNhdGVfc2NyaWJlc190b19zZXR0aW5ncyI6eyJidWNrZXQiOiJvbiIsInZlcnNpb24iOm51bGx9LCJ0ZndfdXNlX3Byb2ZpbGVfaW1hZ2Vfc2hhcGVfZW5hYmxlZCI6eyJidWNrZXQiOiJvbiIsInZlcnNpb24iOm51bGx9LCJ0ZndfdmlkZW9faGxzX2R5bmFtaWNfbWFuaWZlc3RzXzE1MDgyIjp7ImJ1Y2tldCI6InRydWVfYml0cmF0ZSIsInZlcnNpb24iOm51bGx9LCJ0ZndfbGVnYWN5X3RpbWVsaW5lX3N1bnNldCI6eyJidWNrZXQiOnRydWUsInZlcnNpb24iOm51bGx9LCJ0ZndfdHdlZXRfZWRpdF9mcm9udGVuZCI6eyJidWNrZXQiOiJvbiIsInZlcnNpb24iOm51bGx9fQ%3D%3D&frame=false&hideBorder=false&hideFooter=true&hideHeader=false&hideScrollBar=false&lang=en&maxHeight=400px&origin=https%3A%2F%2Fradit024.github.io%2Fmy-portofolio%2F&sessionId=8a4276f9a7b40e85eb847d46535df261cee45030&showHeader=true&showReplies=false&theme=light&transparent=false&widgetsVersion=6a3ad42b224df%3A1778106238597",
+        "initiatorType": "iframe",
+        "duration": 302,
+        "transferSize": 0,
+        "encodedBodySize": 0,
+        "decodedBodySize": 0,
+        "startTime": 12533,
+        "responseEnd": 12836
+      }
+    ],
+    "domNodes": 707
+  },
+  {
+    "scenario": "Local Build - Desktop (Post-Splash Content)",
+    "url": "http://localhost:4173/my-portofolio/",
+    "screenshotPath": "D:\\Vs Code Project\\my-portofolio\\perf-results\\local_build___desktop__post_splash_content_.png",
+    "mainContentLoadedTime": 4127,
+    "themeToggleDuration": null,
+    "modeSwitchDuration": 82,
+    "scrollTotalTime": 1650,
+    "consoleErrors": [
+      "SyntaxError: Unexpected token '<', \"<!doctype \"... is not valid JSON (because of this error, nothing is shown in place of Projects section. Also check if Projects section has been configured)",
+      "SyntaxError: Unexpected token '<', \"<!doctype \"... is not valid JSON (because of this error Blogs section could not be displayed. Blogs section has reverted to default)",
+      "Failed to load resource: the server responded with a status of 429 ()",
+      "Error: <path> attribute d: Expected number, \"….037 2.821-2.912s1.057-1.304 2.2…\"."
+    ],
+    "networkRequests": [
+      {
+        "url": "http://localhost:4173/my-portofolio/",
+        "resourceType": "document",
+        "status": 200,
+        "duration": 34,
+        "transferSize": 2904,
+        "bodySize": 2748
+      },
+      {
+        "url": "http://localhost:4173/static/media/Montserrat-Regular.ee653992.ttf",
+        "resourceType": "font",
+        "status": 200,
+        "duration": 10,
+        "transferSize": 2904,
+        "bodySize": 2748
+      },
+      {
+        "url": "http://localhost:4173/static/media/Agustina.21f233e1.woff",
+        "resourceType": "font",
+        "status": 200,
+        "duration": 16,
+        "transferSize": 2904,
+        "bodySize": 2748
+      },
+      {
+        "url": "http://localhost:4173/my-portofolio/static/css/main.12b3def5.css",
+        "resourceType": "stylesheet",
+        "status": 200,
+        "duration": 19,
+        "transferSize": 67396,
+        "bodySize": 67241
+      },
+      {
+        "url": "http://localhost:4173/my-portofolio/static/js/main.22395016.js",
+        "resourceType": "script",
+        "status": 200,
+        "duration": 45,
+        "transferSize": 3881402,
+        "bodySize": 3881233
+      },
+      {
+        "url": "https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@5.15.4/css/all.min.css",
+        "resourceType": "stylesheet",
+        "status": 200,
+        "duration": 374,
+        "transferSize": 13653,
+        "bodySize": 13653
+      },
+      {
+        "url": "http://localhost:4173/my-portofolio/static/media/Agustina.eb0c59dda4cc308cba96.woff",
+        "resourceType": "font",
+        "status": 200,
+        "duration": 57,
+        "transferSize": 97110,
+        "bodySize": 96954
+      },
+      {
+        "url": "http://localhost:4173/my-portofolio/static/media/Montserrat-Regular.3cd786652b8a2e9d41f2.ttf",
+        "resourceType": "font",
+        "status": 200,
+        "duration": 64,
+        "transferSize": 245903,
+        "bodySize": 245748
+      },
+      {
+        "url": "https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@5.15.4/webfonts/fa-brands-400.woff2",
+        "resourceType": "font",
+        "status": 200,
+        "duration": 304,
+        "transferSize": 77486,
+        "bodySize": 77486
+      },
+      {
+        "url": "https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@5.15.4/webfonts/fa-solid-900.woff2",
+        "resourceType": "font",
+        "status": 200,
+        "duration": 373,
+        "transferSize": 78977,
+        "bodySize": 78977
+      },
+      {
+        "url": "https://www.googletagmanager.com/gtag/js?id=UA-135618960-2",
+        "resourceType": "script",
+        "status": 200,
+        "duration": 1148,
+        "transferSize": 136681,
+        "bodySize": 136681
+      },
+      {
+        "url": "https://www.googletagmanager.com/gtag/js?id=G-001DL7NH6R&cx=c&gtm=4e6a10",
+        "resourceType": "script",
+        "status": 200,
+        "duration": 289,
+        "transferSize": 162802,
+        "bodySize": 162802
+      },
+      {
+        "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-001DL7NH6R&gtm=45je6a10v9114951033za20gxf1&_p=1791221452006&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAI&cid=2126784978.1791221454&frm=0&ngs=1&pscdl=noapi&rcb=12&sr=1440x900&uaa=x86&uab=64&uafvl=HeadlessChrome%3B153.0.8010.12%7CNot_A%2520Brand%3B8.0.0.0%7CChromium%3B153.0.8010.12&uam=&uamb=0&uap=Windows&uapv=19.0.0&uaw=0&ul=en-us&_s=1&tag_exp=115938465~115938468~118897920~118897930~120213116~120385422~120469145~120469153~121246027~121246035&sid=1791221453&sct=1&seg=0&dl=http%3A%2F%2Flocalhost%2Fmy-portofolio%2F&dt=Daffa%20Radityo%20Portfolio&en=page_view&_fv=1&_nsi=1&_ss=1&tfd=1589",
+        "resourceType": "fetch",
+        "status": "FAILED",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://www.google-analytics.com/analytics.js",
+        "resourceType": "script",
+        "status": 200,
+        "duration": 407,
+        "transferSize": 21409,
+        "bodySize": 21409
+      },
+      {
+        "url": "http://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/72x72/2600.png",
+        "resourceType": "image",
+        "status": 307,
+        "duration": 2,
+        "transferSize": 190,
+        "bodySize": 0
+      },
+      {
+        "url": "http://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/72x72/1f44b.png",
+        "resourceType": "image",
+        "status": 307,
+        "duration": 2,
+        "transferSize": 191,
+        "bodySize": 0
+      },
+      {
+        "url": "http://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/72x72/1f3c6.png",
+        "resourceType": "image",
+        "status": 307,
+        "duration": 1,
+        "transferSize": 191,
+        "bodySize": 0
+      },
+      {
+        "url": "http://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/72x72/1f3a7.png",
+        "resourceType": "image",
+        "status": 307,
+        "duration": 19,
+        "transferSize": 191,
+        "bodySize": 0
+      },
+      {
+        "url": "http://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/72x72/260e.png",
+        "resourceType": "image",
+        "status": 307,
+        "duration": 19,
+        "transferSize": 190,
+        "bodySize": 0
+      },
+      {
+        "url": "http://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/72x72/2764.png",
+        "resourceType": "image",
+        "status": 307,
+        "duration": 19,
+        "transferSize": 190,
+        "bodySize": 0
+      },
+      {
+        "url": "http://localhost:4173/my-portofolio/static/media/googleLogo.d995fc0fed91584d8307c2c82fa49e0c.svg",
+        "resourceType": "image",
+        "status": 200,
+        "duration": 21,
+        "transferSize": 1082,
+        "bodySize": 922
+      },
+      {
+        "url": "http://localhost:4173/my-portofolio/static/media/binanceLogo.dc57bdb2f1456d1ea37a9f1b07bdacf9.svg",
+        "resourceType": "image",
+        "status": 200,
+        "duration": 22,
+        "transferSize": 820,
+        "bodySize": 660
+      },
+      {
+        "url": "http://localhost:4173/my-portofolio/static/media/alibabaCloudLogo.2125b16037003ab60fe1ef8c0f544621.svg",
+        "resourceType": "image",
+        "status": 200,
+        "duration": 24,
+        "transferSize": 872,
+        "bodySize": 712
+      },
+      {
+        "url": "http://localhost:4173/profile.json",
+        "resourceType": "fetch",
+        "status": 200,
+        "duration": 4,
+        "transferSize": 2904,
+        "bodySize": 2748
+      },
+      {
+        "url": "http://localhost:4173/blogs.json",
+        "resourceType": "fetch",
+        "status": 200,
+        "duration": 3,
+        "transferSize": 2904,
+        "bodySize": 2748
+      },
+      {
+        "url": "https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/72x72/1f3c6.png",
+        "resourceType": "image",
+        "status": 200,
+        "duration": 117,
+        "transferSize": 1548,
+        "bodySize": 1548
+      },
+      {
+        "url": "https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/72x72/2764.png",
+        "resourceType": "image",
+        "status": 200,
+        "duration": 100,
+        "transferSize": 774,
+        "bodySize": 774
+      },
+      {
+        "url": "https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/72x72/260e.png",
+        "resourceType": "image",
+        "status": 200,
+        "duration": 100,
+        "transferSize": 1167,
+        "bodySize": 1167
+      },
+      {
+        "url": "https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/72x72/1f44b.png",
+        "resourceType": "image",
+        "status": 200,
+        "duration": 119,
+        "transferSize": 1526,
+        "bodySize": 1526
+      },
+      {
+        "url": "https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/72x72/2600.png",
+        "resourceType": "image",
+        "status": 200,
+        "duration": 119,
+        "transferSize": 813,
+        "bodySize": 813
+      },
+      {
+        "url": "https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/72x72/1f3a7.png",
+        "resourceType": "image",
+        "status": 200,
+        "duration": 102,
+        "transferSize": 1019,
+        "bodySize": 1019
+      },
+      {
+        "url": "https://platform.twitter.com/widgets.js",
+        "resourceType": "script",
+        "status": 200,
+        "duration": 235,
+        "transferSize": 28122,
+        "bodySize": 28122
+      },
+      {
+        "url": "https://platform.twitter.com/widgets/widget_iframe.1227a5674072e080ffb1ba14ac0c1079.html?origin=http%3A%2F%2Flocalhost%3A4173",
+        "resourceType": "document",
+        "status": 200,
+        "duration": 215,
+        "transferSize": 105657,
+        "bodySize": 105657
+      },
+      {
+        "url": "https://syndication.twitter.com/settings?session_id=00e28d46641525fa2b7d0bc5f4d17b88bf5449ea",
+        "resourceType": "fetch",
+        "status": 200,
+        "duration": 502,
+        "transferSize": 962,
+        "bodySize": 962
+      },
+      {
+        "url": "https://platform.twitter.com/js/timeline.9ee124fd8db0c3ba3796e9613bbc9e53.js",
+        "resourceType": "script",
+        "status": 200,
+        "duration": 68,
+        "transferSize": 3129,
+        "bodySize": 3129
+      },
+      {
+        "url": "https://syndication.twitter.com/srv/timeline-profile/screen-name/DaffaradityoA?dnt=false&embedId=twitter-widget-0&features=eyJ0ZndfdGltZWxpbmVfbGlzdCI6eyJidWNrZXQiOltdLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X2ZvbGxvd2VyX2NvdW50X3N1bnNldCI6eyJidWNrZXQiOnRydWUsInZlcnNpb24iOm51bGx9LCJ0ZndfdHdlZXRfZWRpdF9iYWNrZW5kIjp7ImJ1Y2tldCI6Im9uIiwidmVyc2lvbiI6bnVsbH0sInRmd19yZWZzcmNfc2Vzc2lvbiI6eyJidWNrZXQiOiJvbiIsInZlcnNpb24iOm51bGx9LCJ0ZndfZm9zbnJfc29mdF9pbnRlcnZlbnRpb25zX2VuYWJsZWQiOnsiYnVja2V0Ijoib24iLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X21peGVkX21lZGlhXzE1ODk3Ijp7ImJ1Y2tldCI6InRyZWF0bWVudCIsInZlcnNpb24iOm51bGx9LCJ0ZndfZXhwZXJpbWVudHNfY29va2llX2V4cGlyYXRpb24iOnsiYnVja2V0IjoxMjA5NjAwLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X3Nob3dfYmlyZHdhdGNoX3Bpdm90c19lbmFibGVkIjp7ImJ1Y2tldCI6Im9uIiwidmVyc2lvbiI6bnVsbH0sInRmd19kdXBsaWNhdGVfc2NyaWJlc190b19zZXR0aW5ncyI6eyJidWNrZXQiOiJvbiIsInZlcnNpb24iOm51bGx9LCJ0ZndfdXNlX3Byb2ZpbGVfaW1hZ2Vfc2hhcGVfZW5hYmxlZCI6eyJidWNrZXQiOiJvbiIsInZlcnNpb24iOm51bGx9LCJ0ZndfdmlkZW9faGxzX2R5bmFtaWNfbWFuaWZlc3RzXzE1MDgyIjp7ImJ1Y2tldCI6InRydWVfYml0cmF0ZSIsInZlcnNpb24iOm51bGx9LCJ0ZndfbGVnYWN5X3RpbWVsaW5lX3N1bnNldCI6eyJidWNrZXQiOnRydWUsInZlcnNpb24iOm51bGx9LCJ0ZndfdHdlZXRfZWRpdF9mcm9udGVuZCI6eyJidWNrZXQiOiJvbiIsInZlcnNpb24iOm51bGx9fQ%3D%3D&frame=false&hideBorder=false&hideFooter=true&hideHeader=false&hideScrollBar=false&lang=en&maxHeight=400px&origin=http%3A%2F%2Flocalhost%3A4173%2Fmy-portofolio%2F&sessionId=00e28d46641525fa2b7d0bc5f4d17b88bf5449ea&showHeader=true&showReplies=false&theme=light&transparent=false&widgetsVersion=6a3ad42b224df%3A1778106238597",
+        "resourceType": "document",
+        "status": 429,
+        "duration": 239,
+        "transferSize": 248,
+        "bodySize": 248
+      },
+      {
+        "url": "http://localhost:4173/my-portofolio/static/media/agrilink-diagram.2193a9dfd689a77753f72ae186a5baa7.svg",
+        "resourceType": "image",
+        "status": 200,
+        "duration": 18,
+        "transferSize": 1847,
+        "bodySize": 1687
+      },
+      {
+        "url": "http://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/72x72/1f4c8.png",
+        "resourceType": "image",
+        "status": 307,
+        "duration": 15,
+        "transferSize": 191,
+        "bodySize": 0
+      },
+      {
+        "url": "http://localhost:4173/my-portofolio/static/media/arina-field.1b313bc6335575e7fd12.jpg",
+        "resourceType": "image",
+        "status": 200,
+        "duration": 128,
+        "transferSize": 3241813,
+        "bodySize": 3241656
+      },
+      {
+        "url": "https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/72x72/1f4c8.png",
+        "resourceType": "image",
+        "status": 200,
+        "duration": 29,
+        "transferSize": 1059,
+        "bodySize": 1059
+      }
+    ],
+    "cdpMetrics": {
+      "Timestamp": 115391.449568,
+      "AudioHandlers": 0,
+      "AudioWorkletProcessors": 0,
+      "Documents": 7,
+      "Frames": 7,
+      "JSEventListeners": 287,
+      "LayoutObjects": 4272,
+      "MediaKeySessions": 0,
+      "MediaKeys": 0,
+      "Nodes": 5457,
+      "Resources": 37,
+      "ContextLifecycleStateObservers": 22,
+      "V8PerContextDatas": 6,
+      "WorkerGlobalScopes": 0,
+      "UACSSResources": 0,
+      "RTCPeerConnections": 0,
+      "ResourceFetchers": 7,
+      "AdSubframes": 0,
+      "DetachedScriptStates": 2,
+      "ArrayBufferContents": 621,
+      "LayoutCount": 2068,
+      "RecalcStyleCount": 2331,
+      "LayoutDuration": 0.342515,
+      "RecalcStyleDuration": 0.660319,
+      "DevToolsCommandDuration": 0.109611,
+      "ScriptDuration": 2.550836,
+      "V8CompileDuration": 0.007277,
+      "TaskDuration": 7.756799,
+      "TaskOtherDuration": 4.086241,
+      "ThreadTime": 7.636637,
+      "ProcessTime": 22.797034,
+      "JSHeapUsedSize": 97360868,
+      "JSHeapTotalSize": 144519168,
+      "FirstMeaningfulPaint": 115354.433108,
+      "DomContentLoaded": 115354.331712,
+      "NavigationStart": 115353.83644
+    },
+    "navigation": {
+      "dns": 23,
+      "tcp": 1,
+      "ttfb": 8,
+      "download": 1,
+      "domInteractive": 46,
+      "domContentLoaded": 495,
+      "loadComplete": 1666,
+      "transferSize": 3036
+    },
+    "perf": {
+      "fcp": 600,
+      "lcp": 5140,
+      "lcpElement": "P.greeting-text-p.subTitle",
+      "cls": 0.052961552322450485,
+      "tbt": 380,
+      "longTasks": [
+        {
+          "duration": 75,
+          "startTime": 420
+        },
+        {
+          "duration": 52,
+          "startTime": 514
+        },
+        {
+          "duration": 284,
+          "startTime": 3782
+        },
+        {
+          "duration": 102,
+          "startTime": 9202
+        },
+        {
+          "duration": 117,
+          "startTime": 34737
+        }
+      ],
+      "renderTimeline": [
+        {
+          "event": "FCP",
+          "time": 600
+        },
+        {
+          "event": "LCP",
+          "time": 600,
+          "element": "DIV.ambient-floater"
+        },
+        {
+          "event": "LCP",
+          "time": 4104,
+          "element": "A.logo"
+        },
+        {
+          "event": "LCP",
+          "time": 5140,
+          "element": "P.greeting-text-p.subTitle"
+        }
+      ]
+    },
+    "memory": {
+      "usedJSHeapMB": 104,
+      "totalJSHeapMB": 150
+    },
+    "resources": [
+      {
+        "name": "http://localhost:4173/static/media/Montserrat-Regular.ee653992.ttf",
+        "initiatorType": "link",
+        "duration": 10,
+        "transferSize": 3036,
+        "encodedBodySize": 2736,
+        "decodedBodySize": 2736,
+        "startTime": 39,
+        "responseEnd": 49
+      },
+      {
+        "name": "http://localhost:4173/static/media/Agustina.21f233e1.woff",
+        "initiatorType": "link",
+        "duration": 16,
+        "transferSize": 3036,
+        "encodedBodySize": 2736,
+        "decodedBodySize": 2736,
+        "startTime": 40,
+        "responseEnd": 56
+      },
+      {
+        "name": "https://www.googletagmanager.com/gtag/js?id=UA-135618960-2",
+        "initiatorType": "script",
+        "duration": 1148,
+        "transferSize": 0,
+        "encodedBodySize": 0,
+        "decodedBodySize": 0,
+        "startTime": 40,
+        "responseEnd": 1187
+      },
+      {
+        "name": "https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@5.15.4/css/all.min.css",
+        "initiatorType": "link",
+        "duration": 374,
+        "transferSize": 13182,
+        "encodedBodySize": 12882,
+        "decodedBodySize": 59305,
+        "startTime": 40,
+        "responseEnd": 413
+      },
+      {
+        "name": "http://localhost:4173/my-portofolio/static/css/main.12b3def5.css",
+        "initiatorType": "link",
+        "duration": 20,
+        "transferSize": 67520,
+        "encodedBodySize": 67220,
+        "decodedBodySize": 67220,
+        "startTime": 40,
+        "responseEnd": 59
+      },
+      {
+        "name": "http://localhost:4173/my-portofolio/static/js/main.22395016.js",
+        "initiatorType": "script",
+        "duration": 45,
+        "transferSize": 3880989,
+        "encodedBodySize": 3880689,
+        "decodedBodySize": 3880689,
+        "startTime": 40,
+        "responseEnd": 85
+      },
+      {
+        "name": "http://localhost:4173/my-portofolio/static/media/Montserrat-Regular.3cd786652b8a2e9d41f2.ttf",
+        "initiatorType": "css",
+        "duration": 64,
+        "transferSize": 246008,
+        "encodedBodySize": 245708,
+        "decodedBodySize": 245708,
+        "startTime": 517,
+        "responseEnd": 581
+      },
+      {
+        "name": "http://localhost:4173/my-portofolio/static/media/Agustina.eb0c59dda4cc308cba96.woff",
+        "initiatorType": "css",
+        "duration": 57,
+        "transferSize": 97232,
+        "encodedBodySize": 96932,
+        "decodedBodySize": 96932,
+        "startTime": 517,
+        "responseEnd": 575
+      },
+      {
+        "name": "https://www.googletagmanager.com/gtag/js?id=G-001DL7NH6R&cx=c&gtm=4e6a10",
+        "initiatorType": "script",
+        "duration": 288,
+        "transferSize": 0,
+        "encodedBodySize": 0,
+        "decodedBodySize": 0,
+        "startTime": 1236,
+        "responseEnd": 1525
+      },
+      {
+        "name": "https://www.google-analytics.com/analytics.js",
+        "initiatorType": "script",
+        "duration": 406,
+        "transferSize": 0,
+        "encodedBodySize": 0,
+        "decodedBodySize": 0,
+        "startTime": 1242,
+        "responseEnd": 1648
+      },
+      {
+        "name": "https://www.google-analytics.com/g/collect?v=2&tid=G-001DL7NH6R&gtm=45je6a10v9114951033za20gxf1&_p=1791221452006&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAI&cid=2126784978.1791221454&frm=0&ngs=1&pscdl=noapi&rcb=12&sr=1440x900&uaa=x86&uab=64&uafvl=HeadlessChrome%3B153.0.8010.12%7CNot_A%2520Brand%3B8.0.0.0%7CChromium%3B153.0.8010.12&uam=&uamb=0&uap=Windows&uapv=19.0.0&uaw=0&ul=en-us&_s=1&tag_exp=115938465~115938468~118897920~118897930~120213116~120385422~120469145~120469153~121246027~121246035&sid=1791221453&sct=1&seg=0&dl=http%3A%2F%2Flocalhost%2Fmy-portofolio%2F&dt=Daffa%20Radityo%20Portfolio&en=page_view&_fv=1&_nsi=1&_ss=1&tfd=1589",
+        "initiatorType": "fetch",
+        "duration": 59,
+        "transferSize": 0,
+        "encodedBodySize": 0,
+        "decodedBodySize": 0,
+        "startTime": 1590,
+        "responseEnd": 1649
+      },
+      {
+        "name": "http://localhost:4173/profile.json",
+        "initiatorType": "fetch",
+        "duration": 4,
+        "transferSize": 3036,
+        "encodedBodySize": 2736,
+        "decodedBodySize": 2736,
+        "startTime": 3998,
+        "responseEnd": 4001
+      },
+      {
+        "name": "http://localhost:4173/blogs.json",
+        "initiatorType": "fetch",
+        "duration": 3,
+        "transferSize": 3036,
+        "encodedBodySize": 2736,
+        "decodedBodySize": 2736,
+        "startTime": 4018,
+        "responseEnd": 4021
+      },
+      {
+        "name": "http://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/72x72/2600.png",
+        "initiatorType": "img",
+        "duration": 121,
+        "transferSize": 0,
+        "encodedBodySize": 0,
+        "decodedBodySize": 0,
+        "startTime": 4066,
+        "responseEnd": 4187
+      },
+      {
+        "name": "http://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/72x72/1f44b.png",
+        "initiatorType": "img",
+        "duration": 121,
+        "transferSize": 0,
+        "encodedBodySize": 0,
+        "decodedBodySize": 0,
+        "startTime": 4066,
+        "responseEnd": 4186
+      },
+      {
+        "name": "http://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/72x72/1f3c6.png",
+        "initiatorType": "img",
+        "duration": 118,
+        "transferSize": 0,
+        "encodedBodySize": 0,
+        "decodedBodySize": 0,
+        "startTime": 4067,
+        "responseEnd": 4185
+      },
+      {
+        "name": "http://localhost:4173/my-portofolio/static/media/googleLogo.d995fc0fed91584d8307c2c82fa49e0c.svg",
+        "initiatorType": "img",
+        "duration": 21,
+        "transferSize": 1210,
+        "encodedBodySize": 910,
+        "decodedBodySize": 910,
+        "startTime": 4067,
+        "responseEnd": 4088
+      },
+      {
+        "name": "http://localhost:4173/my-portofolio/static/media/binanceLogo.dc57bdb2f1456d1ea37a9f1b07bdacf9.svg",
+        "initiatorType": "img",
+        "duration": 22,
+        "transferSize": 948,
+        "encodedBodySize": 648,
+        "decodedBodySize": 648,
+        "startTime": 4067,
+        "responseEnd": 4088
+      },
+      {
+        "name": "http://localhost:4173/my-portofolio/static/media/alibabaCloudLogo.2125b16037003ab60fe1ef8c0f544621.svg",
+        "initiatorType": "img",
+        "duration": 24,
+        "transferSize": 1000,
+        "encodedBodySize": 700,
+        "decodedBodySize": 700,
+        "startTime": 4067,
+        "responseEnd": 4090
+      },
+      {
+        "name": "http://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/72x72/2764.png",
+        "initiatorType": "img",
+        "duration": 119,
+        "transferSize": 0,
+        "encodedBodySize": 0,
+        "decodedBodySize": 0,
+        "startTime": 4067,
+        "responseEnd": 4186
+      },
+      {
+        "name": "http://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/72x72/260e.png",
+        "initiatorType": "img",
+        "duration": 119,
+        "transferSize": 0,
+        "encodedBodySize": 0,
+        "decodedBodySize": 0,
+        "startTime": 4067,
+        "responseEnd": 4185
+      },
+      {
+        "name": "http://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/72x72/1f3a7.png",
+        "initiatorType": "img",
+        "duration": 121,
+        "transferSize": 0,
+        "encodedBodySize": 0,
+        "decodedBodySize": 0,
+        "startTime": 4067,
+        "responseEnd": 4188
+      },
+      {
+        "name": "https://platform.twitter.com/widgets.js",
+        "initiatorType": "script",
+        "duration": 234,
+        "transferSize": 0,
+        "encodedBodySize": 0,
+        "decodedBodySize": 0,
+        "startTime": 4087,
+        "responseEnd": 4321
+      },
+      {
+        "name": "https://platform.twitter.com/widgets/widget_iframe.1227a5674072e080ffb1ba14ac0c1079.html?origin=http%3A%2F%2Flocalhost%3A4173",
+        "initiatorType": "iframe",
+        "duration": 244,
+        "transferSize": 0,
+        "encodedBodySize": 0,
+        "decodedBodySize": 0,
+        "startTime": 4328,
+        "responseEnd": 4572
+      },
+      {
+        "name": "https://platform.twitter.com/js/timeline.9ee124fd8db0c3ba3796e9613bbc9e53.js",
+        "initiatorType": "script",
+        "duration": 68,
+        "transferSize": 0,
+        "encodedBodySize": 0,
+        "decodedBodySize": 0,
+        "startTime": 5074,
+        "responseEnd": 5142
+      },
+      {
+        "name": "https://syndication.twitter.com/srv/timeline-profile/screen-name/DaffaradityoA?dnt=false&embedId=twitter-widget-0&features=eyJ0ZndfdGltZWxpbmVfbGlzdCI6eyJidWNrZXQiOltdLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X2ZvbGxvd2VyX2NvdW50X3N1bnNldCI6eyJidWNrZXQiOnRydWUsInZlcnNpb24iOm51bGx9LCJ0ZndfdHdlZXRfZWRpdF9iYWNrZW5kIjp7ImJ1Y2tldCI6Im9uIiwidmVyc2lvbiI6bnVsbH0sInRmd19yZWZzcmNfc2Vzc2lvbiI6eyJidWNrZXQiOiJvbiIsInZlcnNpb24iOm51bGx9LCJ0ZndfZm9zbnJfc29mdF9pbnRlcnZlbnRpb25zX2VuYWJsZWQiOnsiYnVja2V0Ijoib24iLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X21peGVkX21lZGlhXzE1ODk3Ijp7ImJ1Y2tldCI6InRyZWF0bWVudCIsInZlcnNpb24iOm51bGx9LCJ0ZndfZXhwZXJpbWVudHNfY29va2llX2V4cGlyYXRpb24iOnsiYnVja2V0IjoxMjA5NjAwLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X3Nob3dfYmlyZHdhdGNoX3Bpdm90c19lbmFibGVkIjp7ImJ1Y2tldCI6Im9uIiwidmVyc2lvbiI6bnVsbH0sInRmd19kdXBsaWNhdGVfc2NyaWJlc190b19zZXR0aW5ncyI6eyJidWNrZXQiOiJvbiIsInZlcnNpb24iOm51bGx9LCJ0ZndfdXNlX3Byb2ZpbGVfaW1hZ2Vfc2hhcGVfZW5hYmxlZCI6eyJidWNrZXQiOiJvbiIsInZlcnNpb24iOm51bGx9LCJ0ZndfdmlkZW9faGxzX2R5bmFtaWNfbWFuaWZlc3RzXzE1MDgyIjp7ImJ1Y2tldCI6InRydWVfYml0cmF0ZSIsInZlcnNpb24iOm51bGx9LCJ0ZndfbGVnYWN5X3RpbWVsaW5lX3N1bnNldCI6eyJidWNrZXQiOnRydWUsInZlcnNpb24iOm51bGx9LCJ0ZndfdHdlZXRfZWRpdF9mcm9udGVuZCI6eyJidWNrZXQiOiJvbiIsInZlcnNpb24iOm51bGx9fQ%3D%3D&frame=false&hideBorder=false&hideFooter=true&hideHeader=false&hideScrollBar=false&lang=en&maxHeight=400px&origin=http%3A%2F%2Flocalhost%3A4173%2Fmy-portofolio%2F&sessionId=00e28d46641525fa2b7d0bc5f4d17b88bf5449ea&showHeader=true&showReplies=false&theme=light&transparent=false&widgetsVersion=6a3ad42b224df%3A1778106238597",
+        "initiatorType": "iframe",
+        "duration": 254,
+        "transferSize": 0,
+        "encodedBodySize": 0,
+        "decodedBodySize": 0,
+        "startTime": 5155,
+        "responseEnd": 5409
+      },
+      {
+        "name": "http://localhost:4173/my-portofolio/static/media/arina-field.1b313bc6335575e7fd12.jpg",
+        "initiatorType": "img",
+        "duration": 128,
+        "transferSize": 3241502,
+        "encodedBodySize": 3241202,
+        "decodedBodySize": 3241202,
+        "startTime": 34741,
+        "responseEnd": 34870
+      },
+      {
+        "name": "http://localhost:4173/my-portofolio/static/media/agrilink-diagram.2193a9dfd689a77753f72ae186a5baa7.svg",
+        "initiatorType": "img",
+        "duration": 18,
+        "transferSize": 1975,
+        "encodedBodySize": 1675,
+        "decodedBodySize": 1675,
+        "startTime": 34742,
+        "responseEnd": 34760
+      },
+      {
+        "name": "http://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/72x72/1f4c8.png",
+        "initiatorType": "img",
+        "duration": 43,
+        "transferSize": 0,
+        "encodedBodySize": 0,
+        "decodedBodySize": 0,
+        "startTime": 34854,
+        "responseEnd": 34897
+      }
+    ],
+    "domNodes": 3876
+  }
+]

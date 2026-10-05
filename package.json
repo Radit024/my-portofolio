@@ -22,6 +22,8 @@
     "build": "node fetch.js && react-scripts build",
     "deploy": "gh-pages -b master -d build",
     "test": "react-scripts test",
+    "test:perf": "node scripts/audit-performance.js",
+    "test:e2e": "playwright test",
     "eject": "react-scripts eject",
     "format": "prettier --write \"./**/*.{js,css,json,scss}\"",
     "check-format": "prettier -c \"./**/*.{js,css,json,scss}\""
@@ -48,6 +50,7 @@
   },
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@playwright/test": "^1.63.0",
     "@testing-library/dom": "^10.4.1",
     "@testing-library/jest-dom": "^6.9.1",
     "@testing-library/react": "^16.3.3",

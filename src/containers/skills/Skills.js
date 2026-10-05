@@ -2,15 +2,12 @@ import React, {useContext} from "react";
 import "./Skills.scss";
 import SoftwareSkill from "../../components/softwareSkills/SoftwareSkill";
 import {illustration, skillsSection} from "../../portfolio";
-import {financeSkillsSection} from "../../financePortfolio";
 import {Fade} from "../../components/fade/Fade";
 import {motion} from "framer-motion";
 import {useReducedMotion} from "../../hooks/useReducedMotion";
 import globalParcelTracking from "../../assets/lottie/globalParcelTracking";
-import blockchainLedger from "../../assets/lottie/blockchainLedger";
 import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 import StyleContext from "../../contexts/StyleContext";
-import {usePortfolioMode} from "../../contexts/PortfolioModeContext";
 import CustomSvgIcon, {isCustomSvg} from "../../components/common/CustomSvgIcon";
 
 function renderTechIcon(iconKey, isTag = false) {
@@ -28,18 +25,15 @@ function renderTechIcon(iconKey, isTag = false) {
 
 export default function Skills() {
   const {isDark} = useContext(StyleContext);
-  const {mode} = usePortfolioMode();
   const reduceMotion = useReducedMotion();
-  const isFinance = mode === "finance";
-  const activeSkillsSection = isFinance ? financeSkillsSection : skillsSection;
 
-  if (!activeSkillsSection.display) {
+  if (!skillsSection.display) {
     return null;
   }
 
   const hasSkillCards =
-    Array.isArray(activeSkillsSection.skillCards) &&
-    activeSkillsSection.skillCards.length > 0;
+    Array.isArray(skillsSection.skillCards) &&
+    skillsSection.skillCards.length > 0;
 
   return (
     <div className={isDark ? "dark-mode main" : "main"} id="skills">
@@ -47,15 +41,12 @@ export default function Skills() {
         <Fade left duration={1000}>
           <div className="skills-image-div">
             {illustration.animated ? (
-              <DisplayLottie
-                key={isFinance ? "finance-skills-lottie" : "tech-skills-lottie"}
-                animationData={isFinance ? blockchainLedger : globalParcelTracking}
-              />
+              <DisplayLottie animationData={globalParcelTracking} />
             ) : (
               <img
                 alt="Man Working"
                 src={require("../../assets/images/developerActivity.svg")}
-              ></img>
+              />
             )}
           </div>
         </Fade>
@@ -64,7 +55,7 @@ export default function Skills() {
             <h1
               className={isDark ? "dark-mode skills-heading" : "skills-heading"}
             >
-              {activeSkillsSection.title}{" "}
+              {skillsSection.title}{" "}
             </h1>
             <p
               className={
@@ -73,12 +64,12 @@ export default function Skills() {
                   : "subTitle skills-text-subtitle"
               }
             >
-              {activeSkillsSection.subTitle}
+              {skillsSection.subTitle}
             </p>
-            <SoftwareSkill skills={activeSkillsSection.softwareSkills} />
+            <SoftwareSkill skills={skillsSection.softwareSkills} />
             {hasSkillCards ? (
               <div className="skills-cards-grid">
-                {activeSkillsSection.skillCards.map((card, i) => (
+                {skillsSection.skillCards.map((card, i) => (
                   <motion.div
                     key={card.title || i}
                     className={`skill-feature-card ${card.accent || "blue"}`}
@@ -115,7 +106,7 @@ export default function Skills() {
               </div>
             ) : (
               <div>
-                {activeSkillsSection.skills.map((skills, i) => {
+                {skillsSection.skills.map((skills, i) => {
                   return (
                     <p
                       key={i}

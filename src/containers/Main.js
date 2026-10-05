@@ -17,18 +17,21 @@ import ScrollToTopButton from "./topbutton/Top";
 import Twitter from "./twitter-embed/twitter";
 import Profile from "./profile/Profile";
 import SplashScreen from "./splashScreen/SplashScreen";
-import CurtainsDoors from "../components/curtains/CurtainsDoors";
-import FloatingModeSwitch from "../components/floatingSwitch/FloatingModeSwitch";
-import {splashScreen} from "../portfolio";
+import {
+  splashScreen,
+  workExperiences,
+  openSource,
+  blogSection,
+  talkSection,
+  twitterDetails,
+  podcastSection
+} from "../portfolio";
 import {StyleProvider} from "../contexts/StyleContext";
-import {PortfolioModeProvider, usePortfolioMode} from "../contexts/PortfolioModeContext";
 import {useLocalStorage} from "../hooks/useLocalStorage";
 import "./Main.scss";
 
 const MainContent = ({isDark}) => {
-  const {mode} = usePortfolioMode();
   const reduceMotion = useReducedMotion();
-  const isFinance = mode === "finance";
 
   const [isShowingSplashAnimation, setIsShowingSplashAnimation] = useState(
     splashScreen.enabled && !reduceMotion
@@ -51,14 +54,7 @@ const MainContent = ({isDark}) => {
   }, [reduceMotion, isShowingSplashAnimation]);
 
   return (
-    <div
-      className={`${isDark ? "dark-mode" : ""} ${
-        isFinance ? "finance-mode" : "tech-mode"
-      }`}
-    >
-      {/* Motion.dev Curtains: Doors Page Transition Overlay */}
-      <CurtainsDoors />
-
+    <div className={isDark ? "dark-mode" : ""}>
       {isShowingSplashAnimation && splashScreen.enabled && !reduceMotion ? (
         <SplashScreen />
       ) : (
@@ -68,18 +64,17 @@ const MainContent = ({isDark}) => {
           <Skills />
           <StackProgress />
           <Education />
-          {!isFinance && <WorkExperience />}
-          {!isFinance && <Projects />}
+          {workExperiences.display && <WorkExperience />}
+          {openSource.display && <Projects />}
           <StartupProject />
           <Achievement />
-          {!isFinance && <Blogs />}
-          {!isFinance && <Talks />}
-          {!isFinance && <Twitter />}
-          {!isFinance && <Podcast />}
+          {blogSection.display && <Blogs />}
+          {talkSection.display && <Talks />}
+          {twitterDetails.display && <Twitter />}
+          {podcastSection.display && <Podcast />}
           <Profile />
           <Footer />
           <ScrollToTopButton />
-          <FloatingModeSwitch />
         </>
       )}
     </div>
@@ -100,11 +95,9 @@ const Main = () => {
   };
 
   return (
-    <PortfolioModeProvider>
-      <StyleProvider value={{isDark: isDark, changeTheme: changeTheme}}>
-        <MainContent isDark={isDark} />
-      </StyleProvider>
-    </PortfolioModeProvider>
+    <StyleProvider value={{isDark: isDark, changeTheme: changeTheme}}>
+      <MainContent isDark={isDark} />
+    </StyleProvider>
   );
 };
 
