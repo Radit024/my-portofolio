@@ -2,39 +2,104 @@
 
 .contact-div-main {
   display: flex;
+  align-items: center;
+  gap: 56px;
 }
 
 .dark-mode a {
   color: $textColorDark;
 }
 
-.contact-div-main > * {
+.contact-image-div {
   flex: 1;
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .lottie-container {
+    width: 100%;
+    max-width: 480px;
+  }
+
+  > img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+.contact-header {
+  flex: 1.1;
+  max-width: 620px;
+}
+
+.contact-badge-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 14px;
+  border-radius: 9999px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+  background: rgba(59, 130, 246, 0.1);
+  border: 1px solid rgba(59, 130, 246, 0.25);
+  color: #2563eb;
+
+  .contact-badge-dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #3b82f6;
+    box-shadow: 0 0 8px #3b82f6;
+  }
+}
+
+.dark-mode {
+  .contact-badge-pill {
+    background: rgba(96, 165, 250, 0.15);
+    border-color: rgba(96, 165, 250, 0.3);
+    color: #93c5fd;
+
+    .contact-badge-dot {
+      background: #60a5fa;
+      box-shadow: 0 0 8px #60a5fa;
+    }
+  }
 }
 
 .contact-title {
-  font-size: 65px;
-  font-weight: 400;
+  font-size: clamp(34px, 4.5vw, 65px);
+  font-weight: 700;
+  line-height: 1.15;
+  margin: 0 0 16px 0;
 }
 
 .contact-detail,
 .contact-detail-email {
   margin-top: 20px;
-  font-size: 40px;
+  font-size: 32px;
   font-weight: 400;
   color: $subTitle;
   text-decoration: none;
+  word-break: break-word;
+  transition: all 0.3s;
 }
 
 .contact-detail:hover,
 .contact-detail-email:hover {
   color: $textColor;
   text-shadow: 2px 1px 2px $contactDetailHoverTS;
-  transition: all 0.3s;
 }
 
 .contact-subtitle {
   text-transform: uppercase;
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.6;
 }
 
 .contact-text-div {
@@ -45,28 +110,57 @@
   margin-top: 4rem;
 }
 
-.contact-image-div > img {
-  max-width: 100%;
-  height: auto;
-  margin-left: 1.5rem;
-  margin-top: -4rem;
-}
-
 /* Media Query */
-@media (max-width: 1380px), (max-width: 768px) {
-  .contact-title {
-    font-size: 56px;
-    font-weight: 400;
+@media (max-width: 1024px) {
+  .contact-div-main {
+    flex-direction: column;
     text-align: center;
+    gap: 36px;
+  }
+
+  .contact-image-div {
+    max-width: 380px;
+
+    .lottie-container {
+      max-width: 380px;
+    }
+  }
+
+  .contact-header {
+    max-width: 100%;
+
+    .contact-badge-pill {
+      margin: 0 auto 14px auto;
+    }
   }
 
   .contact-title {
-    font-size: 40px;
+    font-size: 44px;
+    text-align: center;
+  }
+
+  .contact-detail,
+  .contact-detail-email {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-image-div {
+    max-width: 280px;
+
+    .lottie-container {
+      max-width: 280px;
+    }
+  }
+
+  .contact-title {
+    font-size: 30px;
     text-align: center;
   }
 
   .contact-subtitle {
-    font-size: 16px;
+    font-size: 14px;
     line-height: normal;
     text-align: center;
   }
@@ -78,10 +172,6 @@
 
   .contact-detail,
   .contact-detail-email {
-    font-size: 20px;
-  }
-
-  .contact-image-div {
-    display: none;
+    font-size: 18px;
   }
 }

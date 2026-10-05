@@ -67,9 +67,72 @@
   padding: 6px;
 }
 .achievement-cards-div {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1.5rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+
+  .certificate-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+    gap: 20px;
+    padding: 1.25rem 1.5rem;
+    border-radius: 14px;
+
+    .certificate-image-div {
+      height: auto;
+      padding: 0;
+      flex-shrink: 0;
+      width: 76px;
+
+      .card-image {
+        width: 72px;
+        height: 72px;
+      }
+    }
+
+    .certificate-detail-div {
+      text-align: left;
+      flex: 1;
+
+      .card-title {
+        margin: 0 0 6px 0;
+        font-size: 1.15rem;
+      }
+
+      .card-subtitle {
+        margin: 0;
+        font-size: 0.925rem;
+      }
+    }
+
+    .certificate-card-footer {
+      margin-top: 0;
+      flex-shrink: 0;
+
+      span.certificate-tag {
+        margin: 0;
+      }
+    }
+  }
+
+  @media (max-width: 640px) {
+    .certificate-card {
+      flex-direction: column;
+      text-align: center;
+      padding: 1.5rem;
+
+      .certificate-detail-div {
+        text-align: center;
+      }
+
+      .certificate-card-footer {
+        margin-top: 1rem;
+        justify-content: center;
+      }
+    }
+  }
 }
 .certificate-card-footer {
   display: flex;

@@ -85,3 +85,35 @@ it("renders without crashing with reduced motion", async () => {
     screen.getByRole("heading", {name: new RegExp(greeting.title)})
   ).toBeVisible();
 });
+
+it("switches to Finance mode with Curtains Doors transition and renders finance section", async () => {
+  const {container} = await renderPortfolio();
+
+  // Find finance toggle button in Header
+  const financeBtn = screen.getByTitle("Switch to Finance Mode (Curtains Doors animation)");
+  expect(financeBtn).toBeInTheDocument();
+
+  // Click to trigger Curtains Doors transition to finance
+  act(() => {
+    fireEvent.click(financeBtn);
+  });
+
+  // Curtains Doors overlay should be active
+  expect(container.querySelector(".motion-curtains-doors-container")).toBeInTheDocument();
+
+  // Advance time past the door close (500ms + 180ms hold)
+  act(() => {
+    jest.advanceTimersByTime(700);
+  });
+
+  // Advance time past door reveal (500ms)
+  act(() => {
+    jest.advanceTimersByTime(500);
+  });
+
+  // Verify Finance content is rendered
+  expect(screen.getByText("Torock Trading Bot")).toBeInTheDocument();
+  expect(screen.getByText("BisnisKu / BusinessTracker")).toBeInTheDocument();
+  expect(window.localStorage.getItem("portfolio_mode")).toBe("finance");
+});
+

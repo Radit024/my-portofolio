@@ -1,9 +1,27 @@
 @import "../_globalColor";
 
 .dark-mode {
-  background-color: $darkBackground;
+  background-color: #0d111c;
+  background-image: 
+    radial-gradient(ellipse 80% 50% at 50% -10%, rgba(99, 102, 241, 0.14), transparent),
+    radial-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+  background-size: 100% 100%, 32px 32px;
+  background-attachment: fixed;
   color: $textColorDark;
-  transition: background-color 0.2s ease, color 0.2s ease;
+  transition: background-color 0.25s ease, color 0.25s ease;
+
+  &.finance-mode {
+    background-color: #080e14;
+    background-image: 
+      radial-gradient(ellipse 80% 50% at 50% -10%, rgba(16, 185, 129, 0.15), transparent),
+      radial-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px);
+
+    .skills-badge-pill {
+      background: rgba(16, 185, 129, 0.15) !important;
+      border-color: rgba(16, 185, 129, 0.35) !important;
+      color: #34d399 !important;
+    }
+  }
 
   // Headings & paragraphs
   h1, h2, h3, h4, h5, h6 {
@@ -19,21 +37,92 @@
   }
 
   // Greeting Section
+  .status-pill {
+    background: rgba(16, 185, 129, 0.12) !important;
+    border-color: rgba(16, 185, 129, 0.3) !important;
+    color: #34d399 !important;
+  }
+
   .greeting-text {
     color: $textColorDark !important;
+
+    .gradient-text {
+      background: linear-gradient(135deg, #818cf8 0%, #c084fc 50%, #f472b6 100%) !important;
+      -webkit-background-clip: text !important;
+      -webkit-text-fill-color: transparent !important;
+      color: transparent !important;
+    }
   }
 
   .greeting-text-p {
     color: #d1d5db !important;
   }
 
+  .specialty-tag {
+    background: rgba(255, 255, 255, 0.05) !important;
+    border-color: rgba(255, 255, 255, 0.08) !important;
+    color: #cbd5e1 !important;
+
+    &.tag-react i {
+      color: #38bdf8 !important;
+    }
+
+    &.tag-python i {
+      color: #34d399 !important;
+    }
+
+    &.tag-solidity .tag-icon-svg {
+      color: #c084fc !important;
+    }
+
+    &.tag-logistics i {
+      color: #fbbf24 !important;
+    }
+
+    &:hover {
+      border-color: rgba(129, 140, 248, 0.4) !important;
+      background: rgba(129, 140, 248, 0.1) !important;
+    }
+  }
+
   // Skills Section
+  .skills-badge-pill {
+    background: rgba(99, 102, 241, 0.15) !important;
+    border-color: rgba(99, 102, 241, 0.35) !important;
+    color: #a5b4fc !important;
+  }
+
   .skills-heading {
     color: $textColorDark !important;
   }
 
   .skills-text-subtitle {
     color: #cbd5e1 !important;
+  }
+
+  .skill-feature-card {
+    background: rgba(22, 27, 34, 0.72) !important;
+    border-color: rgba(255, 255, 255, 0.08) !important;
+    box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5) !important;
+
+    .card-feature-title {
+      color: #f1f5f9 !important;
+    }
+
+    .card-feature-desc {
+      color: #94a3b8 !important;
+    }
+
+    .card-tag-pill {
+      background: rgba(255, 255, 255, 0.06) !important;
+      color: #cbd5e1 !important;
+      border-color: rgba(255, 255, 255, 0.1) !important;
+
+      i, .tag-icon-svg {
+        color: #94a3b8 !important;
+        fill: #94a3b8 !important;
+      }
+    }
   }
 
   .skills-text {

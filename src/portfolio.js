@@ -10,7 +10,7 @@ import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your
 const splashScreen = {
   enabled: true, // set false to disable splash screen
   animation: splashAnimation,
-  duration: 2000 // Set animation duration as per your animation
+  duration: 3200 // Set animation duration as per your animation
 };
 
 // Summary And Greeting Section
@@ -21,9 +21,9 @@ const illustration = {
 
 const greeting = {
   username: "Daffa Radityo",
-  title: "Hi all, I'm Daffa Radityo",
+  title: "Hi all, I'm Daffa",
   subTitle: emoji(
-    "I build practical digital solutions with modern technology, turning ideas into functional products for real-world needs. My work connects Full-Stack Development, AI, and Web3 with an industrial perspective in supply chain, operations, and data-driven decision making to create efficient, impactful systems"
+    "I build practical digital solutions with modern technology, turning ideas into functional products for real-world needs. My work connects Web applications, AI, and Web3 with an industrial perspective in supply chain, operations, and data-driven decision making to create efficient, impactful systems"
   ),
   resumeLink: "", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
@@ -46,20 +46,74 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "BUILDING PRACTICAL DIGITAL SOLUTIONS & EFFICIENT BUSINESS SYSTEMS",
+  subTitle: "FULL-STACK WEB DEVELOPMENT, DATA SYSTEMS & INDUSTRIAL OPERATIONS",
   skills: [
     emoji(
-      "⚡ Developing practical Full-Stack Web and Mobile applications, turning ideas into functional, real-world digital products using React, TypeScript, and Dart"
+      "⚡ Building responsive web applications and modern digital solutions using React, TypeScript, and Node.js"
     ),
     emoji(
-      "⚡ Architecting AI-powered systems and decentralized Web3 solutions with Solidity for modern, transparent, and automated workflows"
+      "⚡ Developing Decision Support Systems (DSS) and predictive analytics tools using Python for agricultural yield forecasting and operational planning"
     ),
     emoji(
-      "⚡ Applying an industrial engineering perspective through process analysis, production & inventory planning, and supply chain operations"
+      "⚡ Writing Solidity smart contracts for food supply chain traceability and verifiable farm-to-table records"
     ),
     emoji(
-      "⚡ Connecting modern technology with real business processes and data-driven decision making to create efficient, practical, and impactful solutions"
+      "⚡ Applying industrial engineering methods in process mapping, production scheduling, and inventory management"
     )
+  ],
+  skillCards: [
+    {
+      icon: "fab fa-react",
+      accent: "blue",
+      title: "Web & Full-Stack Development",
+      description:
+        "Building responsive front-ends and full-stack web applications with React and TypeScript. I focus on clean component structure, practical UI, and reliable integration with backend APIs.",
+      tags: [
+        {name: "React", icon: "fab fa-react"},
+        {name: "TypeScript", icon: "fas fa-code"},
+        {name: "Node.js", icon: "fab fa-node-js"},
+        {name: "REST APIs", icon: "fas fa-network-wired"}
+      ]
+    },
+    {
+      icon: "fab fa-python",
+      accent: "emerald",
+      title: "AI & Decision Support Systems",
+      description:
+        "Creating practical Decision Support Systems (DSS) for agribusiness, combining operational data with predictive models for crop yield forecasting and cost analysis.",
+      tags: [
+        {name: "Decision Support (DSS)", icon: "fas fa-chart-line"},
+        {name: "Data Analysis", icon: "fas fa-database"},
+        {name: "Yield Forecasting", icon: "fas fa-seedling"},
+        {name: "Python", icon: "fab fa-python"}
+      ]
+    },
+    {
+      icon: "solidity",
+      accent: "purple",
+      title: "Web3 & Smart Contracts",
+      description:
+        "Writing Solidity smart contracts to build food supply chain traceability systems (like Agrilink), verifying product provenance from farm to consumer via tamper-proof QR codes.",
+      tags: [
+        {name: "Solidity", icon: "solidity"},
+        {name: "Smart Contracts", icon: "fas fa-file-contract"},
+        {name: "Supply Chain Traceability", icon: "fas fa-qrcode"},
+        {name: "Web3", icon: "fab fa-ethereum"}
+      ]
+    },
+    {
+      icon: "fas fa-truck-moving",
+      accent: "amber",
+      title: "Industrial Operations & Logistics",
+      description:
+        "Applying industrial engineering methods to real operations: mapping production workflows, inventory planning, and logistics analysis so software fits field realities.",
+      tags: [
+        {name: "Process Mapping", icon: "fas fa-project-diagram"},
+        {name: "Production Planning", icon: "fas fa-calendar-check"},
+        {name: "Inventory Management", icon: "fas fa-boxes"},
+        {name: "Supply Chain", icon: "fas fa-truck-moving"}
+      ]
+    }
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
@@ -83,12 +137,16 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fas fa-code"
     },
     {
+      skillName: "Python",
+      fontAwesomeClassname: "fab fa-python"
+    },
+    {
       skillName: "React",
       fontAwesomeClassname: "fab fa-react"
     },
     {
-      skillName: "Dart",
-      fontAwesomeClassname: "fas fa-mobile-alt"
+      skillName: "Node.js",
+      fontAwesomeClassname: "fab fa-node-js"
     },
     {
       skillName: "SQL Database",
@@ -132,7 +190,7 @@ const educationInfo = {
       logo: require("./assets/images/SMAAWA.jpeg"),
       subHeader: "Senior High School — Mathematics & Natural Sciences",
       duration: "June 2020 - March 2023",
-      desc: "Graduated with distinction (Score: 85.9). Developed foundational analytical thinking and early programming exploration."
+      desc: "High school education in Mathematics & Natural Sciences (MIPA) with a final average score of 85.9."
     }
   ]
 };
@@ -143,27 +201,27 @@ const techStack = {
   viewSkillBars: true, // Set to true to show Proficiency Section
   display: true,
   title: "Proficiency",
-  subtitle: "CORE COMPETENCIES & TECHNICAL PROFICIENCY",
+  subtitle: "CORE TECHNICAL STACK & ENGINEERING SKILLS",
   experience: [
     {
-      Stack: "Frontend & Mobile Development",
-      progressPercentage: "85%",
-      technologies: "HTML5, CSS3, JavaScript, TypeScript, React, Dart"
+      Stack: "Full-Stack Web Development",
+      progressPercentage: "70%",
+      technologies: "React, TypeScript, JavaScript, Node.js, HTML5, CSS3"
     },
     {
-      Stack: "Backend, Cloud & Databases",
-      progressPercentage: "75%",
-      technologies: "Node.js, SQL, Alibaba Cloud, Git & GitHub"
+      Stack: "Backend, Databases & Cloud",
+      progressPercentage: "40%",
+      technologies: "Python, SQL Database, PostgreSQL, Alibaba Cloud, REST APIs, Git"
     },
     {
       Stack: "Web3 & Smart Contracts",
-      progressPercentage: "70%",
-      technologies: "Solidity, Smart Contracts, Supply Chain Traceability"
+      progressPercentage: "65%",
+      technologies: "Solidity, Smart Contracts, Web3"
     },
     {
-      Stack: "Industrial Systems & Problem Solving",
+      Stack: "Industrial Engineering & Operations",
       progressPercentage: "80%",
-      technologies: "Agile Leadership, UI/UX Design, Decision Support Systems"
+      technologies: "Production Planning, Inventory Management, Decision Support Systems"
     }
   ]
 };
@@ -189,7 +247,8 @@ const openSource = {
 
 const bigProjects = {
   title: "Projects",
-  subtitle: "",
+  subtitle:
+    "Web applications, smart contracts, and decision support tools I have developed.",
   projects: [
     {
       projectName:
@@ -202,7 +261,7 @@ const bigProjects = {
       previewLabel: "Concept diagram",
       date: "September 2026 - Present",
       projectDesc:
-        "A decentralized food supply chain traceability platform built with Solidity, eliminating record tampering and bridging farm-to-table transparency via verifiable QR codes.",
+        "A food supply chain traceability system built with Solidity smart contracts, enabling transparent batch tracking from farm to consumer with tamper-proof QR code verification.",
       skills: [
         "Web3 Architecture",
         "Smart Contracts",
@@ -226,12 +285,12 @@ const bigProjects = {
       previewLabel: "AgriTech platform",
       date: "March 2026 - Present",
       projectDesc:
-        "A comprehensive digital Decision Support System (DSS) transforming Indonesian agribusiness with data-driven yield forecasting, operational costing, and intelligent market analytics.",
+        "A digital Decision Support System (DSS) designed for agribusiness operations, featuring crop yield forecasting models, production costing calculations, and market price trends.",
       contributors: "Ade Surya and Mutiara",
       skills: [
         "Full Stack Web",
         "Decision Support Systems",
-        "AI Prompting",
+        "Python",
         "AgriTech"
       ],
       footerLink: [
@@ -249,7 +308,7 @@ const bigProjects = {
       previewLabel: "Digital Media Platform",
       date: "March 2026 - Present",
       projectDesc:
-        "A dynamic pop-culture and technology digital media publication engaging Gen Z & Millennials with curated reviews, gaming insights, and interactive community spaces.",
+        "A digital publication and community media platform covering gaming, pop culture, and modern tech developments with curated reviews and news.",
       contributors: "Sufyan Dwi",
       skills: [
         "Web Development",
@@ -273,11 +332,11 @@ const bigProjects = {
       previewLabel: "AI Smart Farming",
       date: "April 2025 - February 2026",
       projectDesc:
-        "An AI-powered SaaS companion for modern farmers, calculating production ROI, resource input optimization, and predicting agricultural commodity price fluctuations.",
+        "A web application for agricultural decision-making, providing production input cost estimation, ROI projections, and commodity price trend analysis.",
       contributors: "Ade Surya, Azel, and two other contributors",
       skills: [
-        "AI Analytics",
-        "SaaS Architecture",
+        "Data Analytics",
+        "Decision Support (DSS)",
         "Product Engineering",
         "AgriTech"
       ],
@@ -297,7 +356,7 @@ const bigProjects = {
       previewLabel: "Health & Wellbeing App",
       date: "December 2023 - January 2024",
       projectDesc:
-        "A personal health & wellbeing tracking application designed to monitor sleep quality, physical activity, and holistic lifestyle routines.",
+        "A responsive web application for personal health tracking, allowing users to log daily exercise, sleep duration, and lifestyle habits.",
       contributors: "Athallah",
       skills: [
         "Software Engineering",
@@ -321,12 +380,12 @@ const bigProjects = {
 const achievementSection = {
   title: emoji("Achievements & Certifications 🏆"),
   subtitle:
-    "Achievements, Certifications, and Verified Credentials That Highlight My Continuous Growth!",
+    "Verified credentials and competition achievements in cloud computing, Web3, and software development.",
 
   achievementsCards: [
     {
       title: "APAC Solution Challenge Innovator",
-      subtitle: "Google Asia Pacific",
+      subtitle: "Google Developer Student Clubs — APAC Solution Challenge",
       image: require("./assets/images/googleLogo.svg").default || require("./assets/images/googleLogo.svg"),
       imageAlt: "Google Asia Pacific",
       issued: "July 2025",
@@ -375,7 +434,7 @@ const achievementSection = {
 const blogSection = {
   title: "Blogs",
   subtitle:
-    "With Love for Developing cool stuff, I love to write and teach others what I have learnt.",
+    "Technical articles and notes on software development, blockchain, and decision support systems.",
   displayMediumBlogs: "true", // Set true to display fetched medium blogs instead of hardcoded ones
   blogs: [],
   display: false // Set false to hide this section, defaults to true
@@ -384,9 +443,9 @@ const blogSection = {
 // Talks Sections
 
 const talkSection = {
-  title: "TALKS",
+  title: "Talks & Presentations",
   subtitle: emoji(
-    "I LOVE TO SHARE MY LIMITED KNOWLEDGE AND GET A SPEAKER BADGE 😅"
+    "Sharing experiences in software development, tech competitions, and student initiatives."
   ),
   talks: [],
   display: false // Set false to hide this section, defaults to true
@@ -409,7 +468,7 @@ const podcastSection = {
 const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
-    "Discuss a project, collaborate on tech, or just want to say hi? My inbox is open for all!",
+    "Interested in collaborating on a project, discussing software engineering, or exploring quantitative systems? Feel free to reach out.",
   number: "",
   email_address: "daffaradityoa03@gmail.com"
 };

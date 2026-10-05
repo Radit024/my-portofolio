@@ -30,15 +30,113 @@
   margin-top: 20px;
 }
 
+/* Status Pill */
+.status-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 14px;
+  border-radius: 9999px;
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  background: rgba(16, 185, 129, 0.08);
+  border: 1px solid rgba(16, 185, 129, 0.25);
+  color: #047857;
+
+  .status-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #10b981;
+    box-shadow: 0 0 10px #10b981;
+    animation: pulseDot 2s infinite ease-in-out;
+  }
+}
+
+@keyframes pulseDot {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.3);
+    opacity: 0.6;
+  }
+}
+
 .greeting-text {
   font-size: 70px;
   line-height: 1.1;
   color: $textColor;
 }
 
+.gradient-text {
+  background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #d946ef 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
 .greeting-text-p {
   font-size: 30px;
   line-height: 40px;
+}
+
+/* Specialty Tags */
+.hero-specialty-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 22px 0 14px 0;
+}
+
+.specialty-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.04);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  color: #334155;
+  transition: all 0.2s ease;
+
+  i {
+    font-size: 14px;
+  }
+
+  .tag-icon-svg {
+    width: 14px;
+    height: 14px;
+    fill: currentColor;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  &.tag-react i {
+    color: #0284c7;
+  }
+
+  &.tag-python i {
+    color: #10b981;
+  }
+
+  &.tag-solidity .tag-icon-svg {
+    color: #8b5cf6;
+  }
+
+  &.tag-logistics i {
+    color: #f59e0b;
+  }
+
+  &:hover {
+    border-color: rgba(99, 102, 241, 0.4);
+    background: rgba(99, 102, 241, 0.06);
+    transform: translateY(-1px);
+  }
 }
 
 .greeting-image-div > img {
@@ -116,5 +214,106 @@
   }
   .button-greeting-div {
     justify-content: space-around;
+  }
+}
+
+// Finance Gradient Text
+.finance-gradient {
+  background: linear-gradient(135deg, #10b981 0%, #34d399 50%, #f59e0b 100%) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+}
+
+// Finance Specialty Tags
+.specialty-tag {
+  &.tag-trading i,
+  &.tag-trading .tag-icon-svg {
+    color: #2962ff !important;
+  }
+  &.tag-analytics i,
+  &.tag-analytics .tag-icon-svg {
+    color: #107c41 !important;
+  }
+  &.tag-quant i,
+  &.tag-quant .tag-icon-svg {
+    color: #10b981 !important;
+  }
+  &.tag-risk i,
+  &.tag-risk .tag-icon-svg {
+    color: #f59e0b !important;
+  }
+  &.tag-commodity i,
+  &.tag-commodity .tag-icon-svg {
+    color: #a855f7 !important;
+  }
+}
+
+// Greeting Mode Switch Button
+.greeting-mode-switch-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 22px;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  outline: none;
+  border: 1.5px solid;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  margin-left: 14px;
+
+  .door-icon-hint {
+    font-size: 15px;
+    transition: transform 0.2s ease;
+  }
+
+  &:hover {
+    transform: translateY(-2px);
+    .door-icon-hint {
+      transform: scale(1.2);
+    }
+  }
+
+  &:active {
+    transform: translateY(0);
+  }
+
+  &.to-finance-btn {
+    background: rgba(16, 185, 129, 0.1);
+    color: #10b981;
+    border-color: rgba(16, 185, 129, 0.35);
+
+    &:hover {
+      background: rgba(16, 185, 129, 0.18);
+      border-color: rgba(16, 185, 129, 0.6);
+      box-shadow: 0 4px 20px rgba(16, 185, 129, 0.25);
+    }
+  }
+
+  &.to-tech-btn {
+    background: rgba(99, 102, 241, 0.1);
+    color: #818cf8;
+    border-color: rgba(99, 102, 241, 0.35);
+
+    &:hover {
+      background: rgba(99, 102, 241, 0.18);
+      border-color: rgba(99, 102, 241, 0.6);
+      box-shadow: 0 4px 20px rgba(99, 102, 241, 0.25);
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .button-greeting-div {
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+
+    .greeting-mode-switch-btn {
+      margin-left: 0;
+      width: 100%;
+      justify-content: center;
+    }
   }
 }

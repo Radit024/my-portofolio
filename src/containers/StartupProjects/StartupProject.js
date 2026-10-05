@@ -4,19 +4,59 @@ import {useReducedMotion} from "../../hooks/useReducedMotion";
 import "./StartupProjects.scss";
 import "../LowerPortfolio.scss";
 import {bigProjects} from "../../portfolio";
+import {financeBigProjects} from "../../financePortfolio";
 import LinkArrow from "../../components/linkArrow/LinkArrow";
+import DisplayLottie from "../../components/displayLottie/DisplayLottie";
+import build from "../../assets/lottie/build";
+import agriTech from "../../assets/lottie/agriTech";
+import {Fade} from "../../components/fade/Fade";
+import {usePortfolioMode} from "../../contexts/PortfolioModeContext";
+
 export default function StartupProject() {
   const reduceMotion = useReducedMotion();
-  if (!bigProjects.display) return null;
+  const {mode} = usePortfolioMode();
+  const isFinance = mode === "finance";
+  const activeProjects = isFinance ? financeBigProjects : bigProjects;
+
+  if (!activeProjects.display) return null;
+
+  const headerTags = activeProjects.headerTags || [
+    "Full-Stack Development",
+    "Smart Contracts & Web3",
+    "Decision Support Systems"
+  ];
+
   return (
-    <div className="lower-portfolio">
+    <div className={`lower-portfolio ${isFinance ? "finance-projects" : "tech-projects"}`}>
       <section className="portfolio-section project-showcase" id="projects">
-      <header className="portfolio-section-header">
-        <h2>{bigProjects.title}</h2>
-        <p>{bigProjects.subtitle}</p>
-      </header>
-      <div className="projects-container">
-        {bigProjects.projects.map(project => (
+        <header className="portfolio-section-header">
+          <Fade left duration={1000} distance="30px">
+            <div className="portfolio-header-text">
+              <h2>{activeProjects.title}</h2>
+              <p>
+                {activeProjects.subtitle ||
+                  "Practical digital solutions, software products, and decentralized systems I've built."}
+              </p>
+              <div className="projects-header-tags">
+                {headerTags.map(tag => (
+                  <span className="header-tag" key={tag}>
+                    {tag}
+                  </span>
+                ))}
+              </div>
+            </div>
+          </Fade>
+          <Fade right duration={1000} distance="30px">
+            <div className="portfolio-header-image">
+              <DisplayLottie
+                key={isFinance ? "finance-project-lottie" : "tech-project-lottie"}
+                animationData={isFinance ? agriTech : build}
+              />
+            </div>
+          </Fade>
+        </header>
+        <div className="projects-container">
+          {activeProjects.projects.map(project => (
           <article className="project-card" key={project.projectName}>
             <div
               className={`project-preview project-preview--${project.previewStyle}`}

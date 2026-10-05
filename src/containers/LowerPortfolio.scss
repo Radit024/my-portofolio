@@ -14,26 +14,138 @@
   }
   .portfolio-section-header {
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     justify-content: space-between;
-    gap: 32px;
-    margin-bottom: 48px;
+    gap: 48px;
+    margin-bottom: 56px;
+
+    .portfolio-header-text {
+      flex: 1.1;
+      max-width: 620px;
+
+      h2 {
+        font-size: clamp(34px, 4vw, 56px);
+        line-height: 1.15;
+        font-weight: 700;
+        letter-spacing: -0.035em;
+        margin: 0 0 16px 0;
+        text-wrap: balance;
+      }
+
+      p {
+        max-width: 540px;
+        color: var(--showcase-muted);
+        font-size: 16px;
+        line-height: 1.7;
+        margin: 0 0 20px 0;
+      }
+
+      .projects-header-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 18px;
+
+        .header-tag {
+          display: inline-flex;
+          align-items: center;
+          padding: 6px 14px;
+          border-radius: 8px;
+          font-size: 12px;
+          font-weight: 500;
+          background: var(--showcase-surface);
+          border: 1px solid var(--showcase-line);
+          color: var(--showcase-muted);
+          transition: all 0.2s ease;
+        }
+      }
+    }
+
+    .portfolio-header-image {
+      flex: 1;
+      width: 100%;
+      max-width: 480px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .lottie-container {
+        width: 100%;
+        max-width: 480px;
+      }
+    }
+
+    .projects-badge-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 14px;
+      border-radius: 9999px;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+      background: rgba(99, 102, 241, 0.08);
+      border: 1px solid rgba(99, 102, 241, 0.2);
+      color: #4f46e5;
+
+      .projects-badge-dot {
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background: #6366f1;
+        box-shadow: 0 0 8px #6366f1;
+      }
+    }
   }
-  .portfolio-section-header h2 {
-    font-size: clamp(30px, 3.8vw, 52px);
-    line-height: 1.15;
-    font-weight: 600;
-    letter-spacing: -0.035em;
-    margin: 0;
-    max-width: 680px;
-    text-wrap: balance;
+
+  @media (max-width: 960px) {
+    .portfolio-section-header {
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+      gap: 32px;
+
+      .portfolio-header-text {
+        h2 {
+          text-align: center;
+        }
+        p {
+          text-align: center;
+          margin: 0 auto;
+        }
+        .projects-header-tags {
+          justify-content: center;
+        }
+      }
+
+      .portfolio-header-image {
+        max-width: 380px;
+        width: 100%;
+        margin-top: 8px;
+
+        .lottie-container {
+          max-width: 380px;
+        }
+      }
+
+      .projects-badge-pill {
+        margin: 0 auto 12px auto;
+      }
+    }
   }
-  .portfolio-section-header > p {
-    max-width: 330px;
-    color: var(--showcase-muted);
-    font-size: 15px;
-    line-height: 1.7;
-    margin: 0;
+
+  @media (max-width: 600px) {
+    .portfolio-section-header {
+      .portfolio-header-image {
+        max-width: 280px;
+
+        .lottie-container {
+          max-width: 280px;
+        }
+      }
+    }
   }
   .showcase-link {
     display: inline-flex;
@@ -67,21 +179,26 @@
   --showcase-line: #3c3549;
   --showcase-surface: #211e2c;
   --showcase-accent: #c8a4ef;
+
+  .projects-badge-pill {
+    background: rgba(129, 140, 248, 0.15);
+    border-color: rgba(129, 140, 248, 0.3);
+    color: #a5b4fc;
+
+    .projects-badge-dot {
+      background: #818cf8;
+      box-shadow: 0 0 8px #818cf8;
+    }
+  }
 }
+
 @media (max-width: 760px) {
   .lower-portfolio {
     padding-top: 16px;
+
     .portfolio-section {
       width: 88%;
       padding: 48px 0;
-    }
-    .portfolio-section-header {
-      display: block;
-      margin-bottom: 30px;
-    }
-    .portfolio-section-header > p {
-      margin-top: 18px;
-      max-width: 100%;
     }
   }
 }

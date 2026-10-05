@@ -17,20 +17,19 @@ import ScrollToTopButton from "./topbutton/Top";
 import Twitter from "./twitter-embed/twitter";
 import Profile from "./profile/Profile";
 import SplashScreen from "./splashScreen/SplashScreen";
+import CurtainsDoors from "../components/curtains/CurtainsDoors";
+import FloatingModeSwitch from "../components/floatingSwitch/FloatingModeSwitch";
 import {splashScreen} from "../portfolio";
 import {StyleProvider} from "../contexts/StyleContext";
+import {PortfolioModeProvider, usePortfolioMode} from "../contexts/PortfolioModeContext";
 import {useLocalStorage} from "../hooks/useLocalStorage";
 import "./Main.scss";
 
-const Main = () => {
+const MainContent = ({isDark}) => {
+  const {mode} = usePortfolioMode();
   const reduceMotion = useReducedMotion();
-  const darkPref = window.matchMedia
-    ? window.matchMedia("(prefers-color-scheme: dark)")
-    : null;
-  const [isDark, setIsDark] = useLocalStorage(
-    "isDark",
-    darkPref ? darkPref.matches : false
-  );
+  const isFinance = mode === "finance";
+
   const [isShowingSplashAnimation, setIsShowingSplashAnimation] = useState(
     splashScreen.enabled && !reduceMotion
   );
@@ -51,37 +50,61 @@ const Main = () => {
     }
   }, [reduceMotion, isShowingSplashAnimation]);
 
+  return (
+    <div
+      className={`${isDark ? "dark-mode" : ""} ${
+        isFinance ? "finance-mode" : "tech-mode"
+      }`}
+    >
+      {/* Motion.dev Curtains: Doors Page Transition Overlay */}
+      <CurtainsDoors />
+
+      {isShowingSplashAnimation && splashScreen.enabled && !reduceMotion ? (
+        <SplashScreen />
+      ) : (
+        <>
+          <Header />
+          <Greeting />
+          <Skills />
+          <StackProgress />
+          <Education />
+          {!isFinance && <WorkExperience />}
+          {!isFinance && <Projects />}
+          <StartupProject />
+          <Achievement />
+          {!isFinance && <Blogs />}
+          {!isFinance && <Talks />}
+          {!isFinance && <Twitter />}
+          {!isFinance && <Podcast />}
+          <Profile />
+          <Footer />
+          <ScrollToTopButton />
+          <FloatingModeSwitch />
+        </>
+      )}
+    </div>
+  );
+};
+
+const Main = () => {
+  const darkPref = window.matchMedia
+    ? window.matchMedia("(prefers-color-scheme: dark)")
+    : null;
+  const [isDark, setIsDark] = useLocalStorage(
+    "isDark",
+    darkPref ? darkPref.matches : false
+  );
+
   const changeTheme = () => {
     setIsDark(!isDark);
   };
 
   return (
-    <div className={isDark ? "dark-mode" : null}>
+    <PortfolioModeProvider>
       <StyleProvider value={{isDark: isDark, changeTheme: changeTheme}}>
-        {isShowingSplashAnimation && splashScreen.enabled && !reduceMotion ? (
-          <SplashScreen />
-        ) : (
-          <>
-            <Header />
-            <Greeting />
-            <Skills />
-            <StackProgress />
-            <Education />
-            <WorkExperience />
-            <Projects />
-            <StartupProject />
-            <Achievement />
-            <Blogs />
-            <Talks />
-            <Twitter />
-            <Podcast />
-            <Profile />
-            <Footer />
-            <ScrollToTopButton />
-          </>
-        )}
+        <MainContent isDark={isDark} />
       </StyleProvider>
-    </div>
+    </PortfolioModeProvider>
   );
 };
 

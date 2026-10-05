@@ -12,6 +12,7 @@ global.IntersectionObserver = class IntersectionObserver {
 };
 
 beforeEach(() => {
+  window.scrollTo = jest.fn();
   Object.defineProperty(window, "matchMedia", {
     writable: true,
     value: jest.fn().mockImplementation(query => ({
