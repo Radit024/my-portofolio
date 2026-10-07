@@ -12,6 +12,7 @@ module.exports = defineConfig({
     ['html', { outputFolder: 'perf-results/playwright-report', open: 'never' }]
   ],
   use: {
+    colorScheme: 'light',
     trace: 'on-first-retry',
     screenshot: 'only-on-failure',
     bypassCSP: true
@@ -25,5 +26,11 @@ module.exports = defineConfig({
       name: 'Mobile Pixel',
       use: { ...devices['Pixel 7'] }
     }
-  ]
+  ],
+  webServer: {
+    command: 'node scripts/serve-build.js',
+    port: 4173,
+    reuseExistingServer: !process.env.CI,
+    timeout: 30000
+  }
 });

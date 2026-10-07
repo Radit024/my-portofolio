@@ -62,60 +62,6 @@ const skillsSection = {
       "⚡ Applying industrial engineering methods in unit costing (HPP), production scheduling, inventory management, and process mapping"
     )
   ],
-  skillCards: [
-    {
-      icon: "fab fa-react",
-      accent: "blue",
-      title: "Web & Full-Stack Development",
-      description:
-        "Building responsive front-ends and full-stack web applications with React, TypeScript, and Node.js. I focus on clean component structure, practical UI, and reliable integration with backend APIs.",
-      tags: [
-        {name: "React", icon: "fab fa-react"},
-        {name: "TypeScript", icon: "fas fa-code"},
-        {name: "Node.js", icon: "fab fa-node-js"},
-        {name: "REST APIs", icon: "fas fa-network-wired"}
-      ]
-    },
-    {
-      icon: "fab fa-python",
-      accent: "emerald",
-      title: "Quantitative & Algorithmic Trading",
-      description:
-        "Engineering automated crypto trading bots connected directly to the OKX API. Incorporates automated ticker screening (ADX, RSI, volume surges), trend filters, hard-coded risk management, and SQLite logging.",
-      tags: [
-        {name: "Python", icon: "fab fa-python"},
-        {name: "OKX API / CCXT", icon: "fas fa-exchange-alt"},
-        {name: "Pandas & NumPy", icon: "pandas"},
-        {name: "FastAPI", icon: "fastapi"}
-      ]
-    },
-    {
-      icon: "solidity",
-      accent: "purple",
-      title: "Web3 & Smart Contracts",
-      description:
-        "Writing Solidity smart contracts to build food supply chain traceability systems (like Agrilink), verifying product provenance from farm to consumer via tamper-proof QR codes.",
-      tags: [
-        {name: "Solidity", icon: "solidity"},
-        {name: "Smart Contracts", icon: "fas fa-file-contract"},
-        {name: "Supply Chain Traceability", icon: "fas fa-qrcode"},
-        {name: "Web3", icon: "fab fa-ethereum"}
-      ]
-    },
-    {
-      icon: "fas fa-truck-moving",
-      accent: "amber",
-      title: "Industrial Operations & Financial Systems",
-      description:
-        "Applying industrial engineering and financial tracking to real operations: Decision Support Systems (DSS), SME unit costing (HPP), production scheduling, and inventory planning.",
-      tags: [
-        {name: "Decision Support (DSS)", icon: "fas fa-brain"},
-        {name: "Unit Costing & P&L", icon: "fas fa-file-excel"},
-        {name: "Process Mapping", icon: "fas fa-project-diagram"},
-        {name: "Supply Chain", icon: "fas fa-truck-moving"}
-      ]
-    }
-  ],
 
   softwareSkills: [
     {

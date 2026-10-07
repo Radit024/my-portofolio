@@ -1,0 +1,41 @@
+.motion-curtains {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 2147483647;
+  contain: strict;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
+.motion-curtain {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--curtain, #0d111c);
+  will-change: transform, clip-path;
+  contain: strict;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  box-shadow: 0 0 60px rgba(0, 0, 0, 0.35);
+}
+
+[data-motion-curtains]::backdrop {
+  background: transparent;
+}
+
+/* While curtain covers the screen, suppress element-level CSS transitions
+   to eliminate CPU thrashing, layout reflow, and paint invalidations */
+html.theme-curtain-transitioning *,
+html.theme-curtain-transitioning *::before,
+html.theme-curtain-transitioning *::after {
+  transition: none !important;
+}

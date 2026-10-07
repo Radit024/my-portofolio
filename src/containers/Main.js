@@ -28,6 +28,7 @@ import {
 } from "../portfolio";
 import {StyleProvider} from "../contexts/StyleContext";
 import {useLocalStorage} from "../hooks/useLocalStorage";
+import {curtains} from "../utils/curtainsTransition";
 import "./Main.scss";
 
 const MainContent = ({isDark}) => {
@@ -90,8 +91,43 @@ const Main = () => {
     darkPref ? darkPref.matches : false
   );
 
-  const changeTheme = () => {
-    setIsDark(!isDark);
+  const changeTheme = (event) => {
+    const nextIsDark = !isDark;
+    const curtainColor = nextIsDark ? "#0d111c" : "#ffffff";
+
+    let origin = {x: 0.5, y: 0.5};
+    if (event && event.target && event.target.getBoundingClientRect) {
+      const rect = event.target.getBoundingClientRect();
+      if (typeof window !== "undefined" && window.innerWidth && window.innerHeight) {
+        origin = {
+          x: (rect.left + rect.width / 2) / window.innerWidth,
+          y: (rect.top + rect.height / 2) / window.innerHeight
+        };
+      }
+    } else if (
+      event &&
+      typeof event.clientX === "number" &&
+      typeof window !== "undefined" &&
+      window.innerWidth
+    ) {
+      origin = {
+        x: event.clientX / window.innerWidth,
+        y: event.clientY / window.innerHeight
+      };
+    }
+
+    curtains(
+      () => {
+        setIsDark(nextIsDark);
+      },
+      {
+        color: curtainColor,
+        origin: origin,
+        direction: nextIsDark ? "right" : "left",
+        coverDuration: 280,
+        revealDuration: 340
+      }
+    );
   };
 
   return (

@@ -77,9 +77,8 @@ it("renders Big Projects with previews and links", async () => {
 
 it("renders without crashing with reduced motion", async () => {
   useReducedMotion.mockReturnValue(true);
-  let result;
   await act(async () => {
-    result = render(<App />);
+    render(<App />);
   });
   expect(
     screen.getByRole("heading", {name: new RegExp(greeting.title)})
@@ -95,4 +94,5 @@ it("renders unified portfolio with tech, quantitative finance, and operational p
   expect(screen.getByText("Arina Agri")).toBeInTheDocument();
   expect(container.querySelectorAll("#projects .project-card").length).toBe(bigProjects.projects.length);
 });
+
 

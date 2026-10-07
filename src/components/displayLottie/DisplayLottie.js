@@ -8,8 +8,13 @@ import StyleContext from "../../contexts/StyleContext";
  * Adapt dark/near-black palette colors in Lottie animations so they
  * stand out vibrantly and legibly against dark backgrounds.
  */
+const lottieAdaptedCache = new WeakMap();
+
 function adaptLottieColors(data, isDark) {
   if (!isDark || !data) return data;
+  if (lottieAdaptedCache.has(data)) {
+    return lottieAdaptedCache.get(data);
+  }
 
   try {
     const cloned = JSON.parse(JSON.stringify(data));
@@ -39,6 +44,7 @@ function adaptLottieColors(data, isDark) {
     }
 
     replaceColor(cloned);
+    lottieAdaptedCache.set(data, cloned);
     return cloned;
   } catch (e) {
     return data;
@@ -99,7 +105,6 @@ export default function DisplayLottie({animationData}) {
     >
       <Suspense fallback={<Loading />}>
         <Lottie
-          key={isDark ? "dark-animation" : "light-animation"}
           lottieRef={animation}
           animationData={currentAnimationData}
           autoplay={false}
