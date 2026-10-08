@@ -58,7 +58,7 @@ const MainContent = ({isDark}) => {
   return (
     <div className={isDark ? "dark-mode" : ""}>
       {isShowingSplashAnimation && splashScreen.enabled && !reduceMotion && (
-        <SplashScreen />
+        <SplashScreen onFinish={() => setIsShowingSplashAnimation(false)} />
       )}
       <Header />
       <Greeting />
