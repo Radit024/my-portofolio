@@ -39,3 +39,8 @@ playwright.config.js
 tests
 perf-results
 test-results
+DESIGN.md
+AGENTS.md
+GEMINI.md
+playwright.config.js
+perf-results/playwright-report/index.html

@@ -1,0 +1,217 @@
+@import "../../_globalColor";
+
+// Radial Menu Design Tokens (Anti-AI Slop Compliant)
+$radial-accent: #0ea5e9;
+$radial-accent-hover: #0284c7;
+
+.radial-menu-wrapper {
+  display: none; // Hidden on desktop
+}
+
+@media (max-width: 860px) {
+  .radial-menu-wrapper {
+    display: block;
+    position: static;
+  }
+
+  /* Backdrop Scrim */
+  .radial-backdrop {
+    position: fixed;
+    inset: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.45);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    z-index: 998;
+  }
+
+  /* Floating Radial Container anchored near bottom-right */
+  .radial-menu-container {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    z-index: 1000;
+    width: 48px;
+    height: 48px;
+  }
+
+  /* Central Trigger Button (Dots Morph Button) */
+  .radial-trigger-btn {
+    position: absolute;
+    inset: 0;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: 1px solid transparent;
+    outline: none;
+    user-select: none;
+    padding: 0;
+    box-shadow: 0 10px 25px -3px rgba(0, 0, 0, 0.35);
+    transition:
+      background-color 0.2s ease,
+      border-color 0.2s ease,
+      box-shadow 0.2s ease;
+    z-index: 10;
+
+    &:focus-visible {
+      outline: 2px solid $radial-accent;
+      outline-offset: 3px;
+    }
+
+    .radial-dots-inner {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .dark-theme .radial-trigger-btn {
+    background: #111827;
+    color: #f8fafc;
+    border-color: rgba(255, 255, 255, 0.12);
+
+    &:hover {
+      background: #1f2937;
+      border-color: rgba(255, 255, 255, 0.2);
+    }
+
+    &.is-open {
+      background: #0f172a;
+      border-color: $radial-accent;
+      color: $radial-accent;
+    }
+  }
+
+  .light-theme .radial-trigger-btn {
+    background: #ffffff;
+    color: #0f172a;
+    border-color: #cbd5e1;
+
+    &:hover {
+      background: #f8fafc;
+      border-color: #94a3b8;
+    }
+
+    &.is-open {
+      background: #ffffff;
+      border-color: $radial-accent;
+      color: $radial-accent;
+    }
+  }
+
+  /* Fanned-out Item Position Wrapper */
+  .radial-item-wrapper {
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 42px;
+    height: 42px;
+    z-index: 5;
+    pointer-events: auto;
+  }
+
+  /* Circular Action Button */
+  .radial-item-btn {
+    position: relative;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: 1px solid transparent;
+    outline: none;
+    padding: 0;
+    font-size: 1rem;
+    box-shadow: 0 8px 20px -2px rgba(0, 0, 0, 0.28);
+    transition:
+      background-color 0.18s ease,
+      border-color 0.18s ease,
+      color 0.18s ease,
+      transform 0.15s ease;
+
+    &:focus-visible {
+      outline: 2px solid $radial-accent;
+      outline-offset: 2px;
+    }
+
+    /* Floating Tooltip Label */
+    .radial-item-tooltip {
+      position: absolute;
+      right: calc(100% + 8px);
+      top: 50%;
+      transform: translateY(-50%) translateX(4px);
+      white-space: nowrap;
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+      padding: 4px 8px;
+      border-radius: 6px;
+      pointer-events: none;
+      opacity: 0;
+      transition:
+        opacity 0.18s ease,
+        transform 0.18s ease;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    &:hover .radial-item-tooltip,
+    &:focus-visible .radial-item-tooltip,
+    &:active .radial-item-tooltip {
+      opacity: 1;
+      transform: translateY(-50%) translateX(0);
+    }
+  }
+
+  .dark-theme .radial-item-btn {
+    background: #1e293b;
+    color: #f8fafc;
+    border-color: rgba(255, 255, 255, 0.12);
+
+    &:hover {
+      background: $radial-accent;
+      border-color: $radial-accent;
+      color: #ffffff;
+    }
+
+    &.theme-item {
+      color: #38bdf8;
+    }
+
+    .radial-item-tooltip {
+      background: #0b0f17;
+      color: #f8fafc;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+  }
+
+  .light-theme .radial-item-btn {
+    background: #ffffff;
+    color: #0f172a;
+    border-color: #e2e8f0;
+
+    &:hover {
+      background: $radial-accent;
+      border-color: $radial-accent;
+      color: #ffffff;
+    }
+
+    &.theme-item {
+      color: #0284c7;
+    }
+
+    .radial-item-tooltip {
+      background: #ffffff;
+      color: #0f172a;
+      border: 1px solid #e2e8f0;
+    }
+  }
+}

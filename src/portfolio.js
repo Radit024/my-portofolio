@@ -158,7 +158,7 @@ const educationInfo = {
   schools: [
     {
       schoolName: "Universitas Brawijaya",
-      logo: require("./assets/images/UB LOGO.jpeg"),
+      logo: require("./assets/images/ubLogo.svg").default || require("./assets/images/ubLogo.svg"),
       subHeader: "Bachelor of Engineering in Agroindustrial Technology",
       duration: "August 2023 - Present",
       desc: "Focusing on Industrial Systems Optimization, Decision Support Systems, and Software Engineering.",
@@ -256,11 +256,7 @@ const bigProjects = {
       footerLink: [
         {
           name: "View on GitHub",
-          url: "https://github.com/Radit024"
-        },
-        {
-          name: "View on LinkedIn",
-          url: "https://www.linkedin.com/in/daffaradityoadjiefirmansyah/"
+          url: "https://github.com/Radit024/Torock-Trading-Bot"
         }
       ]
     },
@@ -272,7 +268,7 @@ const bigProjects = {
       imageAlt:
         "Concept diagram connecting producers, distributors, retailers, and consumers through Solidity contracts and QR access",
       previewStyle: "agrilink",
-      previewLabel: "Concept diagram",
+      previewLabel: "Food Supply Chain Traceability System",
       date: "September 2026 - Present",
       projectDesc:
         "A food supply chain traceability system built with Solidity smart contracts, enabling transparent batch tracking from farm to consumer with tamper-proof QR code verification.",
@@ -284,8 +280,8 @@ const bigProjects = {
       ],
       footerLink: [
         {
-          name: "View on LinkedIn",
-          url: "https://www.linkedin.com/in/daffaradityoadjiefirmansyah/overlay/1789751222392/single-media-viewer/"
+          name: "View on GitHub",
+          url: "https://github.com/Radit024/agrichain-app"
         }
       ]
     },
@@ -296,7 +292,7 @@ const bigProjects = {
       image: require("./assets/images/projects/bisnisku-diagram.svg").default,
       imageAlt:
         "BisnisKu financial platform architecture showing cash flow ledger, unit costing, and P&L analytics",
-      previewStyle: "arina-agri",
+      previewStyle: "Bisnisku",
       previewLabel: "Financial Management Platform",
       date: "July 2025 - Present",
       projectDesc:
@@ -310,8 +306,8 @@ const bigProjects = {
       ],
       footerLink: [
         {
-          name: "View on LinkedIn",
-          url: "https://www.linkedin.com/in/daffaradityoadjiefirmansyah/details/projects/"
+          name: "View on GitHub",
+          url: "https://github.com/Radit024/BisnisKu_2"
         }
       ]
     },
@@ -326,7 +322,6 @@ const bigProjects = {
       date: "March 2026 - Present",
       projectDesc:
         "A digital Decision Support System (DSS) designed for agribusiness operations, featuring crop yield forecasting models, production costing calculations, and market price trends.",
-      contributors: "Ade Surya and Mutiara",
       skills: [
         "Full Stack Web",
         "Decision Support Systems",
@@ -335,8 +330,8 @@ const bigProjects = {
       ],
       footerLink: [
         {
-          name: "View projects on LinkedIn",
-          url: "https://www.linkedin.com/in/daffaradityoadjiefirmansyah/details/projects/"
+          name: "Try the platform",
+          url: "https://app.arinaagri.com/"
         }
       ]
     },
@@ -349,7 +344,6 @@ const bigProjects = {
       date: "March 2026 - Present",
       projectDesc:
         "A digital publication and community media platform covering gaming, pop culture, and modern tech developments with curated reviews and news.",
-      contributors: "Sufyan Dwi",
       skills: [
         "Web Development",
         "UI/UX Design",
@@ -358,8 +352,8 @@ const bigProjects = {
       ],
       footerLink: [
         {
-          name: "View on LinkedIn",
-          url: "https://www.linkedin.com/in/daffaradityoadjiefirmansyah/overlay/1773562816809/single-media-viewer/"
+          name: "View on GitHub",
+          url: "https://github.com/Radit024/toorock.verse"
         }
       ]
     },
@@ -372,7 +366,6 @@ const bigProjects = {
       date: "December 2023 - January 2024",
       projectDesc:
         "A responsive web application for personal health tracking, allowing users to log daily exercise, sleep duration, and lifestyle habits.",
-      contributors: "Athallah",
       skills: [
         "Software Engineering",
         "Mobile-First Design",
@@ -381,8 +374,8 @@ const bigProjects = {
       ],
       footerLink: [
         {
-          name: "View projects on LinkedIn",
-          url: "https://www.linkedin.com/in/daffaradityoadjiefirmansyah/details/projects/"
+          name: "View on GitHub",
+          url: "https://github.com/Radit024/WellnessMeFlut"
         }
       ]
     }
@@ -427,7 +420,7 @@ const achievementSection = {
     {
       title: "SME Financial Record-Keeping & Cost Optimization",
       subtitle: "Program Mahasiswa Membangun Mitra (3M FTP UB) — UMKM Sari Gunung",
-      image: require("./assets/images/UB LOGO.jpeg"),
+      image: require("./assets/images/ubLogo.svg").default || require("./assets/images/ubLogo.svg"),
       imageAlt: "Universitas Brawijaya 3M FTP",
       issued: "July 2025",
       footerLink: [
@@ -494,16 +487,23 @@ const podcastSection = {
 const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
-    "Interested in collaborating on software engineering, quantitative trading systems, or agro-industrial operations? Feel free to reach out.",
+    "Interested in collaborating on software engineering, or agro-industrial operations? Feel free to reach out.",
   number: "",
   email_address: "daffaradityoa03@gmail.com"
 };
 
 // Twitter Section
-
 const twitterDetails = {
   userName: "DaffaradityoA",
-  display: true
+  display: false
+};
+
+// GitHub Profile Section
+const githubProfile = {
+  userName: "Radit024",
+  display: true,
+  title: "GitHub Profile",
+  subtitle: "Explore my open source repositories, projects, and developer activity."
 };
 
 const isHireable = true;
@@ -525,5 +525,6 @@ export {
   podcastSection,
   contactInfo,
   twitterDetails,
+  githubProfile,
   isHireable
 };

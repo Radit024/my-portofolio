@@ -14,7 +14,8 @@ import Talks from "./talks/Talks";
 import Podcast from "./podcast/Podcast";
 import Education from "./education/Education";
 import ScrollToTopButton from "./topbutton/Top";
-import Twitter from "./twitter-embed/twitter";
+import RadialMenu from "../components/radialMenu/RadialMenu";
+import GithubProfile from "./githubProfile/GithubProfile";
 import Profile from "./profile/Profile";
 import SplashScreen from "./splashScreen/SplashScreen";
 import {
@@ -23,7 +24,7 @@ import {
   openSource,
   blogSection,
   talkSection,
-  twitterDetails,
+  githubProfile,
   podcastSection
 } from "../portfolio";
 import {StyleProvider} from "../contexts/StyleContext";
@@ -56,28 +57,26 @@ const MainContent = ({isDark}) => {
 
   return (
     <div className={isDark ? "dark-mode" : ""}>
-      {isShowingSplashAnimation && splashScreen.enabled && !reduceMotion ? (
+      {isShowingSplashAnimation && splashScreen.enabled && !reduceMotion && (
         <SplashScreen />
-      ) : (
-        <>
-          <Header />
-          <Greeting />
-          <Skills />
-          <StackProgress />
-          <Education />
-          {workExperiences.display && <WorkExperience />}
-          {openSource.display && <Projects />}
-          <StartupProject />
-          <Achievement />
-          {blogSection.display && <Blogs />}
-          {talkSection.display && <Talks />}
-          {twitterDetails.display && <Twitter />}
-          {podcastSection.display && <Podcast />}
-          <Profile />
-          <Footer />
-          <ScrollToTopButton />
-        </>
       )}
+      <Header />
+      <Greeting />
+      <Skills />
+      <StackProgress />
+      <Education />
+      {workExperiences.display && <WorkExperience />}
+      {openSource.display && <Projects />}
+      <StartupProject />
+      <Achievement />
+      {blogSection.display && <Blogs />}
+      {talkSection.display && <Talks />}
+      {githubProfile.display && <GithubProfile />}
+      {podcastSection.display && <Podcast />}
+      <Profile />
+      <Footer />
+      <ScrollToTopButton />
+      <RadialMenu />
     </div>
   );
 };
@@ -91,14 +90,18 @@ const Main = () => {
     darkPref ? darkPref.matches : false
   );
 
-  const changeTheme = (event) => {
+  const changeTheme = event => {
     const nextIsDark = !isDark;
     const curtainColor = nextIsDark ? "#0d111c" : "#ffffff";
 
     let origin = {x: 0.5, y: 0.5};
     if (event && event.target && event.target.getBoundingClientRect) {
       const rect = event.target.getBoundingClientRect();
-      if (typeof window !== "undefined" && window.innerWidth && window.innerHeight) {
+      if (
+        typeof window !== "undefined" &&
+        window.innerWidth &&
+        window.innerHeight
+      ) {
         origin = {
           x: (rect.left + rect.width / 2) / window.innerWidth,
           y: (rect.top + rect.height / 2) / window.innerHeight

@@ -12,22 +12,40 @@
 
 .skills-main-div > * {
   flex: 1;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
   margin-bottom: 30px;
 }
 
 .skills-image-div {
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   overflow: hidden;
-}
 
-/* Clip Lottie SVG elements and right edge boundary artifact */
-.skills-image-div svg {
-  overflow: hidden;
-  clip-path: inset(0 2% 0 0);
-}
+  .lottie-container {
+    width: 100%;
+    max-width: 480px;
+    overflow: hidden;
+  }
 
-.skills-image-div > img {
-  max-width: 100%;
-  height: auto;
+  svg {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    overflow: hidden !important;
+    clip-path: inset(0 2% 0 0);
+  }
+
+  > img {
+    max-width: 100%;
+    height: auto;
+  }
 }
 
 .skills-heading {
@@ -71,31 +89,51 @@
     font-size: 40px;
   }
 }
+
+@media (max-width: 1024px) {
+  .skills-main-div {
+    flex-direction: column;
+    gap: 32px;
+  }
+  .skills-image-div {
+    max-width: 380px;
+    margin: 0 auto;
+    order: 2;
+  }
+  .skills-text-div {
+    margin-left: 0;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+  }
+  .skills-heading {
+    text-align: center;
+  }
+  .skills-text-subtitle {
+    text-align: center;
+  }
+  .skills-badge-pill {
+    margin: 0 auto 12px auto;
+  }
+}
+
 @media (max-width: 768px) {
   .skills-heading {
     font-size: 30px;
     text-align: center;
   }
-  .greeting-text-p {
-    font-size: 16px;
-    line-height: normal;
-  }
-  .skills-main-div {
-    flex-direction: column;
+  .skills-image-div {
+    max-width: 280px;
+    order: 2;
   }
   .skills-text-div {
-    margin-left: 0px;
-    margin: 20px;
+    margin: 10px 0;
   }
   .skills-text {
     font-size: 16px;
   }
   .skills-text-subtitle {
-    font-size: 16px;
+    font-size: 15px;
     text-align: center;
-  }
-  .skills-image-div {
-    /* display: none; */
-    order: 2;
   }
 }

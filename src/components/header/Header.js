@@ -14,11 +14,34 @@ import {
 
 function Header() {
   const {isDark} = useContext(StyleContext);
+
   const viewSkills = skillsSection.display;
   const viewProficiency = techStack.display || techStack.viewSkillBars;
   const viewEducation = educationInfo.display;
   const viewProjects = bigProjects.display;
   const viewAchievement = achievementSection.display;
+
+  // Monochromatic, uniform navigation items
+  const navItems = [
+    viewSkills && {id: "skills", label: "Skills"},
+    viewProficiency && {
+      id: "proficiency",
+      label: "Proficiency"
+    },
+    viewEducation && {
+      id: "education",
+      label: "Education"
+    },
+    viewProjects && {
+      id: "projects",
+      label: "Projects"
+    },
+    viewAchievement && {
+      id: "achievements",
+      label: "Achievements"
+    },
+    {id: "contact", label: "Contact Me"}
+  ].filter(Boolean);
 
   return (
     <Headroom>
@@ -28,52 +51,25 @@ function Header() {
           <span className="logo-name">{greeting.username}</span>
           <span className="grey-color">/&gt;</span>
         </a>
-        <input className="menu-btn" type="checkbox" id="menu-btn" />
-        <label
-          className="menu-icon"
-          htmlFor="menu-btn"
-          style={{color: "white"}}
+
+        {/* Desktop Menu */}
+        <ul
+          className={
+            isDark ? "dark-menu menu desktop-menu" : "menu desktop-menu"
+          }
         >
-          <span className={isDark ? "navicon navicon-dark" : "navicon"}></span>
-        </label>
-        <ul className={isDark ? "dark-menu menu" : "menu"}>
-          {viewSkills && (
-            <li>
-              <a href="#skills">Skills</a>
+          {navItems.map(item => (
+            <li key={item.id}>
+              <a href={`#${item.id}`}>{item.label}</a>
             </li>
-          )}
-          {viewProficiency && (
-            <li>
-              <a href="#proficiency">Proficiency</a>
-            </li>
-          )}
-          {viewEducation && (
-            <li>
-              <a href="#education">Education</a>
-            </li>
-          )}
-          {viewProjects && (
-            <li>
-              <a href="#projects">Projects</a>
-            </li>
-          )}
-          {viewAchievement && (
-            <li>
-              <a href="#achievements">Achievements</a>
-            </li>
-          )}
-          <li>
-            <a href="#contact">Contact Me</a>
-          </li>
-          <li>
-            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-            <a>
-              <ToggleSwitch />
-            </a>
+          ))}
+          <li className="theme-toggle-desktop">
+            <ToggleSwitch />
           </li>
         </ul>
       </header>
     </Headroom>
   );
 }
+
 export default Header;

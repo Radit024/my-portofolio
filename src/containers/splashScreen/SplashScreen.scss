@@ -1,377 +1,144 @@
 @import "../../_globalColor";
 
-.splash-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  width: 100vw;
+// Loading Line Reveal Tokens (Anti-AI Slop Compliant)
+$reveal-accent-dark: #0ea5e9;
+$reveal-accent-light: #0284c7;
+$reveal-bg-base-dark: #0b0f17;
+$reveal-bg-clip-dark: #0f172a;
+$reveal-bg-base-light: #ffffff;
+$reveal-bg-clip-light: #f8fafc;
+
+.splash-line-reveal-container {
   position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 9999;
-  background: radial-gradient(circle at 50% 50%, #ffffff 0%, #f1f5f9 60%, #e2e8f0 100%);
-  color: #0f172a;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 99999;
+  pointer-events: none;
   overflow: hidden;
   user-select: none;
-  transition: background 0.3s ease, color 0.3s ease;
 
-  &.dark-mode {
-    background: radial-gradient(circle at 50% 50%, #0f172a 0%, #080c14 60%, #030712 100%);
-    color: #f8fafc;
+  /* Base Background Underlay (Fades out when loaded) */
+  .line-reveal-base-overlay {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 10000;
+  }
 
-    .pokopia-backdrop-glow {
-      background: radial-gradient(circle at 50% 50%, rgba(99, 102, 241, 0.35) 0%, rgba(236, 72, 153, 0.18) 45%, rgba(3, 7, 18, 0) 70%);
+  /* Clip-Path Reveal Layer (Parts horizontally on loaded) */
+  .line-reveal-clip-overlay {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    will-change: clip-path;
+    z-index: 10001;
+  }
+
+  /* Precision Vertical Line Indicator */
+  .line-reveal-indicator {
+    position: fixed;
+    top: 0;
+    left: calc(50% - 1px);
+    width: 2px;
+    height: 100%;
+    pointer-events: none;
+    z-index: 10002;
+  }
+
+  /* Center Brand Signature */
+  .line-reveal-center-brand {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10003;
+    pointer-events: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    max-width: calc(100vw - 32px);
+    overflow: hidden;
+
+    .brand-bracket {
+      font-size: 1.6rem;
+      font-weight: 600;
+      transition: color 0.2s ease;
     }
 
-    .ambient-floater {
-      color: rgba(255, 255, 255, 0.18);
+    .brand-name {
+      font-family: "Agustina Regular";
+      font-size: 2.2rem;
+      font-weight: bold;
+      padding: 0 8px;
+      letter-spacing: -0.01em;
+      transition: color 0.2s ease;
+    }
+  }
+
+  /* Dark Theme Tokens */
+  &.dark-theme {
+    .line-reveal-base-overlay {
+      background-color: $reveal-bg-base-dark;
     }
 
-    .pokopia-modal {
-      background: rgba(15, 23, 42, 0.95);
-      border-color: rgba(99, 102, 241, 0.4);
-      box-shadow: 0 30px 80px -10px rgba(0, 0, 0, 0.8), 0 0 50px rgba(99, 102, 241, 0.3);
+    .line-reveal-clip-overlay {
+      background-color: $reveal-bg-clip-dark;
     }
 
-    .pokopia-accent-ring {
-      border-color: rgba(129, 140, 248, 0.45);
-      box-shadow: inset 0 0 20px rgba(99, 102, 241, 0.2);
+    .line-reveal-indicator {
+      background-color: $reveal-accent-dark;
+      box-shadow: 0 0 12px rgba(14, 165, 233, 0.45);
     }
 
-    .pokopia-icon-wrapper {
-      background: linear-gradient(135deg, #1e293b, #0f172a);
-      border-color: rgba(129, 140, 248, 0.5);
-      color: #818cf8;
-      box-shadow: 0 10px 30px rgba(99, 102, 241, 0.4);
+    .brand-bracket {
+      color: $reveal-accent-dark;
     }
 
-    .pokopia-badge-pill {
-      background-color: rgba(99, 102, 241, 0.15);
-      border-color: rgba(129, 140, 248, 0.3);
-      color: #a5b4fc;
+    .brand-name {
+      color: #f8fafc;
+    }
+  }
+
+  /* Light Theme Tokens */
+  &.light-theme {
+    .line-reveal-base-overlay {
+      background-color: $reveal-bg-base-light;
     }
 
-    .pokopia-title {
-      color: #ffffff;
-      text-shadow: 0 2px 16px rgba(255, 255, 255, 0.15);
+    .line-reveal-clip-overlay {
+      background-color: $reveal-bg-clip-light;
     }
 
-    .pokopia-bracket {
-      color: #818cf8;
+    .line-reveal-indicator {
+      background-color: $reveal-accent-light;
+      box-shadow: 0 0 10px rgba(2, 132, 199, 0.35);
     }
 
-    .pokopia-pill-item {
-      background-color: rgba(255, 255, 255, 0.06);
-      border-color: rgba(255, 255, 255, 0.12);
-      color: #e2e8f0;
+    .brand-bracket {
+      color: $reveal-accent-light;
     }
 
-    .pokopia-progress-track {
-      background-color: rgba(255, 255, 255, 0.12);
-    }
-
-    .pokopia-progress-fill {
-      background: linear-gradient(90deg, #6366f1, #a855f7, #ec4899);
-      box-shadow: 0 0 14px rgba(236, 72, 153, 0.5);
-    }
-
-    .pokopia-status-meta {
-      color: #94a3b8;
+    .brand-name {
+      color: #0f172a;
     }
   }
 }
 
-/* Ambient Backdrop Glow & Flares */
-.pokopia-backdrop-glow {
-  position: absolute;
-  width: 550px;
-  height: 550px;
-  border-radius: 50%;
-  background: radial-gradient(circle at 50% 50%, rgba(99, 102, 241, 0.25) 0%, rgba(236, 72, 153, 0.12) 40%, rgba(248, 250, 252, 0) 70%);
-  filter: blur(40px);
-  pointer-events: none;
-}
+@media (max-width: 768px) {
+  .splash-line-reveal-container .line-reveal-center-brand {
+    .brand-bracket {
+      font-size: 1.25rem;
+    }
 
-/* Floating Ambient Geometric Glyphs */
-.ambient-floater {
-  position: absolute;
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
-  font-size: 14px;
-  font-weight: 700;
-  color: rgba(99, 102, 241, 0.25);
-  pointer-events: none;
-  z-index: 1;
-}
-
-/* Pokopia Modal Stage */
-.pokopia-stage {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  padding: 20px;
-  z-index: 5;
-}
-
-/* Pokopia Particle Sparks Burst on Expand */
-.pokopia-spark-burst {
-  position: absolute;
-  width: 0;
-  height: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  pointer-events: none;
-  z-index: 15;
-}
-
-.pokopia-spark-dot {
-  position: absolute;
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  background: linear-gradient(135deg, #6366f1, #ec4899);
-  box-shadow: 0 0 8px #ec4899;
-}
-
-/* Modal Shell with Pokopia Morph */
-.pokopia-modal {
-  position: relative;
-  background: rgba(255, 255, 255, 0.98);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border: 2px solid rgba(99, 102, 241, 0.25);
-  box-shadow: 0 30px 70px -10px rgba(15, 23, 42, 0.2), 0 0 40px rgba(99, 102, 241, 0.18);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  cursor: default;
-}
-
-/* Stage Phase Sizes */
-[data-phase="idle"] .pokopia-modal,
-[data-phase="entry"] .pokopia-modal,
-[data-phase="spin"] .pokopia-modal {
-  width: 115px;
-  height: 115px;
-}
-
-[data-phase="expand"] .pokopia-modal {
-  width: min(92vw, 460px);
-  min-height: 290px;
-  padding: 34px 30px;
-}
-
-/* Accent Ring inside Modal Frame */
-.pokopia-accent-ring {
-  position: absolute;
-  inset: 6px;
-  border-radius: inherit;
-  border: 1.5px solid rgba(99, 102, 241, 0.3);
-  pointer-events: none;
-}
-
-/* Center Pulse Icon (Active during entry & spin) */
-.pokopia-icon-wrapper {
-  position: absolute;
-  width: 58px;
-  height: 58px;
-  border-radius: 50%;
-  background: linear-gradient(135deg, #ffffff, #eef2ff);
-  border: 2px solid rgba(99, 102, 241, 0.35);
-  color: #6366f1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 24px;
-  box-shadow: 0 8px 25px rgba(99, 102, 241, 0.3);
-  z-index: 10;
-  pointer-events: none;
-
-  svg {
-    width: 30px;
-    height: 30px;
-  }
-}
-
-/* Inner Content revealed upon expand */
-.pokopia-inner-content {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  gap: 18px;
-  z-index: 5;
-}
-
-/* Top Pill Badge */
-.pokopia-badge-pill {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  padding: 5px 14px;
-  border-radius: 9999px;
-  background-color: rgba(99, 102, 241, 0.1);
-  border: 1.5px solid rgba(99, 102, 241, 0.25);
-  font-size: 0.74rem;
-  font-weight: 700;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: #4f46e5;
-}
-
-.pokopia-live-dot {
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  background-color: #10b981;
-  box-shadow: 0 0 8px #10b981;
-  animation: pokopiaPulse 1.6s infinite ease-in-out;
-}
-
-@keyframes pokopiaPulse {
-  0%, 100% {
-    transform: scale(0.9);
-    opacity: 0.8;
-  }
-  50% {
-    transform: scale(1.3);
-    opacity: 1;
-  }
-}
-
-/* Brand Name Typography */
-.pokopia-brand-row {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: clamp(2.1rem, 5vw, 2.75rem);
-  line-height: 1.15;
-}
-
-.pokopia-bracket {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
-  font-size: 0.88em;
-  font-weight: 700;
-  color: #6366f1;
-}
-
-.pokopia-title {
-  display: inline-block;
-  font-family: "Agustina Regular", cursive, sans-serif;
-  font-weight: 700;
-  padding: 0 10px;
-  color: #0f172a;
-  letter-spacing: -0.01em;
-}
-
-/* Feature Tech Specialty Pills (Mengisi visual agar tidak sepi!) */
-.pokopia-pills-grid {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  width: 100%;
-  max-width: 380px;
-}
-
-.pokopia-pill-item {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  padding: 5px 12px;
-  border-radius: 8px;
-  background-color: rgba(15, 23, 42, 0.04);
-  border: 1px solid rgba(15, 23, 42, 0.08);
-  font-size: 0.75rem;
-  font-weight: 600;
-  color: #334155;
-  transition: transform 0.2s ease;
-
-  i {
-    font-size: 0.82rem;
-  }
-
-  &.cyan i {
-    color: #0284c7;
-  }
-
-  &.emerald i {
-    color: #059669;
-  }
-
-  &.purple i {
-    color: #7c3aed;
-  }
-
-  &.amber i {
-    color: #d97706;
-  }
-}
-
-/* High-Contrast Progress Section */
-.pokopia-progress-container {
-  width: 100%;
-  max-width: 320px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 8px;
-  margin-top: 4px;
-}
-
-.pokopia-progress-track {
-  width: 100%;
-  height: 5px;
-  border-radius: 9999px;
-  background-color: rgba(15, 23, 42, 0.08);
-  overflow: hidden;
-  position: relative;
-}
-
-.pokopia-progress-fill {
-  width: 100%;
-  height: 100%;
-  border-radius: 9999px;
-  background: linear-gradient(90deg, #6366f1, #a855f7, #ec4899);
-  box-shadow: 0 0 10px rgba(99, 102, 241, 0.5);
-  transform-origin: left;
-}
-
-.pokopia-status-meta {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
-  font-size: 11px;
-  font-weight: 600;
-  color: #64748b;
-  letter-spacing: 0.06em;
-}
-
-@media (max-width: 640px) {
-  [data-phase="expand"] .pokopia-modal {
-    padding: 26px 20px;
-    min-height: 260px;
-  }
-
-  .pokopia-brand-row {
-    font-size: 1.85rem;
-  }
-
-  .pokopia-pills-grid {
-    gap: 6px;
-  }
-
-  .pokopia-pill-item {
-    font-size: 0.7rem;
-    padding: 4px 10px;
+    .brand-name {
+      font-size: 1.65rem;
+      padding: 0 6px;
+    }
   }
 }

@@ -96,15 +96,6 @@ export default function StackProgress() {
                         }
                       />
                     </div>
-                    {exp.technologies && (
-                      <div className="skill-tech-pills">
-                        {exp.technologies.split(",").map((tech, techIdx) => (
-                          <span key={techIdx} className="tech-chip">
-                            {tech.trim()}
-                          </span>
-                        ))}
-                      </div>
-                    )}
                   </motion.div>
                 );
               })}

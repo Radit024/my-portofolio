@@ -10,11 +10,24 @@
   color: $textColorDark;
   transition: background-color 0.25s ease, color 0.25s ease;
 
+  // Prevent nested elements with .dark-mode from inheriting root page background or dot grid
+  .dark-mode {
+    background-color: transparent;
+    background-image: none;
+    background-size: auto;
+    background-attachment: scroll;
+  }
+
   &.finance-mode {
     background-color: #080e14;
     background-image: 
       radial-gradient(ellipse 80% 50% at 50% -10%, rgba(16, 185, 129, 0.15), transparent),
       radial-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px);
+
+    .dark-mode {
+      background-color: transparent;
+      background-image: none;
+    }
 
     .skills-badge-pill {
       background: rgba(16, 185, 129, 0.15) !important;
@@ -26,10 +39,14 @@
   // Headings & paragraphs
   h1, h2, h3, h4, h5, h6 {
     color: $textColorDark;
+    background-color: transparent;
+    background-image: none;
   }
 
   p {
     color: #e2e8f0;
+    background-color: transparent;
+    background-image: none;
   }
 
   .subTitle {
@@ -195,19 +212,37 @@
   // Achievement Section
   .achievement-heading {
     color: $textColorDark !important;
+    background: transparent !important;
+    background-image: none !important;
   }
   .achievement-subtitle {
     color: #94a3b8 !important;
+    background: transparent !important;
+    background-image: none !important;
   }
-  .dark-mode.certificate-card {
+  .dark-mode.certificate-card,
+  .certificate-card {
     background-color: #1a1921 !important;
+    background-image: none !important;
     border-color: rgba(255, 255, 255, 0.08) !important;
+    isolation: isolate;
+
+    .card-title,
+    .card-subtitle,
+    .certificate-detail-div {
+      background: transparent !important;
+      background-image: none !important;
+    }
   }
   .card-title {
     color: $textColorDark !important;
+    background: transparent !important;
+    background-image: none !important;
   }
   .card-subtitle {
     color: #94a3b8 !important;
+    background: transparent !important;
+    background-image: none !important;
   }
 
   // Contact Section
