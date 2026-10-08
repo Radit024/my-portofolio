@@ -8,7 +8,6 @@ import {
   animate
 } from "framer-motion";
 import StyleContext from "../../contexts/StyleContext";
-import {greeting} from "../../portfolio";
 import "./SplashScreen.scss";
 
 /**
@@ -103,21 +102,6 @@ export default function SplashScreen() {
         animate={{opacity: isLoaded ? 0 : 1}}
         transition={{duration: 0.2}}
       />
-
-      {/* Center Brand Identity */}
-      {!isLoaded && (
-        <motion.div
-          className="line-reveal-center-brand"
-          initial={{opacity: 0, scale: 0.95}}
-          animate={{opacity: 1, scale: 1}}
-          exit={{opacity: 0, scale: 1.05}}
-          transition={{duration: 0.35, ease: "easeOut"}}
-        >
-          <span className="brand-bracket">&lt;&nbsp;</span>
-          <span className="brand-name">{greeting.username}</span>
-          <span className="brand-bracket">&nbsp;/&gt;</span>
-        </motion.div>
-      )}
     </div>
   );
 }

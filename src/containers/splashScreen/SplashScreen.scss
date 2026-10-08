@@ -50,37 +50,6 @@ $reveal-bg-clip-light: #f8fafc;
     z-index: 10002;
   }
 
-  /* Center Brand Signature */
-  .line-reveal-center-brand {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 10003;
-    pointer-events: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    white-space: nowrap;
-    max-width: calc(100vw - 32px);
-    overflow: hidden;
-
-    .brand-bracket {
-      font-size: 1.6rem;
-      font-weight: 600;
-      transition: color 0.2s ease;
-    }
-
-    .brand-name {
-      font-family: "Agustina Regular";
-      font-size: 2.2rem;
-      font-weight: bold;
-      padding: 0 8px;
-      letter-spacing: -0.01em;
-      transition: color 0.2s ease;
-    }
-  }
-
   /* Dark Theme Tokens */
   &.dark-theme {
     .line-reveal-base-overlay {
@@ -94,14 +63,6 @@ $reveal-bg-clip-light: #f8fafc;
     .line-reveal-indicator {
       background-color: $reveal-accent-dark;
       box-shadow: 0 0 12px rgba(14, 165, 233, 0.45);
-    }
-
-    .brand-bracket {
-      color: $reveal-accent-dark;
-    }
-
-    .brand-name {
-      color: #f8fafc;
     }
   }
 
@@ -118,27 +79,6 @@ $reveal-bg-clip-light: #f8fafc;
     .line-reveal-indicator {
       background-color: $reveal-accent-light;
       box-shadow: 0 0 10px rgba(2, 132, 199, 0.35);
-    }
-
-    .brand-bracket {
-      color: $reveal-accent-light;
-    }
-
-    .brand-name {
-      color: #0f172a;
-    }
-  }
-}
-
-@media (max-width: 768px) {
-  .splash-line-reveal-container .line-reveal-center-brand {
-    .brand-bracket {
-      font-size: 1.25rem;
-    }
-
-    .brand-name {
-      font-size: 1.65rem;
-      padding: 0 6px;
     }
   }
 }
